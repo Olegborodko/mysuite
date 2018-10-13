@@ -105,18 +105,6 @@ jQuery(window).bind("load", function() {
   });
 
 //================================ scroll to section
-  //Scroll active
-  // jQuery(window).scroll(function () {
-  //   var scrollDistance = jQuery(window).scrollTop();
-  //
-  //   jQuery('section').each(function (i) {
-  //     if (jQuery(this).position().top - 51 <= scrollDistance) {
-  //       jQuery('a[href*="#"]:not([href="#"]).active').removeClass('active');
-  //       jQuery('a').eq(i).addClass('active');
-  //     }
-  //   });
-  //
-  // }).scroll();
 
 //Scroll to anchor
   jQuery(function () {
@@ -177,59 +165,57 @@ jQuery(window).bind("load", function() {
   });
 
   //========================== add active class to menu links
-  const scroller = scrollama();
-
-  scroller
-  .setup({
-    step: '.animated' // required - class name of trigger steps
-  })
-  .onStepEnter(function(el){
-    var this_ = jQuery(el.element);
-
-    var set_ = jQuery("#primary-menu li");
-    if (this_.attr("id")){
-    //   //var length_ = set_.length;
-       set_.each(function(i,el) {
-         jQuery(el).removeClass("active");
-       });
-       jQuery("#primary-menu ." + this_.attr("id")).addClass("active");
-    }
-  })
-  .onStepExit();
+  // const scroller = scrollama();
+  //
+  // scroller
+  // .setup({
+  //   step: '.animated' // required - class name of trigger steps
+  // })
+  // .onStepEnter(function(el){
+  //   var this_ = jQuery(el.element);
+  //
+  //   var set_ = jQuery("#primary-menu li");
+  //   if (this_.attr("id")){
+  //   //   //var length_ = set_.length;
+  //      set_.each(function(i,el) {
+  //        jQuery(el).removeClass("active");
+  //      });
+  //      jQuery("#primary-menu ." + this_.attr("id")).addClass("active");
+  //   }
+  // })
+  // .onStepExit();
 
   //========================= js_equal_height
-  var js_equal_height_max = 0;
-  jQuery(".js_equal_height").each(function (i, el) {
-    var el_ = jQuery(el);
-    var el_height = el_.height();
-
-    if ( el_height > js_equal_height_max){
-      js_equal_height_max = el_height;
-    }
-  });
-
-  console.log(js_equal_height_max);
-
-  jQuery(".js_equal_height").each(function (i, el) {
-    var el_ = jQuery(el);
-    var el_item = el_.find('.black_block__item');
-    el_item.css('height', js_equal_height_max + "px");
-  });
-});
+//   var js_equal_height_max = 0;
+//   jQuery(".js_equal_height").each(function (i, el) {
+//     var el_ = jQuery(el);
+//     var el_height = el_.height();
+//
+//     if ( el_height > js_equal_height_max){
+//       js_equal_height_max = el_height;
+//     }
+//   });
+//
+//   jQuery(".js_equal_height").each(function (i, el) {
+//     var el_ = jQuery(el);
+//     var el_item = el_.find('.black_block__item');
+//     el_item.css('height', js_equal_height_max + "px");
+//   });
+ });
 
 
 //=========================== shadow image
-jQuery(window).load(function() {
-  jQuery(".img_with_backg__block .img_with_backg__shadow").each(function (i, el) {
-    var el_ = jQuery(el);
-    var img_ =  el_.closest('.img_with_backg__block').find('img.img_with_backg__img');
-    //var img_ = el_.nextAll('img.img_with_backg__img').first();
-
-    el_.css("width",img_.width());
-    el_.css("height",img_.height() - (img_.height() / 5.36));
-    el_.css("top",(img_.position().top) + (img_.height() / 2.977));
-    el_.css("left",(img_.position().left) + (img_.width() / 5.22) );
-    el_.css("margin",img_.css("margin"));
-
-  });
-});
+// jQuery(window).load(function() {
+//   jQuery(".img_with_backg__block .img_with_backg__shadow").each(function (i, el) {
+//     var el_ = jQuery(el);
+//     var img_ =  el_.closest('.img_with_backg__block').find('img.img_with_backg__img');
+//     //var img_ = el_.nextAll('img.img_with_backg__img').first();
+//
+//     el_.css("width",img_.width());
+//     el_.css("height",img_.height() - (img_.height() / 5.36));
+//     el_.css("top",(img_.position().top) + (img_.height() / 2.977));
+//     el_.css("left",(img_.position().left) + (img_.width() / 5.22) );
+//     el_.css("margin",img_.css("margin"));
+//
+//   });
+// });
