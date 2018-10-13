@@ -1,85 +1,19 @@
 /* --- h2, h1, h3, top_description, zoom_text --- */
 
 h1.h1, h3.h3{
-  line-height: 45px;
-  font-size: 45px;
-  font-family: 'Newt Serif', 'Times New Roman', serif;
-  color: #5a5a5a;
-  margin-top:25px;
-  margin-bottom:0;
+  
 }
 
 h2.h2{
-  font-size: 45px;
-  color: #1086c2;
-  font-family: 'Newt Serif', 'Times New Roman', serif;
-  line-height: 45px;
-  margin-top: 18px;
-  margin-bottom:0;
+  
 }
 
 h4.h4{
-  font-size: 45px;
-  line-height: 45px;
-  font-family: Geneva, Arial, sans-serif;
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-
-.mce-visualblocks h4{
-  font-size: 45px!important;
-  line-height: 45px!important;
-}
-
-.top_description{
-  font-family: 'Oswald', Arial, sans-serif;
-  color: #1086c2;
-  line-height: 18px;
-  font-size: 16px;
-}
-
-.zoom_text{
-  line-height: 68px;
-  font-size: 45px;
-  font-family: 'Oswald', Arial, sans-serif;
-}
-
-.color_c24b10{
-  color:#c24b10;
-}
-
-.small_text{
-  font-size: 16px;
-  color: #5a5a5a;
-  font-family: 'Oswald', 'Helvetica Neue', sans-serif;
-  line-height: 30px;
-}
-
-.blue_middle_text{
-  font-size: 32px;
-  font-family: 'Newt Serif', 'Times New Roman', serif;
-  color: #1086c2;
-  line-height: 36px;
-}
-
-.black_block__text_style{
-  font-size: 16px;
-  font-family: 'Oswald', Arial, sans-serif;
-  line-height: 20px;
+  
 }
 
 @media screen and (max-width: 75em) {  /* до 1200px */
   h1.h1, h3.h3{
-    line-height: 48px;
-    font-size: 44px;
-  }
-  
-  .g_mobile_align_center{
-    text-align: center!important;
-  }
-  
-  .venture_capital__title p {
-    overflow: hidden;
-    text-overflow: ellipsis;
+   
   }
 }

@@ -1,0 +1,141 @@
+header .container{
+  display:flex;
+}
+
+header #primary-menu{
+  float: right;
+}
+
+header #primary-menu a{
+  padding: 22px 0 22px 0;
+  margin-left: 50px;
+}
+
+header#masthead{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+  padding-top: 0;
+
+  background: #FFFFFF;
+}
+
+header{
+  will-change: transform;
+  transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear, opacity 0.3s linear;
+  -webkit-transition: height 0.5s linear, opacity 0.3s linear;
+  -o-transition: height 0.5s linear, opacity 0.3s linear;
+  -ms-transition: height 0.5s linear, opacity 0.3s linear;
+  overflow: initial;
+  opacity: 1;
+}
+
+header.js_menu_display_none{
+  opacity: 0;
+}
+
+header.js_menu_scroll_now{
+  /* border-bottom:1px solid #2025c0; */
+}
+
+body{
+  padding-top:68px;
+}
+
+header .custom-logo-link{
+  display: block;
+  line-height: 0;
+}
+
+header .custom-logo-link img{
+  width: 260px;
+}
+
+header #primary-menu li.active a{
+  color: #1086c2;
+}
+
+header .site-logo{
+  display: flex;
+  align-items: center;
+}
+
+header ul#primary-menu li a{
+  font-family: Oswald, Arial, sans-serif;
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 75em) { /* от 1200px */
+  .button-menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
+
+  header #primary-menu {
+
+  }
+}
+
+@media screen and (max-width: 75em) { /* до 1200px */
+  header#masthead {
+    /* border-bottom: 1px solid #2025c0; */
+  }
+
+  header .button-menu-toggle {
+    display: inline-block;
+    float: right;
+    margin-top: -48px;
+  }
+
+  header .main-navigation ul.sub-menu{
+    position:relative;
+    float:none;
+  }
+
+  header .container{
+    display:block;
+  }
+
+  header #primary-menu,
+  header #primary-menu li{
+    float: none;
+  }
+
+  header #primary-menu li.focus .sub-menu {
+    margin-left: 20px;
+    float: none;
+    position:relative;
+  }
+
+  header .main-navigation ul ul{
+    box-shadow: none;
+  }
+
+  header #primary-menu ul li a{
+    width:100%;
+  }
+
+  header .sub-menu{
+    display:none;
+    padding-left: 20px;
+  }
+
+  header .sub_menu_open{
+    display:block;
+  }
+
+  header .site-logo{
+    height: 75px;
+  }
+
+  header ul#primary-menu li a{
+    margin-left: 0;
+    padding-left: 50px;
+  }
+}
