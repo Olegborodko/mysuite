@@ -109,13 +109,13 @@ select{border:1px solid #ccc}
 @font-face{font-family:Avenir;src:url(../fonts/Avenir-Light.eot);src:url(../fonts/Avenir-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Avenir-Light.woff2) format("woff2"),url(../fonts/Avenir-Light.woff) format("woff"),url(../fonts/Avenir-Light.ttf) format("truetype"),url(../fonts/Avenir-Light.svg#Avenir-Light) format("svg");font-weight:300;font-style:normal}
 @font-face{font-family:'Lyon Display';src:url(../fonts/LyonDisplay-Regular.eot);src:url(../fonts/LyonDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/LyonDisplay-Regular.woff2) format("woff2"),url(../fonts/LyonDisplay-Regular.woff) format("woff"),url(../fonts/LyonDisplay-Regular.ttf) format("truetype"),url(../fonts/LyonDisplay-Regular.svg#LyonDisplay-Regular) format("svg");font-weight:400;font-style:normal}
 body p{margin-top:18px;margin-bottom:18px}
+.ready_top_background{min-height:740px}
 header .container{display:flex}
 header #primary-menu{float:right}
 header #primary-menu a{padding:22px 0}
-header#masthead{position:fixed;width:100%;top:0;z-index:10000;padding-top:0;background:#FFF}
+header#masthead{position:fixed;width:100%;top:0;z-index:10000;padding-top:0}
 header{will-change:transform;transition:height .5s linear;-moz-transition:height .5s linear,opacity .3s linear;-webkit-transition:height .5s linear,opacity .3s linear;-o-transition:height .5s linear,opacity .3s linear;-ms-transition:height .5s linear,opacity .3s linear;overflow:initial;opacity:1}
 header.js_menu_display_none{opacity:0}
-body{padding-top:68px}
 header .custom-logo-link{display:block;line-height:0}
 header .custom-logo-link img{width:260px}
 header #primary-menu li.active a{color:#1086c2}

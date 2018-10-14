@@ -25,15 +25,6 @@ $options = array(
 		'choices' => array(//	in future may will set predefined images
 		)
 	),
-  'background_repeat' => array(
-    'label' => __('Background repeat', 'fw'),
-    'type'  => 'switch',
-  ),
-  'background_position' => array(
-    'label' => __('Background position Y X', 'fw'),
-    'desc'  => __('bottom left, center center, top right, 10px 10px, calc(100% - 20px) 20%', 'fw'),
-    'type'  => 'text'
-  ),
   'background_mobile' => array(
   'label' => __('Background display on mobile', 'fw'),
   'type'  => 'switch',
@@ -47,15 +38,20 @@ $options = array(
   'label' => __('NO', 'fw'),
   )
   ),
-	'video' => array(
-		'label' => __('Background Video', 'fw'),
-		'desc'  => __('Insert Video URL to embed this video', 'fw'),
-		'type'  => 'text',
-	),
   'id' => array(
     'label' => __('id', 'fw'),
     'desc'  => __('Insert id', 'fw'),
     'type'  => 'text',
+  ),
+  'ready_custom_class' => array(
+  'type'  => 'select',
+  'value' => '',
+  'label' => __('Ready custom class', '{domain}'),
+  'choices' => array(
+  'default' => '',
+  'ready_top_background' => 'ready_top_background'
+  ),
+  'no-validate' => false
   ),
   'class' => array(
     'label' => __('class', 'fw'),

@@ -22,17 +22,6 @@ if ( ! empty( $atts['margin_bottom'] ) ) {
   $margin_bottom = esc_attr($atts['margin_bottom']);
 }
 
-$bg_video_data_attr    = '';
-$section_extra_classes = '';
-if ( ! empty( $atts['video'] ) ) {
-	$filetype           = wp_check_filetype( $atts['video'] );
-	$filetypes          = array( 'mp4' => 'mp4', 'ogv' => 'ogg', 'webm' => 'webm', 'jpg' => 'poster' );
-	$filetype           = array_key_exists( (string) $filetype['ext'], $filetypes ) ? $filetypes[ $filetype['ext'] ] : 'video';
-	$data_name_attr = version_compare( fw_ext('shortcodes')->manifest->get_version(), '1.3.9', '>=' ) ? 'data-background-options' : 'data-wallpaper-options';
-	$bg_video_data_attr = $data_name_attr.'="' . fw_htmlspecialchars( json_encode( array( 'source' => array( $filetype => $atts['video'] ) ) ) ) . '"';
-	$section_extra_classes .= ' background-video';
-}
-
 //$section_style   = ( $bg_color || $bg_image ) ? 'style="' . esc_attr($bg_color . $bg_image) . '"' : '';
 $container_class = ( isset( $atts['is_fullwidth'] ) && $atts['is_fullwidth'] ) ? 'fw-container-fluid' : 'fw-container';
 
@@ -59,17 +48,6 @@ if ( isset( $atts['is_mobile_display'] ) && $atts['is_mobile_display'] ) {
   if ($atts['is_mobile_display']=='no') {
     $section_extra_classes .= ' g_mobile_display_none';
   }
-}
-
-$container_style = '';
-if ( isset( $atts['background_repeat'] ) && $atts['background_repeat'] ) {
-  $container_style .= ' background-repeat:repeat;';
-}else{
-  $container_style .= ' background-repeat:no-repeat;';
-}
-
-if ( ! empty( $atts['background_position'] ) ) {
-  $container_style .= 'background-position:'.esc_attr($atts['background_position']).';';
 }
 
 $container_style .= $bg_color;
@@ -107,6 +85,11 @@ if ( ! empty( $atts['padding_mobile'] ) ) {
   $padding_mobile =  esc_attr($atts['padding_mobile']);
 }
 
+if ( ! empty( $atts['ready_custom_class'] ) ) {
+  $section_extra_classes .=  esc_attr($atts['ready_custom_class']);
+}
+
+
 ?>
 <section data-animated="<?=$animated?>"
          data-m-top="<?=$m_margin_top?>"
@@ -114,7 +97,6 @@ if ( ! empty( $atts['padding_mobile'] ) ) {
          data-m-padding="<?=$padding_mobile?>"
          id="<?= esc_attr($id) ?>"
          class="animated js_mobile_margin fw-main-row <?php echo esc_attr($section_extra_classes) ?>"
-         <?php echo $bg_video_data_attr; ?>
          style="margin-top: <?= $margin_top ?>; margin-bottom: <?= $margin_bottom ?>;
          padding:<?=$padding?>;<?=$container_style?>;" >
 
