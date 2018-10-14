@@ -105,10 +105,13 @@ select{border:1px solid #ccc}
 .gallery-caption{display:block}
 .fw-col-xs-12{min-height:2px!important;width:100%}
 .fw-col-xs-6{min-height:2px!important;width:50%;float:left}
+@font-face{font-family:Lora;src:url(../fonts/Lora-Regular.eot);src:url(../fonts/Lora-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Lora-Regular.woff2) format("woff2"),url(../fonts/Lora-Regular.woff) format("woff"),url(../fonts/Lora-Regular.ttf) format("truetype"),url(../fonts/Lora-Regular.svg#Lora-Regular) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:Avenir;src:url(../fonts/Avenir-Light.eot);src:url(../fonts/Avenir-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Avenir-Light.woff2) format("woff2"),url(../fonts/Avenir-Light.woff) format("woff"),url(../fonts/Avenir-Light.ttf) format("truetype"),url(../fonts/Avenir-Light.svg#Avenir-Light) format("svg");font-weight:300;font-style:normal}
+@font-face{font-family:'Lyon Display';src:url(../fonts/LyonDisplay-Regular.eot);src:url(../fonts/LyonDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/LyonDisplay-Regular.woff2) format("woff2"),url(../fonts/LyonDisplay-Regular.woff) format("woff"),url(../fonts/LyonDisplay-Regular.ttf) format("truetype"),url(../fonts/LyonDisplay-Regular.svg#LyonDisplay-Regular) format("svg");font-weight:400;font-style:normal}
 body p{margin-top:18px;margin-bottom:18px}
-header .container{margin-top:100px;display:flex}
+header .container{display:flex}
 header #primary-menu{float:right}
-header #primary-menu a{padding:22px 0;margin-left:50px;margin-right:20px}
+header #primary-menu a{padding:22px 0}
 header#masthead{position:fixed;width:100%;top:0;z-index:10000;padding-top:0;background:#FFF}
 header{will-change:transform;transition:height .5s linear;-moz-transition:height .5s linear,opacity .3s linear;-webkit-transition:height .5s linear,opacity .3s linear;-o-transition:height .5s linear,opacity .3s linear;-ms-transition:height .5s linear,opacity .3s linear;overflow:initial;opacity:1}
 header.js_menu_display_none{opacity:0}
