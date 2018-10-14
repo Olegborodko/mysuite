@@ -1,4 +1,5 @@
 header .container{
+  margin-top:100px;
   display:flex;
 }
 
@@ -9,6 +10,7 @@ header #primary-menu{
 header #primary-menu a{
   padding: 22px 0 22px 0;
   margin-left: 50px;
+  margin-right:20px;
 }
 
 header#masthead{
@@ -69,6 +71,16 @@ header ul#primary-menu li a{
   font-weight: 300;
 }
 
+header i.has_sub-menu:after{
+  content: "\f107";
+  font-family: FontAwesome;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+
 @media screen and (min-width: 75em) { /* от 1200px */
   .button-menu-toggle {
     display: none;
@@ -118,7 +130,7 @@ header ul#primary-menu li a{
   }
 
   header #primary-menu ul li a{
-    width:100%;
+
   }
 
   header .sub-menu{
@@ -138,4 +150,9 @@ header ul#primary-menu li a{
     margin-left: 0;
     padding-left: 50px;
   }
+
+  header ul.sub_menu_open{
+    left: 0;
+  }
+
 }

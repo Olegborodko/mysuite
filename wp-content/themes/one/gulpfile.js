@@ -21,7 +21,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('css', function () {
-    return gulp.src(['sass/start.+(scss|css)', 'css/*.+(scss|css)'])
+    return gulp.src(['sass/start.+(scss|css)', 'css/unyson/*.+(scss|css)', 'css/*.+(scss|css)'])
         .pipe(sass())
         .pipe(minify({keepBreaks: true}))
 	    .pipe(concat('app.css'))

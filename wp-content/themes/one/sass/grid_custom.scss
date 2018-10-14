@@ -1,0 +1,11 @@
+/* -- grid fix -- */
+.fw-col-xs-12{
+  min-height:2px!important;
+  width:100%;
+}
+
+.fw-col-xs-6{
+  min-height:2px!important;
+  width:50%;
+  float: left;
+}

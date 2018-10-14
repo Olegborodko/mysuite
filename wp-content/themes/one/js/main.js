@@ -38,9 +38,11 @@ jQuery(window).bind("load", function() {
   //========================== close menu and sub-menu if click on document
   if (mobile_size_1200) {
     jQuery(document).on('click', function (event) {
+      console.log("document on click");
       if (event.target.id !== "js_i_menu" && event.target.id !== "js_i_menu_button" && jQuery(event.target).closest("#primary-menu").attr("id")!=="primary-menu") {
         //close sub menu
         jQuery("#primary-menu").css("display", "none");
+        close_sub_menu();
       }
     });
   }
@@ -105,37 +107,22 @@ jQuery(window).bind("load", function() {
   });
 
 //================================ scroll to section
+  function close_sub_menu(){
+    jQuery('#primary-menu ul.sub-menu').each(function () {
+      jQuery(this).removeClass('sub_menu_open');
+    });
+  }
 
 //Scroll to anchor
   jQuery(function () {
     jQuery('#primary-menu a').click(function (e) {
+      console.log('#primary-menu a');
 
       var this_ = jQuery(this);
       var this_next = this_.next();
 
-      function close_sub_menu(){
-        jQuery('#primary-menu ul.sub-menu').each(function () {
-          jQuery(this).removeClass('sub_menu_open');
-        });
-      }
-
-      //open sub menu
-      if (this_.next().attr('class') === "sub-menu") {
-        if (!this_next.hasClass("sub_menu_open")) {
-          e.preventDefault();
-          close_sub_menu();
-          this_next.addClass("sub_menu_open");
-        }
-      }else {
-        if (mobile_size_1200) {
-          close_sub_menu();
-          jQuery("#primary-menu").css("display", "none");
-        }else{
-        //if (!this_.closest(".sub_menu_open").length) {
-          close_sub_menu();
-        //}
-        }
-      }
+      jQuery("#primary-menu").css("display", "none");
+      close_sub_menu();
 
       // if don't use scroll active
       // jQuery('#primary-menu a').each(function () {
@@ -161,7 +148,10 @@ jQuery(window).bind("load", function() {
 
   //========================== display menu on mobile
   jQuery("#js_i_menu_button").click(function(){
+    console.log('#js_i_menu_button');
+
     jQuery("#primary-menu").toggle();
+    close_sub_menu();
   });
 
   //========================== add active class to menu links
@@ -201,7 +191,6 @@ jQuery(window).bind("load", function() {
 //     var el_item = el_.find('.black_block__item');
 //     el_item.css('height', js_equal_height_max + "px");
 //   });
- });
 
 
 //=========================== shadow image
@@ -219,3 +208,24 @@ jQuery(window).bind("load", function() {
 //
 //   });
 // });
+
+//============================ menu changed
+
+  jQuery("li.menu-item-has-children").each(function (i, el) {
+    var this_ = jQuery(el);
+    var span_ = this_.children('i.tangle').first();
+
+    span_.addClass("has_sub-menu");
+  });
+
+  if (mobile_size_1200) {
+    jQuery("i.has_sub-menu").click(function () {
+      console.log("i.has_sub-menu");
+      close_sub_menu();
+      var this_ = jQuery(this);
+      var sub_menu_ = this_.next();
+      sub_menu_.addClass("sub_menu_open");
+    });
+  }
+
+});
