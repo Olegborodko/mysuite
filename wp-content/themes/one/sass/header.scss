@@ -1,24 +1,9 @@
-header .container{
-  display:flex;
-}
-
-header #primary-menu{
-  float: right;
-}
-
-header #primary-menu a{
-  padding: 22px 0 22px 0;
-}
-
-header#masthead{
+header {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10000;
   padding-top: 0;
-}
-
-header{
   will-change: transform;
   transition: height 0.5s linear;
   -moz-transition: height 0.5s linear, opacity 0.3s linear;
@@ -27,6 +12,102 @@ header{
   -ms-transition: height 0.5s linear, opacity 0.3s linear;
   overflow: initial;
   opacity: 1;
+
+  .container {
+    display: flex;
+    margin-top: 100px;
+  }
+
+  #primary-menu {
+    float: right;
+  }
+
+  #primary-menu a {
+    padding: 22px 0 22px 0;
+  }
+
+  .custom-logo-link {
+    display: block;
+    line-height: 0;
+  }
+
+  .custom-logo-link img {
+    width: 135px;
+  }
+
+  #primary-menu li.active a {
+    color: #1086c2;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  ul#primary-menu li {
+    margin-right: 36px;
+  }
+
+  #primary-menu ul.sub-menu li {
+    margin-right: 0;
+    display: block;
+    position: relative;
+    float: none;
+  }
+
+  ul#primary-menu ul.sub-menu {
+    min-width: 200px;
+    /* white-space:nowrap; */
+  }
+
+  ul#primary-menu ul.sub-menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  ul#primary-menu li a {
+    color: #ffffff;
+    font-family: "Lyon Display", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+
+  i.has_sub-menu:after {
+    content: "\f107";
+    font-family: FontAwesome, sans-serif;
+    position: relative;
+    display: inline-block;
+  }
+
+  i.tangle.has_sub-menu {
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  /* --key-- */
+
+  a.header_resident_portal_btn {
+    color: #7c7a7d;
+    font-family: "Lyon Display", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    white-space: nowrap;
+    padding: 10px 12px 10px 18px;
+    background-color: #ffffff;
+    display: inline-block;
+    height: 36px;
+    margin-top: 12px;
+  }
+
+  a.header_resident_portal_btn i.fa-key {
+    margin-left: 10px;
+    transform: scale(1, -1) rotate(-45deg);
+  }
 }
 
 header.js_menu_display_none{
@@ -37,113 +118,113 @@ header.js_menu_scroll_now{
   /* border-bottom:1px solid #2025c0; */
 }
 
-header .custom-logo-link{
-  display: block;
-  line-height: 0;
-}
-
-header .custom-logo-link img{
-  width: 260px;
-}
-
-header #primary-menu li.active a{
-  color: #1086c2;
-}
-
-header .site-logo{
-  display: flex;
-  align-items: center;
-}
-
-header ul#primary-menu li a{
-  font-family: Oswald, Arial, sans-serif;
-  color: #9b9b9b;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-header i.has_sub-menu:after{
-  content: "\f107";
-  font-family: FontAwesome;
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-}
-
-
 @media screen and (min-width: 75em) { /* от 1200px */
-  .button-menu-toggle {
-    display: none;
-  }
-  .main-navigation ul {
-    display: block;
-  }
-
-  header #primary-menu {
-
+  header {
+    .button-menu-toggle {
+      display: none;
+    }
+    .main-navigation ul {
+      display: block;
+    }
   }
 }
 
 @media screen and (max-width: 75em) { /* до 1200px */
-  header#masthead {
-    /* border-bottom: 1px solid #2025c0; */
+  header {
+    .button-menu-toggle {
+      display: inline-block;
+      float: right;
+      margin-top: -48px;
+      margin-right: 20px;
+    }
+
+    .main-navigation ul.sub-menu {
+      position: relative;
+      float: none;
+    }
+
+    .container {
+      display: block;
+    }
+
+    #primary-menu,
+    #primary-menu li {
+      float: none;
+    }
+
+    #primary-menu li.focus .sub-menu {
+      margin-left: 20px;
+      float: none;
+      position: relative;
+    }
+
+    .main-navigation ul ul {
+      box-shadow: none;
+    }
+
+    .sub-menu {
+      display: none;
+      padding-left: 20px;
+    }
+
+    .sub_menu_open {
+      display: block;
+    }
+
+    .site-logo {
+      height: 75px;
+    }
+
+    ul#primary-menu li a {
+      margin-left: 0;
+      padding-left: 50px;
+    }
+
+    ul.sub_menu_open {
+      left: 0;
+    }
+
+    a.custom-logo-link {
+      margin: 0 auto;
+    }
+
+    a.header_resident_portal_btn {
+      display: none;
+    }
+
+    ul#primary-menu {
+      text-align: left;
+    }
+
+    div#menu-top-container {
+      text-align: center;
+    }
+
+    ul#js_i_menu {
+      display: block;
+    }
+
+    ul#js_i_menu li.menu_mobile_bar__one {
+      width: 26px;
+      height: 2px;
+      background-color: #ffffff;
+      float: none;
+    }
+
+    ul#js_i_menu li.menu_mobile_bar__two {
+      width: 20px;
+      height: 2px;
+      background-color: #ffffff;
+      float: none;
+      margin-top: 8px;
+    }
+
+    ul#js_i_menu li.menu_mobile_bar__three {
+      width: 26px;
+      height: 2px;
+      background-color: #ffffff;
+      float: none;
+      margin-top: 8px;
+    }
   }
-
-  header .button-menu-toggle {
-    display: inline-block;
-    float: right;
-    margin-top: -48px;
-  }
-
-  header .main-navigation ul.sub-menu{
-    position:relative;
-    float:none;
-  }
-
-  header .container{
-    display:block;
-  }
-
-  header #primary-menu,
-  header #primary-menu li{
-    float: none;
-  }
-
-  header #primary-menu li.focus .sub-menu {
-    margin-left: 20px;
-    float: none;
-    position:relative;
-  }
-
-  header .main-navigation ul ul{
-    box-shadow: none;
-  }
-
-  header #primary-menu ul li a{
-
-  }
-
-  header .sub-menu{
-    display:none;
-    padding-left: 20px;
-  }
-
-  header .sub_menu_open{
-    display:block;
-  }
-
-  header .site-logo{
-    height: 75px;
-  }
-
-  header ul#primary-menu li a{
-    margin-left: 0;
-    padding-left: 50px;
-  }
-
-  header ul.sub_menu_open{
-    left: 0;
-  }
-
 }

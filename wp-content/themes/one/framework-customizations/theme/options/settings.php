@@ -1,64 +1,77 @@
-<?php //if (!defined('FW')) {
-//  die('Forbidden');
-//}
-//
-//$options = array(
-//
-//array(
-//'type' => 'box',
-//'title' => __('Social icons', 'fw'),
-//'attr' => array('data-foo' => 'bar'),
-//'options' => array(
-//
-//  'twitter_link' => array(
-//    'type'  => 'text',
-//    'value' => '',
-//    'label' => __('Twitter link', '{domain}')
-//  ),
-//  'linkedin_link' => array(
-//    'type'  => 'text',
-//    'value' => '',
-//    'label' => __('LinkedIn link', '{domain}')
-//  )
-//
-//)),
-//
-//array(
-//'type' => 'box',
-//'title' => __('Main settings', 'fw'),
-//'attr' => array('data-foo' => 'bar'),
-//'options' => array(
-//
-//    'copyright' => array(
-//    'type'  => 'text',
-//    'value' => '© 2018 Kauffman Fellows',
-//    'label' => __('Copyright', '{domain}')
-//    ),
-//
-//    'telephone' => array(
-//    'type'  => 'text',
-//    'value' => '1-650-561-7450',
-//    'label' => __('Telephone', '{domain}')
-//    ),
-//
-//    'address' => array(
-//    'type'  => 'text',
-//    'value' => '855 El Camino Real, Suite 12 Palo Alto, California 94301 USA',
-//    'label' => __('Address', '{domain}')
-//    ),
-//
-//    'address2' => array(
-//    'type'  => 'text',
-//    'value' => '855 El Camino Real, Suite 12 Palo Alto, California 94301 USA',
-//    'label' => __('Address 2', '{domain}')
-//    ),
-//
-//    'mail_chimp' => array(
-//    'type'  => 'text',
-//    'value' => '[mc4wp_form id="6856"]',
-//    'label' => __('Footer short code', '{domain}')
-//    )
-//))
-//
-//
-//);
+<?php if (!defined('FW')) {
+  die('Forbidden');
+}
+
+$options = array(
+
+array(
+'type' => 'box',
+'title' => __('Social icons', 'fw'),
+'attr' => array('data-foo' => 'bar'),
+'options' => array(
+
+  'facebook_link' => array(
+    'type'  => 'text',
+    'value' => '',
+    'label' => __('Facebook link', '{domain}')
+  ),
+  'instagram_link' => array(
+    'type'  => 'text',
+    'value' => '',
+    'label' => __('Instagram link', '{domain}')
+  )
+
+)),
+
+array(
+'type' => 'box',
+'title' => __('Header', 'fw'),
+'attr' => array('data-foo' => 'bar'),
+'options' => array(
+  'logo_default' => array(
+  'type'  => 'upload',
+  'label' => __('logo default', '{domain}'),
+  'images_only' => true,
+  'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+  ),
+  'logo_scroll' => array(
+  'type'  => 'upload',
+  'label' => __('logo scroll', '{domain}'),
+  'images_only' => true,
+  'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+  )
+)),
+
+array(
+'type' => 'box',
+'title' => __('Footer', 'fw'),
+'attr' => array('data-foo' => 'bar'),
+'options' => array(
+
+    'copyright' => array(
+    'type'  => 'text',
+    'value' => 'Copyright ©  2018',
+    'label' => __('Copyright', '{domain}')
+    ),
+
+    'telephone' => array(
+    'type'  => 'text',
+    'value' => '424 222 7733',
+    'label' => __('Telephone', '{domain}')
+    ),
+
+    'footer_test_1' => array(
+    'type'  => 'text',
+    'value' => 'For leasing and other inquiries, please complete <a href="">the contact form</a> or give us a call.',
+    'label' => __('Footer text 1', '{domain}')
+    ),
+
+    'footer_test2' => array(
+    'type'  => 'text',
+    'value' => 'We look forward to hearing from you!',
+    'label' => __('Footer text 2', '{domain}')
+    ),
+))
+
+
+);

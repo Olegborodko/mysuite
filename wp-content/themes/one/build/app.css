@@ -3,10 +3,10 @@ body,button,input,optgroup,select,textarea{margin:0}
 button,hr,input{overflow:visible}
 progress,sub,sup{vertical-align:baseline}
 [type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}
-.widget select,.wp-caption,embed,iframe,img,legend,object,pre{max-width:100%}
 pre,textarea{overflow:auto}
 #content[tabindex="-1"]:focus,a:active,a:hover{outline:0}
 .aligncenter,.clear:after,.comment-content:after,.entry-content:after,.page-links,.site-content:after,.site-footer:after,.site-header:after,h1,h2,h3,h4,h5,h6{clear:both}
+.widget select,.wp-caption,embed,iframe,img,legend,object,pre{max-width:100%}
 html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box}
 body{background:#fff}
 hr{box-sizing:content-box;background-color:#ccc;border:0;height:1px;margin-bottom:1.5em}
@@ -63,7 +63,6 @@ select{border:1px solid #ccc}
 .main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,.2);float:left;position:absolute;top:100%;left:-999em;z-index:99999}
 .main-navigation ul ul ul{left:-999em;top:0}
 .main-navigation ul ul li.focus>ul,.main-navigation ul ul li:hover>ul{left:100%}
-.main-navigation ul ul a{width:200px}
 .main-navigation ul li.focus>ul,.main-navigation ul li:hover>ul{left:auto}
 .main-navigation li{float:left;position:relative}
 .main-navigation a{display:inline-block;text-decoration:none}
@@ -71,6 +70,7 @@ select{border:1px solid #ccc}
 .site-main .comment-navigation,.site-main .post-navigation,.site-main .posts-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.post-navigation .nav-previous,.posts-navigation .nav-previous{float:left;width:50%}
 .comment-navigation .nav-next,.post-navigation .nav-next,.posts-navigation .nav-next{float:right;text-align:right;width:50%}
+.gallery-item,.wp-caption-text{text-align:center}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;clip-path:none;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:700;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 .alignleft{display:inline;float:left;margin-right:1.5em}
@@ -91,9 +91,8 @@ select{border:1px solid #ccc}
 .wp-caption{margin-bottom:1.5em}
 .wp-caption img[class*=wp-image-]{display:block;margin-left:auto;margin-right:auto}
 .wp-caption .wp-caption-text{margin:.8075em 0}
-.wp-caption-text{text-align:center}
 .gallery{margin-bottom:1.5em}
-.gallery-item{display:inline-block;text-align:center;vertical-align:top;width:100%}
+.gallery-item{display:inline-block;vertical-align:top;width:100%}
 .gallery-columns-2 .gallery-item{max-width:50%}
 .gallery-columns-3 .gallery-item{max-width:33.33%}
 .gallery-columns-4 .gallery-item{max-width:25%}
@@ -110,22 +109,27 @@ select{border:1px solid #ccc}
 @font-face{font-family:'Lyon Display';src:url(../fonts/LyonDisplay-Regular.eot);src:url(../fonts/LyonDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/LyonDisplay-Regular.woff2) format("woff2"),url(../fonts/LyonDisplay-Regular.woff) format("woff"),url(../fonts/LyonDisplay-Regular.ttf) format("truetype"),url(../fonts/LyonDisplay-Regular.svg#LyonDisplay-Regular) format("svg");font-weight:400;font-style:normal}
 body p{margin-top:18px;margin-bottom:18px}
 .ready_top_background{min-height:740px}
-header .container{display:flex}
+header{position:fixed;width:100%;top:0;z-index:10000;padding-top:0;will-change:transform;transition:height .5s linear;-moz-transition:height .5s linear,opacity .3s linear;-webkit-transition:height .5s linear,opacity .3s linear;-o-transition:height .5s linear,opacity .3s linear;-ms-transition:height .5s linear,opacity .3s linear;overflow:initial;opacity:1}
+header .container{display:flex;margin-top:100px}
 header #primary-menu{float:right}
 header #primary-menu a{padding:22px 0}
-header#masthead{position:fixed;width:100%;top:0;z-index:10000;padding-top:0}
-header{will-change:transform;transition:height .5s linear;-moz-transition:height .5s linear,opacity .3s linear;-webkit-transition:height .5s linear,opacity .3s linear;-o-transition:height .5s linear,opacity .3s linear;-ms-transition:height .5s linear,opacity .3s linear;overflow:initial;opacity:1}
-header.js_menu_display_none{opacity:0}
 header .custom-logo-link{display:block;line-height:0}
-header .custom-logo-link img{width:260px}
+header .custom-logo-link img{width:135px}
 header #primary-menu li.active a{color:#1086c2}
 header .site-logo{display:flex;align-items:center}
-header ul#primary-menu li a{font-family:Oswald,Arial,sans-serif;color:#9b9b9b;font-size:16px;font-weight:300}
-header i.has_sub-menu:after{content:"\f107";font-family:FontAwesome;position:relative;display:inline-block;width:30px;height:30px}
-@media screen and (min-width:75em){.button-menu-toggle{display:none}
-.main-navigation ul{display:block}
+header ul#primary-menu li{margin-right:36px}
+header #primary-menu ul.sub-menu li{margin-right:0;display:block;position:relative;float:none}
+header ul#primary-menu ul.sub-menu{min-width:200px;padding-left:20px;padding-right:20px}
+header ul#primary-menu li a{color:#fff;font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.3px}
+header i.has_sub-menu:after{content:"\f107";font-family:FontAwesome,sans-serif;position:relative;display:inline-block}
+header i.tangle.has_sub-menu{color:#fff;font-size:18px;margin-left:10px}
+header a.header_resident_portal_btn{color:#7c7a7d;font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.3px;white-space:nowrap;padding:10px 12px 10px 18px;background-color:#fff;display:inline-block;height:36px;margin-top:12px}
+header a.header_resident_portal_btn i.fa-key{margin-left:10px;transform:scale(1,-1) rotate(-45deg)}
+header.js_menu_display_none{opacity:0}
+@media screen and (min-width:75em){header .button-menu-toggle{display:none}
+header .main-navigation ul{display:block}
 }
-@media screen and (max-width:75em){header .button-menu-toggle{display:inline-block;float:right;margin-top:-48px}
+@media screen and (max-width:75em){header .button-menu-toggle{display:inline-block;float:right;margin-top:-48px;margin-right:20px}
 header .main-navigation ul.sub-menu{position:relative;float:none}
 header .container{display:block}
 header #primary-menu,header #primary-menu li{float:none}
@@ -136,6 +140,14 @@ header .sub_menu_open{display:block}
 header .site-logo{height:75px}
 header ul#primary-menu li a{margin-left:0;padding-left:50px}
 header ul.sub_menu_open{left:0}
+header a.custom-logo-link{margin:0 auto}
+header a.header_resident_portal_btn{display:none}
+header ul#primary-menu{text-align:left}
+header div#menu-top-container{text-align:center}
+header ul#js_i_menu{display:block}
+header ul#js_i_menu li.menu_mobile_bar__one{width:26px;height:2px;background-color:#fff;float:none}
+header ul#js_i_menu li.menu_mobile_bar__two{width:20px;height:2px;background-color:#fff;float:none;margin-top:8px}
+header ul#js_i_menu li.menu_mobile_bar__three{width:26px;height:2px;background-color:#fff;float:none;margin-top:8px}
 }
 .center-block,.fw-container,.fw-container-fluid{margin-right:auto;margin-left:auto}
 .clear,.clearfix:after,.dl-horizontal dd:after,.fw-container-fluid:after,.fw-container:after,.fw-row:after{clear:both}

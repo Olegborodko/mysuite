@@ -39,10 +39,11 @@ jQuery(window).bind("load", function() {
   if (mobile_size_1200) {
     jQuery(document).on('click', function (event) {
       console.log("document on click");
-      if (event.target.id !== "js_i_menu" && event.target.id !== "js_i_menu_button" && jQuery(event.target).closest("#primary-menu").attr("id")!=="primary-menu") {
+      if (jQuery(event.target).closest("#js_i_menu_button").attr("id")!== "js_i_menu_button" && jQuery(event.target).closest("#primary-menu").attr("id")!=="primary-menu" && event.target.id !=="menu-top-container") {
         //close sub menu
         jQuery("#primary-menu").css("display", "none");
         close_sub_menu();
+        console.log(event.target.id);
       }
     });
   }
@@ -149,9 +150,14 @@ jQuery(window).bind("load", function() {
   //========================== display menu on mobile
   jQuery("#js_i_menu_button").click(function(){
     console.log('#js_i_menu_button');
-
-    jQuery("#primary-menu").toggle();
+    var menu_ = jQuery("#primary-menu");
+    if (menu_.css("display")==="none"){
+      menu_.css("display","inline-block");
+    }else{
+      menu_.css("display","none");
+    }
     close_sub_menu();
+
   });
 
   //========================== add active class to menu links

@@ -41,17 +41,25 @@
 
             <nav class="main-navigation site-navigation">
               <div id="js_i_menu_button" class="button-menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <i class="fa fa-bars" id="js_i_menu"></i>
+                <ul id="js_i_menu" class="menu_mobile_bar">
+                  <li class="menu_mobile_bar__one"></li>
+                  <li class="menu_mobile_bar__two"></li>
+                  <li class="menu_mobile_bar__three"></li>
+                </ul>
               </div>
               <?php
               wp_nav_menu( array(
               'theme_location' => 'menu-1',
               'menu_id'        => 'primary-menu',
               'menu_class'     => 'sf-menu ',
+              'container_id' => 'menu-top-container',
               'after' => '<i class="tangle"></i>'
               ) );
               ?>
             </nav><!-- #site-navigation -->
+            <a class="header_resident_portal_btn">
+              RESIDENT PORTAL <i class="fa fa-key" aria-hidden="true"></i>
+            </a>
           </div>
 
         </div>
