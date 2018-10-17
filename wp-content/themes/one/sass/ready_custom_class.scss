@@ -1,3 +1,24 @@
-.ready_top_background{
-  min-height: 740px;
+@media screen and (min-width: 1200px) { /* desktop */
+  .ready_top_background {
+    background: url(../img/top.jpg);
+    min-height: 783px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) { /* ipad */
+  .ready_top_background {
+    background: url(../img/top_laptop.jpg);
+    min-height: 1024px;
+    background-size: cover;
+  }
+}
+
+
+@media screen and (max-width: 767px) { /* mobile */
+  .ready_top_background {
+    background: url(../img/top_mobile.jpg);
+    min-height: 667px;
+    background-size: cover;
+  }
 }

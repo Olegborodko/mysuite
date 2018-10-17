@@ -73,12 +73,12 @@ if ( ! function_exists( 'one_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+//		add_theme_support( 'custom-logo', array(
+//			'height'      => 250,
+//			'width'       => 250,
+//			'flex-width'  => true,
+//			'flex-height' => true,
+//		) );
 	}
 endif;
 add_action( 'after_setup_theme', 'one_setup' );
@@ -172,9 +172,9 @@ add_filter( 'tiny_mce_before_init', 'wpex_mce_text_sizes' );
 //custom fonts mce editor
 add_filter( 'tiny_mce_before_init', 'mce_custom_fonts' );
 function mce_custom_fonts( $init ) {
-  $theme_advanced_fonts = "Oswald=Oswald,Arial,sans-serif;" .
-  "Geneva=Geneva,Helvetica,sans-serif;" .
-  "Newt Serif=Newt Serif,Times New Roman,serif;".
+  $theme_advanced_fonts = "Lora=Lora,Arial,sans-serif;" .
+  "Avenir=Avenir,Helvetica,sans-serif;" .
+  "Lyon Display=Lyon Display,Times New Roman,sans-serif;".
   "Arial=arial,helvetica,sans-serif;" .
   "Arial Black=arial black,avant garde;" .
   "Book Antiqua=book antiqua,palatino;" .

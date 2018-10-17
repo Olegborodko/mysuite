@@ -26,8 +26,8 @@ if ( version_compare( $shortcodes_extension->manifest->get_version(), '1.3.9', '
 	}
 
 	wp_enqueue_style(
-		'fw-shortcode-section-background-video',
-		$shortcodes_extension->get_uri( '/shortcodes/section/static/css/background.css' )
+//		'fw-shortcode-section-background-video',
+//		$shortcodes_extension->get_uri( '/shortcodes/section/static/css/background.css' )
 	);
 
 	wp_enqueue_script(
@@ -85,7 +85,7 @@ if ( version_compare( $shortcodes_extension->manifest->get_version(), '1.3.9', '
 }
 
 wp_enqueue_style(
-	'fw-shortcode-section',
-	$shortcodes_extension->get_uri( '/shortcodes/section/static/css/styles.css' )
+//	'fw-shortcode-section',
+//	$shortcodes_extension->get_uri( '/shortcodes/section/static/css/styles.css' )
 );
 

@@ -15,7 +15,6 @@ header {
 
   .container {
     display: flex;
-    margin-top: 100px;
   }
 
   #primary-menu {
@@ -42,6 +41,8 @@ header {
   .site-logo {
     display: flex;
     align-items: center;
+    position: relative;
+    top: -2px;
   }
 
   ul#primary-menu li {
@@ -108,6 +109,14 @@ header {
     margin-left: 10px;
     transform: scale(1, -1) rotate(-45deg);
   }
+
+  .site-logo-default{
+    display: flex;
+  }
+
+  .site-logo-scroll{
+    display: none;
+  }
 }
 
 header.js_menu_display_none{
@@ -115,7 +124,34 @@ header.js_menu_display_none{
 }
 
 header.js_menu_scroll_now{
-  /* border-bottom:1px solid #2025c0; */
+  background-color: #ffffff;
+
+  .site-logo-default{
+    display: none;
+  }
+
+  .site-logo-scroll{
+    display: flex;
+  }
+
+  ul#primary-menu li a{
+    color: #141414;
+  }
+
+  a.header_resident_portal_btn{
+    background-color: #141414;
+    color: #ffffff;
+  }
+
+  ul#js_i_menu li.menu_mobile_bar__one,
+  ul#js_i_menu li.menu_mobile_bar__two,
+  ul#js_i_menu li.menu_mobile_bar__three{
+    background-color: #141414;
+  }
+
+  i.tangle.has_sub-menu{
+    color: #141414;
+  }
 }
 
 @media screen and (min-width: 75em) { /* от 1200px */
@@ -125,6 +161,15 @@ header.js_menu_scroll_now{
     }
     .main-navigation ul {
       display: block;
+    }
+    ul#primary-menu ul.sub-menu li a{
+      min-width: 100%;
+    }
+  }
+
+  header.js_menu_scroll_now{
+    ul#primary-menu ul.sub-menu{
+      background-color: #ffffff;
     }
   }
 }
@@ -225,6 +270,10 @@ header.js_menu_scroll_now{
       background-color: #ffffff;
       float: none;
       margin-top: 8px;
+    }
+
+    .site-logo img{
+      margin:0 auto;
     }
   }
 }

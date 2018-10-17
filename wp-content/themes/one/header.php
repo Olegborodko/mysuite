@@ -31,12 +31,13 @@
         <div class="fw-col-xs-12">
 
           <div class="container">
-            <div class="site-logo">
-              <?php if ( function_exists( 'the_custom_logo' ) ) {
-                the_custom_logo();
-              }
-              ?>
+            <div class="site-logo site-logo-default">
+              <img src="<?=fw_get_db_settings_option('logo_default')['url']?>"/>
             </div>
+            <div class="site-logo site-logo-scroll">
+              <img src="<?=fw_get_db_settings_option('logo_scroll')['url']?>"/>
+            </div>
+
 
 
             <nav class="main-navigation site-navigation">
