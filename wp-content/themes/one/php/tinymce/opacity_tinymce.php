@@ -23,8 +23,8 @@ function gavickpro_add_tinymce_plugin($plugin_array) {
   return $plugin_array;
 }
 
-function gavickpro_register_my_tc_button($buttons) {
-  array_push($buttons, "gavickpro_tc_button");
-  return $buttons;
-}
+//function gavickpro_register_my_tc_button($buttons) {
+//  array_push($buttons, "gavickpro_tc_button");
+//  return $buttons;
+//}
 
