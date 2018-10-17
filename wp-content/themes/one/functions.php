@@ -8,78 +8,78 @@
  */
 
 if ( ! function_exists( 'one_setup' ) ) :
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
-	 */
-	function one_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on one, use a find and replace
-		 * to change 'one' to the name of your theme in all the template files.
-		 */
-		load_theme_textdomain( 'one', get_template_directory() . '/languages' );
+  /**
+   * Sets up theme defaults and registers support for various WordPress features.
+   *
+   * Note that this function is hooked into the after_setup_theme hook, which
+   * runs before the init hook. The init hook is too late for some features, such
+   * as indicating support for post thumbnails.
+   */
+  function one_setup() {
+    /*
+     * Make theme available for translation.
+     * Translations can be filed in the /languages/ directory.
+     * If you're building a theme based on one, use a find and replace
+     * to change 'one' to the name of your theme in all the template files.
+     */
+    load_theme_textdomain( 'one', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+    // Add default posts and comments RSS feed links to head.
+    add_theme_support( 'automatic-feed-links' );
 
-		/*
-		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
-		 * provide it for us.
-		 */
-		add_theme_support( 'title-tag' );
+    /*
+     * Let WordPress manage the document title.
+     * By adding theme support, we declare that this theme does not use a
+     * hard-coded <title> tag in the document head, and expect WordPress to
+     * provide it for us.
+     */
+    add_theme_support( 'title-tag' );
 
-		/*
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
-		add_theme_support( 'post-thumbnails' );
+    /*
+     * Enable support for Post Thumbnails on posts and pages.
+     *
+     * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+     */
+    add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'one' ),
-		) );
+    // This theme uses wp_nav_menu() in one location.
+    register_nav_menus( array(
+    'menu-1' => esc_html__( 'Primary', 'one' ),
+    ) );
 
-		/*
-		 * Switch default core markup for search form, comment form, and comments
-		 * to output valid HTML5.
-		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+    /*
+     * Switch default core markup for search form, comment form, and comments
+     * to output valid HTML5.
+     */
+    add_theme_support( 'html5', array(
+    'search-form',
+    'comment-form',
+    'comment-list',
+    'gallery',
+    'caption',
+    ) );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'one_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+    // Set up the WordPress core custom background feature.
+    add_theme_support( 'custom-background', apply_filters( 'one_custom_background_args', array(
+    'default-color' => 'ffffff',
+    'default-image' => '',
+    ) ) );
 
-		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+    // Add theme support for selective refresh for widgets.
+    add_theme_support( 'customize-selective-refresh-widgets' );
 
-		/**
-		 * Add support for core custom logo.
-		 *
-		 * @link https://codex.wordpress.org/Theme_Logo
-		 */
+    /**
+     * Add support for core custom logo.
+     *
+     * @link https://codex.wordpress.org/Theme_Logo
+     */
 //		add_theme_support( 'custom-logo', array(
 //			'height'      => 250,
 //			'width'       => 250,
 //			'flex-width'  => true,
 //			'flex-height' => true,
 //		) );
-	}
+  }
 endif;
 add_action( 'after_setup_theme', 'one_setup' );
 
@@ -91,10 +91,10 @@ add_action( 'after_setup_theme', 'one_setup' );
  * @global int $content_width
  */
 function one_content_width() {
-	// This variable is intended to be overruled from themes.
-	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
-	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'one_content_width', 640 );
+  // This variable is intended to be overruled from themes.
+  // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+  // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+  $GLOBALS['content_width'] = apply_filters( 'one_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'one_content_width', 0 );
 
@@ -104,15 +104,15 @@ add_action( 'after_setup_theme', 'one_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function one_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'one' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'one' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+  register_sidebar( array(
+  'name'          => esc_html__( 'Sidebar', 'one' ),
+  'id'            => 'sidebar-1',
+  'description'   => esc_html__( 'Add widgets here.', 'one' ),
+  'before_widget' => '<section id="%1$s" class="widget %2$s">',
+  'after_widget'  => '</section>',
+  'before_title'  => '<h2 class="widget-title">',
+  'after_title'   => '</h2>',
+  ) );
 }
 add_action( 'widgets_init', 'one_widgets_init' );
 
@@ -157,7 +157,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+  require get_template_directory() . '/inc/jetpack.php';
 }
 
 // Customize mce editor font sizes
@@ -197,10 +197,9 @@ function mce_custom_fonts( $init ) {
 
 /* -- styles for admin panel -- */
 function my_admin_theme_style() {
-  //wp_enqueue_style('my-admin-fonts-css', get_template_directory_uri() . '/fonts/stylesheet.css');
-  wp_enqueue_style('my-admin-style', get_template_directory_uri() . '/css/frontend_and_backend.css');
+  add_editor_style(get_template_directory_uri() . '/sass/admin_and_frontend.css');
 }
-add_action('admin_enqueue_scripts', 'my_admin_theme_style');
+add_action('after_setup_theme', 'my_admin_theme_style');
 
 /* --- */
 function kauffman_widgets_init() {
@@ -214,3 +213,6 @@ function kauffman_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'kauffman_widgets_init' );
+
+/* opacity */
+require_once( get_stylesheet_directory() . '/php/tinymce/opacity_tinymce.php' );

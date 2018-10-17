@@ -7,6 +7,16 @@ progress,sub,sup{vertical-align:baseline}
 pre,textarea{overflow:auto}
 #content[tabindex="-1"]:focus,a:active,a:hover{outline:0}
 .aligncenter,.clear:after,.comment-content:after,.entry-content:after,.page-links,.site-content:after,.site-footer:after,.site-header:after,h1,h2,h3,h4,h5,h6{clear:both}
+span.af_small_top{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.54px}
+span.af_opacity_01{opacity:.1}
+span.af_opacity_02{opacity:.2}
+span.af_opacity_03{opacity:.3}
+span.af_opacity_04{opacity:.4}
+span.af_opacity_05{opacity:.5}
+span.af_opacity_06{opacity:.6}
+span.af_opacity_07{opacity:.7}
+span.af_opacity_08{opacity:.8}
+span.af_opacity_09{opacity:.9}
 html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box}
 body{background:#fff}
 hr{box-sizing:content-box;background-color:#ccc;border:0;height:1px;margin-bottom:1.5em}
@@ -55,8 +65,8 @@ table{margin:0 0 1.5em;width:100%}
 button,input[type=button],input[type=reset],input[type=submit]{border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;background:#e6e6e6;color:rgba(0,0,0,.8);font-size:12px;font-size:.75rem;line-height:1;padding:.6em 1em .4em}
 button:hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover{border-color:#ccc #bbb #aaa}
 button:active,button:focus,input[type=button]:active,input[type=button]:focus,input[type=reset]:active,input[type=reset]:focus,input[type=submit]:active,input[type=submit]:focus{border-color:#aaa #bbb #bbb}
-input[type=email],input[type=url],input[type=password],input[type=tel],input[type=range],input[type=date],input[type=month],input[type=week],input[type=time],input[type=datetime],input[type=datetime-local],input[type=color],input[type=number],input[type=search],input[type=text],textarea{color:#666;border:1px solid #ccc;border-radius:3px;padding:3px}
-input[type=email]:focus,input[type=url]:focus,input[type=password]:focus,input[type=tel]:focus,input[type=range]:focus,input[type=date]:focus,input[type=month]:focus,input[type=week]:focus,input[type=time]:focus,input[type=datetime]:focus,input[type=datetime-local]:focus,input[type=color]:focus,input[type=number]:focus,input[type=search]:focus,input[type=text]:focus,textarea:focus{color:#111}
+input[type=text],input[type=email],input[type=url],input[type=password],input[type=tel],input[type=range],input[type=date],input[type=month],input[type=week],input[type=time],input[type=datetime],input[type=datetime-local],input[type=color],input[type=number],input[type=search],textarea{color:#666;border:1px solid #ccc;border-radius:3px;padding:3px}
+input[type=text]:focus,input[type=email]:focus,input[type=url]:focus,input[type=password]:focus,input[type=tel]:focus,input[type=range]:focus,input[type=date]:focus,input[type=month]:focus,input[type=week]:focus,input[type=time]:focus,input[type=datetime]:focus,input[type=datetime-local]:focus,input[type=color]:focus,input[type=number]:focus,input[type=search]:focus,textarea:focus{color:#111}
 select{border:1px solid #ccc}
 .main-navigation{clear:both;display:block;float:left;width:100%}
 .main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}

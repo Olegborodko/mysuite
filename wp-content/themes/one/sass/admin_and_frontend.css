@@ -1,0 +1,45 @@
+span.af_small_top{
+  opacity: 0.45;
+  color: #141414;
+  font-family: "Lyon Display",sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.54px;
+}
+
+span.af_opacity_01{
+  opacity: 0.1;
+}
+
+span.af_opacity_02{
+  opacity: 0.2;
+}
+
+span.af_opacity_03{
+  opacity: 0.3;
+}
+
+span.af_opacity_04{
+  opacity: 0.4;
+}
+
+span.af_opacity_05{
+  opacity: 0.5;
+}
+
+span.af_opacity_06{
+  opacity: 0.6;
+}
+
+span.af_opacity_07{
+  opacity: 0.7;
+}
+
+span.af_opacity_08{
+  opacity: 0.8;
+}
+
+span.af_opacity_09{
+  opacity: 0.9;
+}
