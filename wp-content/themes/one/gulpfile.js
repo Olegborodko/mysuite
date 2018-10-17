@@ -9,6 +9,10 @@ gulp.task('js', function () {
     gulp.src([
       'js/jquery.js',
       'js/jquery-migrate.js',
+      'js/unyson/core.js',
+      'js/unyson/transition.js',
+      'js/unyson/background.js',
+      'js/unyson/background.init.js',
       //'js/customizer.js',
       'js/intersection-observer.js',
       'js/scrollama.min.js',
