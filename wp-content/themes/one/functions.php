@@ -197,7 +197,7 @@ function mce_custom_fonts( $init ) {
 
 /* -- styles for admin panel -- */
 function my_admin_theme_style() {
-  add_editor_style(get_template_directory_uri() . '/sass/admin_and_frontend.css');
+  add_editor_style(get_template_directory_uri() . '/build/css_admin_panel.css');
 }
 add_action('after_setup_theme', 'my_admin_theme_style');
 

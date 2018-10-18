@@ -124,10 +124,10 @@ $options = array(
 'desc'  => __('empty == 100% without padding', 'fw'),
 ),
 
-  'animated' => array(
-  'type'  => 'text',
-  'value' => '',
-  'label' => __('Animated', '{domain}'),
-  'desc'  => __('fadeInUp, zoomIn, .. other -> https://github.com/daneden/animate.css', 'fw'),
-  )
+//  'animated' => array(
+//  'type'  => 'text',
+//  'value' => '',
+//  'label' => __('Animated', '{domain}'),
+//  'desc'  => __('fadeInUp, zoomIn, .. other -> https://github.com/daneden/animate.css', 'fw'),
+//  )
 );

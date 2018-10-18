@@ -2,3 +2,34 @@ body p{
   margin-top:18px;
   margin-bottom:18px;
 }
+
+.fw-hidden-xs,
+.fw-hidden-sm-md,
+.fw-visible-lg,
+.fw-visible-xs,
+.fw-visible-sm-md,
+.fw-hidden-lg{
+  display: none;
+}
+
+@media screen and (min-width: 1200px) { /* desktop */
+  /* lg */
+  .fw-visible-lg{
+    display:block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) { /* ipad */
+  /* sm, md */
+  .fw-visible-sm-md{
+    display:block;
+  }
+}
+
+
+@media screen and (max-width: 767px) { /* mobile */
+  /* xs */
+  .fw-visible-xs{
+    display:block;
+  }
+}

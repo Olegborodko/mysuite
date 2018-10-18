@@ -1,7 +1,7 @@
 jQuery(window).bind("load", function() {
 
   //========================= menu
-  mobile_size_1200 = window.matchMedia( "(max-width: 1200px)" ).matches;
+  mobile_size_1200 = window.matchMedia( "(max-width: 1199px)" ).matches;
 
   var c, currentScrollTop = 0;
   var navbar = jQuery('header');
@@ -14,7 +14,7 @@ jQuery(window).bind("load", function() {
 
     currentScrollTop = a;
 
-    if (a >= 100) {
+    if (a >= 30) {
       navbar.addClass("js_menu_scroll_now");
       if (c < currentScrollTop && a > b + b) {
         if (!mobile_size_1200) {
@@ -69,43 +69,43 @@ jQuery(window).bind("load", function() {
   }
 
   //=========================== animation on scroll
-  ScrollReveal().reveal('.animated',{
-    delay: 0,
-    distance: '0px',
-    duration: 600,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    interval: 0,
-    opacity: 0,
-    origin: 'bottom',
-    rotate: {
-      x: 0,
-      y: 0,
-      z: 0
-    },
-    scale: 1,
-    cleanup: true,
-    container: document.documentElement,
-    desktop: true,
-    mobile: true,
-    reset: false, //true = replay
-    useDelay: 'always',
-    viewFactor: 0.0,
-    viewOffset: {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0
-    },
-    afterReset: function (el) {},
-    afterReveal: function (el) {},
-    beforeReset: function (el) {},
-    beforeReveal: function (el) {
-      //start animation
-      var this_ = jQuery(el);
-      var classElement = this_.attr("data-animated");
-      this_.addClass(classElement);
-    }
-  });
+  // ScrollReveal().reveal('.animated',{
+  //   delay: 0,
+  //   distance: '0px',
+  //   duration: 600,
+  //   easing: 'cubic-bezier(0.5, 0, 0, 1)',
+  //   interval: 0,
+  //   opacity: 0,
+  //   origin: 'bottom',
+  //   rotate: {
+  //     x: 0,
+  //     y: 0,
+  //     z: 0
+  //   },
+  //   scale: 1,
+  //   cleanup: true,
+  //   container: document.documentElement,
+  //   desktop: true,
+  //   mobile: true,
+  //   reset: false, //true = replay
+  //   useDelay: 'always',
+  //   viewFactor: 0.0,
+  //   viewOffset: {
+  //     top: 0,
+  //     right: 0,
+  //     bottom: 0,
+  //     left: 0
+  //   },
+  //   afterReset: function (el) {},
+  //   afterReveal: function (el) {},
+  //   beforeReset: function (el) {},
+  //   beforeReveal: function (el) {
+  //     //start animation
+  //     var this_ = jQuery(el);
+  //     var classElement = this_.attr("data-animated");
+  //     this_.addClass(classElement);
+  //   }
+  // });
 
 //================================ scroll to section
   function close_sub_menu(){

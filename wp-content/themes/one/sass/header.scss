@@ -12,6 +12,9 @@ header {
   -ms-transition: height 0.5s linear, opacity 0.3s linear;
   overflow: initial;
   opacity: 1;
+  margin-top:20px;
+  transition-property: margin-top;
+  transition-duration: 0.3s;
 
   .container {
     display: flex;
@@ -68,7 +71,7 @@ header {
 
   ul#primary-menu li a {
     color: #ffffff;
-    font-family: "Lyon Display", sans-serif;
+    font-family: $font-lyon;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -92,7 +95,7 @@ header {
 
   a.header_resident_portal_btn {
     color: #7c7a7d;
-    font-family: "Lyon Display", sans-serif;
+    font-family: $font-lyon;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -125,6 +128,7 @@ header.js_menu_display_none{
 
 header.js_menu_scroll_now{
   background-color: #ffffff;
+  margin-top:0;
 
   .site-logo-default{
     display: none;
@@ -154,7 +158,7 @@ header.js_menu_scroll_now{
   }
 }
 
-@media screen and (min-width: 75em) { /* от 1200px */
+@media screen and (min-width: 1200px) {
   header {
     .button-menu-toggle {
       display: none;
@@ -174,7 +178,7 @@ header.js_menu_scroll_now{
   }
 }
 
-@media screen and (max-width: 75em) { /* до 1200px */
+@media screen and (max-width: 1199px) {
   header {
     .button-menu-toggle {
       display: inline-block;

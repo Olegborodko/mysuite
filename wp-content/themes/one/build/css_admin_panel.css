@@ -1,0 +1,15 @@
+h1.af_h1,h3.af_h3,span.af_small_top{color:#141414;font-family:"Lyon Display",sans-serif}
+@font-face{font-family:Lora;src:url(../fonts/Lora-Regular.eot);src:url(../fonts/Lora-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Lora-Regular.woff2) format("woff2"),url(../fonts/Lora-Regular.woff) format("woff"),url(../fonts/Lora-Regular.ttf) format("truetype"),url(../fonts/Lora-Regular.svg#Lora-Regular) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:Avenir;src:url(../fonts/Avenir-Light.eot);src:url(../fonts/Avenir-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Avenir-Light.woff2) format("woff2"),url(../fonts/Avenir-Light.woff) format("woff"),url(../fonts/Avenir-Light.ttf) format("truetype"),url(../fonts/Avenir-Light.svg#Avenir-Light) format("svg");font-weight:300;font-style:normal}
+@font-face{font-family:'Lyon Display';src:url(../fonts/LyonDisplay-Regular.eot);src:url(../fonts/LyonDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/LyonDisplay-Regular.woff2) format("woff2"),url(../fonts/LyonDisplay-Regular.woff) format("woff"),url(../fonts/LyonDisplay-Regular.ttf) format("truetype"),url(../fonts/LyonDisplay-Regular.svg#LyonDisplay-Regular) format("svg");font-weight:400;font-style:normal}
+span.af_small_top{opacity:.45;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.54px}
+h1.af_h1,h3.af_h3{font-size:42px;font-weight:700;line-height:62px}
+span.af_opacity_01{opacity:.1}
+span.af_opacity_02{opacity:.2}
+span.af_opacity_03{opacity:.3}
+span.af_opacity_04{opacity:.4}
+span.af_opacity_05{opacity:.5}
+span.af_opacity_06{opacity:.6}
+span.af_opacity_07{opacity:.7}
+span.af_opacity_08{opacity:.8}
+span.af_opacity_09{opacity:.9}

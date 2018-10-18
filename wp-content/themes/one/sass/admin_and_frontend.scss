@@ -1,11 +1,20 @@
 span.af_small_top{
   opacity: 0.45;
-  color: #141414;
-  font-family: "Lyon Display",sans-serif;
+  color: $color_141414;
+  font-family: $font-lyon;
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.54px;
+}
+
+h1.af_h1,
+h3.af_h3{
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 62px;
 }
 
 span.af_opacity_01{

@@ -32,6 +32,14 @@ gulp.task('css', function () {
         .pipe(gulp.dest('build'));
 });
 
+gulp.task('css_admin_panel', function () {
+  return gulp.src(['sass/admin_start.scss'])
+  .pipe(sass())
+  .pipe(minify({keepBreaks: true}))
+  .pipe(concat('css_admin_panel.css'))
+  .pipe(gulp.dest('build'));
+});
+
 gulp.task('w', function () {
-    gulp.watch(['sass/**/*.+(scss|css)', 'css/*.+(scss|css)', 'js/*.js'], ['css', 'js']);
+    gulp.watch(['sass/**/*.+(scss|css)', 'css/*.+(scss|css)', 'js/*.js'], ['css', 'js', 'css_admin_panel']);
 });

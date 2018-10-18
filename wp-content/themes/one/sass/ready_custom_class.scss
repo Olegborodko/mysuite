@@ -1,4 +1,8 @@
-@media screen and (min-width: 1200px) { /* desktop */
+.ready_top_background {
+  padding-top: 82px!important;
+}
+
+@media screen and (min-width: 1200px) {
   .ready_top_background {
     background: url(../img/top.jpg);
     min-height: 783px;
@@ -6,7 +10,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) { /* ipad */
+@media screen and (min-width: 768px) and (max-width: 1199px) { /* ipad */
   .ready_top_background {
     background: url(../img/top_laptop.jpg);
     min-height: 1024px;
