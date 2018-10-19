@@ -1,3 +1,135 @@
 .home_top__small_text{
   margin-top:145px;
+  opacity: 0.7;
+  color: #ffffff;
+  font-family: $font-lyon;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.18px;
+  text-align:center;
+}
+
+.home_top__title{
+  color: #ffffff;
+  font-family: $font-lyon;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align:center;
+  margin-top:12px;
+}
+
+.home_top__button1{
+  margin-top:50px;
+}
+
+.home_top__button2{
+  margin-top:50px;
+}
+
+.home_top__or{
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 300;
+  display:inline-block;
+  margin:0 30px;
+}
+
+.home_top__buttons{
+  text-align:center;
+}
+
+/* - arrow_down - */
+
+.home_top__arrow_down{
+  cursor:pointer;
+  display: inline-flex;
+  text-decoration:none;
+  flex-direction: column;
+  color:#ffffff;
+  font-size:20px;
+  font-weight:100;
+  padding:10px;
+}
+
+.home_top__down_2{
+  position:relative;
+  top:-15.5px;
+}
+
+.ready_top_background{
+ position: relative;
+}
+
+.home_top__arrow_down_block {
+  margin-left: 20px;
+}
+
+/* -- */
+
+@media screen and (min-width: 1200px) { /* desktop */
+  /* lg */
+  .home_top__arrow_down_block{
+    margin-top:130px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) { /* ipad */
+  /* sm, md */
+  .home_top__small_text{
+    margin-top: 80px;
+  }
+
+  .home_top__arrow_down_block{
+    margin-top: 390px;
+  }
+
+  .home_top__title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+  }
+}
+
+
+@media screen and (max-width: 767px) { /* mobile */
+  /* xs */
+  .home_top__small_text{
+    margin-top: 50px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 1px;
+  }
+
+  .home_top__title{
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .home_top__buttons .home_top__button1{
+    display: block;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .home_top__or{
+    display:none;
+  }
+
+  .home_top__buttons .home_top__button2{
+    display: block;
+    max-width: 320px;
+    margin:20px auto 0 auto;
+  }
+
+  .home_top__buttons{
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+
 }

@@ -3,40 +3,41 @@
 }
 
 $options = array(
-'small_text' => array(
-'type'   => 'wp-editor',
-'attr'  => array( 'class' => 'unyson_wp_editor', 'data-foo' => 'bar' ),
-'label'  => __( 'Small text', 'fw' ),
-'desc'   => __( 'Enter some content for this text block', 'fw' ),
-'shortcodes' => false,
-'size' => 'large'
+
+'small_text_desktop' => array(
+'type'  => 'textarea',
+'value' => '',
+'label' => __('small text desktop', '{domain}')
+),
+
+'small_text_ipad' => array(
+'type'  => 'textarea',
+'value' => '',
+'label' => __('small text ipad', '{domain}')
+),
+
+'small_text_mobile' => array(
+'type'  => 'textarea',
+'value' => '',
+'label' => __('small text mobile', '{domain}')
 ),
 
 'title_desktop' => array(
-'type'   => 'wp-editor',
-'attr'  => array( 'class' => 'unyson_wp_editor', 'data-foo' => 'bar' ),
-'label'  => __( 'Title desktop', 'fw' ),
-'desc'   => __( 'Enter some content for this text block', 'fw' ),
-'shortcodes' => false,
-'size' => 'large'
+'type'  => 'textarea',
+'value' => '',
+'label' => __('title desktop', '{domain}')
 ),
 
 'title_ipad' => array(
-'type'   => 'wp-editor',
-'attr'  => array( 'class' => 'unyson_wp_editor', 'data-foo' => 'bar' ),
-'label'  => __( 'Title ipad', 'fw' ),
-'desc'   => __( 'Enter some content for this text block', 'fw' ),
-'shortcodes' => false,
-'size' => 'large'
+'type'  => 'textarea',
+'value' => '',
+'label' => __('title ipad', '{domain}')
 ),
 
 'title_mobile' => array(
-'type'   => 'wp-editor',
-'attr'  => array( 'class' => 'unyson_wp_editor', 'data-foo' => 'bar' ),
-'label'  => __( 'Title mobile', 'fw' ),
-'desc'   => __( 'Enter some content for this text block', 'fw' ),
-'shortcodes' => false,
-'size' => 'large'
+'type'  => 'textarea',
+'value' => '',
+'label' => __('title mobile', '{domain}')
 ),
 
 'button_title_1' => array(
@@ -61,6 +62,12 @@ $options = array(
 'type'  => 'text',
 'value' => '',
 'label' => __('button url 2', '{domain}')
+),
+
+'arrow_url' => array(
+'type'  => 'text',
+'value' => '',
+'label' => __('arrow url', '{domain}')
 ),
 
 'margin_top' => array(

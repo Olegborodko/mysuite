@@ -1,0 +1,51 @@
+.button_white{
+  display:inline-block;
+  background-color: #ffffff;
+  padding:24px 40px;
+  text-decoration:none;
+  border: 1px solid #ffffff;
+
+  color: #818181;
+  font-family: $font-lora;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.52px;
+}
+
+.button_white:hover{
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.button_transparent{
+  padding:26px 42px;
+  border: 1px solid #ffffff;
+  text-decoration:none;
+
+  color: #ffffff;
+  font-family: $font-lora;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.52px;
+}
+
+.button_transparent:hover{
+  background-color: #ffffff;
+  color: #818181;
+  border: 1px solid #818181;
+}
+
+@media screen and (max-width: 767px) { /* mobile */
+  .button_white {
+    max-width: 320px;
+    //margin: 0 auto;
+  }
+
+  .button_transparent{
+    max-width: 320px;
+    //margin:0 auto;
+  }
+}

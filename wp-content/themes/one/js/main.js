@@ -1,7 +1,17 @@
 jQuery(window).bind("load", function() {
+  //========================= desktop ipad mobile
+  var mobile_size = window.matchMedia( "(max-width: 767px)" ).matches;
+  var ipad_size = window.matchMedia( "(min-width: 768px) and (max-width: 1199px)" ).matches;
+  var desktop_size = window.matchMedia( "(min-width: 1200px)" ).matches;
+  var scroll_now = jQuery(window).scrollTop();
+
+
+  if (scroll_now > 30) {
+    jQuery('header').addClass("js_menu_scroll_now");
+  }
 
   //========================= menu
-  mobile_size_1200 = window.matchMedia( "(max-width: 1199px)" ).matches;
+  var mobile_size_1200 = window.matchMedia( "(max-width: 1199px)" ).matches;
 
   var c, currentScrollTop = 0;
   var navbar = jQuery('header');
@@ -9,18 +19,18 @@ jQuery(window).bind("load", function() {
 
   jQuery(window).scroll(function () {
 
-    var a = jQuery(window).scrollTop();
+    scroll_now = jQuery(window).scrollTop();
     var b = navbar.height();
 
-    currentScrollTop = a;
+    currentScrollTop = scroll_now;
 
-    if (a >= 30) {
+    if (scroll_now >= 30) {
       navbar.addClass("js_menu_scroll_now");
-      if (c < currentScrollTop && a > b + b) {
+      if (c < currentScrollTop && scroll_now > b + b) {
         if (!mobile_size_1200) {
           navbar.addClass("js_menu_display_none");
         }else{}
-      } else if (c > currentScrollTop && !(a <= b)) {
+      } else if (c > currentScrollTop && !(scroll_now <= b)) {
         if (!mobile_size_1200) {
           navbar.removeClass("js_menu_display_none");
         }else{}
@@ -29,7 +39,10 @@ jQuery(window).bind("load", function() {
     } else {
       if (!mobile_size_1200) {
         navbar.removeClass("js_menu_display_none");
-      }else{}
+      }else{
+        jQuery("#primary-menu").css("display", "none");
+        close_sub_menu();
+      }
       navbar.removeClass("js_menu_scroll_now");
     }
 
@@ -152,7 +165,18 @@ jQuery(window).bind("load", function() {
     console.log('#js_i_menu_button');
     var menu_ = jQuery("#primary-menu");
     if (menu_.css("display")==="none"){
-      menu_.css("display","inline-block");
+
+      if (scroll_now < 30) {
+        console.log(scroll_now);
+        jQuery('html, body').animate({
+          scrollTop: scroll_now + 30
+        }, 300, function(){
+          menu_.css("display","inline-block")
+        });
+      }else{
+        menu_.css("display","inline-block");
+      }
+
     }else{
       menu_.css("display","none");
     }
@@ -233,5 +257,21 @@ jQuery(window).bind("load", function() {
       sub_menu_.addClass("sub_menu_open");
     });
   }
+
+//========================= js_change_text on mobile desktop ipad
+  jQuery(".js_change_text").each(function (i, el) {
+    var this_ = jQuery(el);
+    var data_desktop = this_.attr('data-desktop');
+    var data_ipad = this_.attr('data-ipad');
+    var data_mobile = this_.attr('data-mobile');
+
+    if (mobile_size){
+      this_.html(data_mobile);
+    }else if(ipad_size){
+      this_.html(data_ipad);
+    }else if(desktop_size){
+      this_.html(data_desktop);
+    }
+  });
 
 });

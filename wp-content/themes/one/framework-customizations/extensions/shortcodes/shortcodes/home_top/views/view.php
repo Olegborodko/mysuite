@@ -47,6 +47,11 @@ if ( ! empty( $atts['animated'] ) ) {
   $animated = esc_attr($atts['animated']);
 }
 
+$arrow_url = '';
+if ( ! empty( $atts['arrow_url'] ) ) {
+  $arrow_url = esc_attr($atts['arrow_url']);
+}
+
 ?>
 
 <div class="animated home_top js_mobile_margin <?=$mobile_align?>"
@@ -56,24 +61,32 @@ if ( ! empty( $atts['animated'] ) ) {
      style="margin-top: <?= $margin_top ?>;
      margin-bottom: <?= $margin_bottom ?>;
      text-align: <?= $align ?>">
-  <div class="home_top__small_text"><?=$atts['small_text']?></div>
-  <div class="home_top__title fw-hidden-xs fw-hidden-sm-md fw-visible-lg">
-    <?=$atts['title_desktop']?>
+
+  <div data-desktop="<?=esc_attr($atts['small_text_desktop'])?>"
+       data-ipad="<?=esc_attr($atts['small_text_ipad'])?>"
+       data-mobile="<?=esc_attr($atts['small_text_mobile'])?>"
+       class="home_top__small_text js_change_text">
   </div>
-  <div class="home_top__title fw-hidden-xs fw-visible-sm-md fw-hidden-lg">
-    <?=$atts['title_ipad']?>
+
+  <div
+    data-desktop="<?=esc_attr($atts['title_desktop'])?>"
+    data-ipad="<?=esc_attr($atts['title_ipad'])?>"
+    data-mobile="<?=esc_attr($atts['title_mobile'])?>"
+    class="home_top__title js_change_text">
   </div>
-  <div class="home_top__title fw-visible-xs fw-hidden-sm-md fw-hidden-lg">
-    <?=$atts['title_mobile']?>
-  </div>
+
   <div class="home_top__buttons">
-    <a href="<?=$button_url_1?>" class="home_top__button1"><?=$button_title_1?></a>
+    <a href="<?=$button_url_1?>" class="button_white home_top__button1"><?=$button_title_1?></a>
     <span class="home_top__or">or</span>
-    <a href="<?=$button_url_2?>" class="home_top__button2"><?=$button_title_2?></a>
+    <a href="<?=$button_url_2?>" class="button_transparent home_top__button2"><?=$button_title_2?></a>
   </div>
-  <div class="home_top__arrow_down">
-    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+  <div class="fw-text-center home_top__arrow_down_block">
+    <a href="<?=$arrow_url?>" class="home_top__arrow_down">
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+      <i class="fa fa-angle-down home_top__down_2" aria-hidden="true"></i>
+    </a>
   </div>
+
 </div>
 
