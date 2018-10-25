@@ -3,6 +3,10 @@ jQuery(window).bind("load", function() {
   var mobile_size = window.matchMedia( "(max-width: 767px)" ).matches;
   var ipad_size = window.matchMedia( "(min-width: 768px) and (max-width: 1199px)" ).matches;
   var desktop_size = window.matchMedia( "(min-width: 1200px)" ).matches;
+
+  var size_410_and_less = window.matchMedia( "(max-width: 410px)" ).matches;
+  var size_411_and_more = window.matchMedia( "(min-width: 411px)" ).matches;
+
   var scroll_now = jQuery(window).scrollTop();
 
 
@@ -66,17 +70,21 @@ jQuery(window).bind("load", function() {
     jQuery('.js_mobile_margin').each(function (i, el) {
       var this_ = jQuery(el);
       var attr_top = this_.attr('data-m-top');
-      var attr_bottom = this_.attr('data-m-bottom');
       var attr_padding = this_.attr('data-m-padding');
+      var attr_ipad_top = this_.attr('data-ipad-top');
 
-      if (attr_top.length > 0) {
-        this_.css('margin-top', attr_top);
+      if (mobile_size) {
+        if (attr_top.length > 0) {
+          this_.css('margin-top', attr_top);
+        }
+        if (attr_padding && attr_padding.length > 0) {
+          this_.css('padding', attr_padding);
+        }
       }
-      if (attr_bottom.length > 0) {
-        this_.css('margin-bottom', attr_bottom);
-      }
-      if (attr_padding && attr_padding.length > 0) {
-        this_.css('padding', attr_padding);
+      if (ipad_size) {
+        if (attr_ipad_top && attr_ipad_top.length > 0) {
+          this_.css('margin-top', attr_ipad_top);
+        }
       }
     });
   }
@@ -274,4 +282,63 @@ jQuery(window).bind("load", function() {
     }
   });
 
+//========================== initialize swiper type1
+  if ( jQuery(".slider_type1__js").length ) {
+    if (size_410_and_less) {
+      var mySwiper = new Swiper('.slider_type1__js', {
+        spaceBetween: 20,
+        slidesPerView: 1.4,
+        centeredSlides: true,
+        paginationClickable: true,
+        loop: false,
+        allowSwipeToNext: true,
+        allowSwipeToPrev: true,
+        pagination: '.slider_type1__pagination'
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev'
+        //autoplay: 2000
+        // scrollbar: {
+        //   el: '.swiper-scrollbar'
+        // }
+        // breakpoints: {
+        //   414: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 10
+        //   }
+        // }
+      });
+    } else {
+      var mySwiper = new Swiper('.slider_type1__js', {
+        spaceBetween: 25,
+        slidesPerView: 3,
+        paginationClickable: true
+      });
+    }
+  }
+
+  //========================== initialize swiper type2
+  if ( jQuery(".slider_type2__js").length ) {
+    if (mobile_size_1200) {
+      var mySwiper = new Swiper('.slider_type2__js', {
+        slidesPerView: 1,
+        centeredSlides: true,
+        paginationClickable: true,
+        loop: false,
+        allowSwipeToNext: true,
+        allowSwipeToPrev: true,
+        pagination: '.slider_type2__pagination',
+        nextButton: '.slider_type2__button_next',
+        prevButton: '.slider_type2__button_prev'
+      });
+    } else {
+      var mySwiper = new Swiper('.slider_type2__js', {
+        spaceBetween: 25,
+        slidesPerView: 3,
+        loop: false
+        // pagination: '.slider_type2__pagination'
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev'
+      });
+    }
+  }
 });

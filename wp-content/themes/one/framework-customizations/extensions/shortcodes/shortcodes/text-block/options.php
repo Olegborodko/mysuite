@@ -19,13 +19,6 @@ $options = array(
 'desc'  => __('0, 44px, ...', 'fw'),
 ),
 
-'margin_bottom' => array(
-'type'  => 'text',
-'value' => '0',
-'label' => __('margin-bottom', '{domain}'),
-'desc'  => __('0, 44px, ...', 'fw')
-),
-
 'm_margin_top' => array(
 'type'  => 'text',
 'value' => '0',
@@ -33,10 +26,10 @@ $options = array(
 'desc'  => __('0, 44px, ...', 'fw')
 ),
 
-'m_margin_bottom' => array(
+'ipad_margin_top' => array(
 'type'  => 'text',
 'value' => '0',
-'label' => __('mobile margin-bottom', '{domain}'),
+'label' => __('ipad margin-top', '{domain}'),
 'desc'  => __('0, 44px, ...', 'fw')
 ),
 
@@ -59,17 +52,6 @@ $options = array(
 'value' => '',
 'label' => __('max width', '{domain}'),
 'desc'  => __('44px, 50%, ...', 'fw'),
-),
-
-'additional_classes' => array(
-'type'  => 'select',
-'value' => 'nothing',
-'label' => __('Additional classes', '{domain}'),
-'choices' => array(
-'' => 'nothing',
-'as_border_left_set_to_blue_desktop' => 'border left set to blue'
-),
-'no-validate' => false
 ),
 
 'class' => array(

@@ -7,17 +7,19 @@ var gulp = require('gulp'),
 
 gulp.task('js', function () {
     gulp.src([
-      'js/jquery.js',
-      'js/jquery-migrate.js',
+      'js/jquery.min.js',
+      //'js/jquery_2_13.js',
+      //'js/jquery-migrate.js',
       'js/unyson/core.js',
       'js/unyson/transition.js',
       'js/unyson/background.js',
       'js/unyson/background.init.js',
-      //'js/customizer.js',
       'js/intersection-observer.js',
       'js/scrollama.min.js',
       'js/scrollreveal.js',
       'js/skip-link-focus-fix.js',
+      //'js/swiper.jquery.min.js',
+      'js/swiper.min.js',
       'js/main.js'
     ]).pipe(uglify())
 	     .pipe(concat('app.js'))

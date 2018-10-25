@@ -49,7 +49,8 @@ $options = array(
   'label' => __('Ready custom class', '{domain}'),
   'choices' => array(
   'default' => '',
-  'ready_top_background' => 'ready_top_background'
+  'ready_top_background' => 'ready_top_background',
+  'container_without_margin' => 'container_without_margin'
   ),
   'no-validate' => false
   ),
@@ -69,24 +70,19 @@ $options = array(
   'label' => __('margin-top', '{domain}'),
   'desc'  => __('0, 22px, ...', 'fw'),
   ),
-  'margin_bottom' => array(
-  'type'  => 'text',
-  'value' => '0',
-  'label' => __('margin-bottom', '{domain}'),
-  'desc'  => __('0, 31px, ...', 'fw'),
-  ),
-'m_margin_top' => array(
+
+'ipad_margin_top' => array(
 'type'  => 'text',
-'value' => '80px',
-'label' => __('mobile margin-top', '{domain}'),
+'value' => '0',
+'label' => __('ipad margin-top', '{domain}'),
 'desc'  => __('0, 31px, ...', 'fw')
 ),
 
-'m_margin_bottom' => array(
+'m_margin_top' => array(
 'type'  => 'text',
 'value' => '0',
-'label' => __('mobile margin-bottom', '{domain}'),
-'desc'  => __('0, 44px, ...', 'fw')
+'label' => __('mobile margin-top', '{domain}'),
+'desc'  => __('0, 31px, ...', 'fw')
 ),
 
 'padding' => array(

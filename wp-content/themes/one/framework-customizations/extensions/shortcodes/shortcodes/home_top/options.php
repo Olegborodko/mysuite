@@ -77,13 +77,6 @@ $options = array(
 'desc'  => __('0, 44px, ...', 'fw'),
 ),
 
-'margin_bottom' => array(
-'type'  => 'text',
-'value' => '0',
-'label' => __('margin-bottom', '{domain}'),
-'desc'  => __('0, 44px, ...', 'fw')
-),
-
 'm_margin_top' => array(
 'type'  => 'text',
 'value' => '0',
@@ -91,12 +84,12 @@ $options = array(
 'desc'  => __('0, 44px, ...', 'fw')
 ),
 
-'m_margin_bottom' => array(
+'ipad_margin_top' => array(
 'type'  => 'text',
 'value' => '0',
-'label' => __('mobile margin-bottom', '{domain}'),
+'label' => __('ipad margin-top', '{domain}'),
 'desc'  => __('0, 44px, ...', 'fw')
-)
+),
 
 //'animated' => array(
 //'type'  => 'text',

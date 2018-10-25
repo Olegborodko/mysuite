@@ -123,7 +123,7 @@ function one_scripts() {
 
   wp_enqueue_style( 'css', get_template_directory_uri().'/build/app.css', '', '234234324328', false );
 
-  wp_enqueue_script('jquery');
+  //wp_enqueue_script('jquery');
 
   wp_enqueue_script( 'js', get_template_directory_uri() . '/build/app.js', array(), '20151215', true );
 

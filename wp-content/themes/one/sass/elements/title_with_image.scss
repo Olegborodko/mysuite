@@ -1,0 +1,64 @@
+.title_with_image{
+  margin:0 auto;
+}
+
+.title_with_image__image_block{
+  text-align:center;
+}
+
+.title_with_image__title_block{
+  display:flex;
+}
+
+.title_with_image__left{
+  flex:1 1 auto;
+  background: url(../img/vawe.png);
+  background-repeat:repeat-x;
+  background-position: center;
+  margin-left: -15px;
+}
+
+.title_with_image__left_ipad_line,
+.title_with_image__right_ipad_line{
+  flex:1 1 auto;
+}
+
+.title_with_image__center{
+  flex: 0 0 auto;
+  text-align:center;
+  padding: 0 47px;
+}
+
+.title_with_image__right{
+  flex:1 1 auto;
+  background: url(../img/vawe.png);
+  background-repeat:repeat-x;
+  background-position: center;
+  transform: scale(-1, 1);
+  margin-right: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .title_with_image__right,
+  .title_with_image__left{
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) { /* ipad */
+  .title_with_image__left_ipad_line,
+  .title_with_image__right_ipad_line {
+    flex: 1 1 auto;
+    height: 1px;
+    background-color: #bfb5d7;
+    margin-top: 40px;
+  }
+
+  .title_with_image__left_ipad_line{
+    margin-left: -15px;
+  }
+
+  .title_with_image__right_ipad_line{
+    margin-right: -15px;
+  }
+}

@@ -17,11 +17,6 @@ if ( ! empty( $atts['margin_top'] ) ) {
   $margin_top = esc_attr($atts['margin_top']);
 }
 
-$margin_bottom = 0;
-if ( ! empty( $atts['margin_bottom'] ) ) {
-  $margin_bottom = esc_attr($atts['margin_bottom']);
-}
-
 //$section_style   = ( $bg_color || $bg_image ) ? 'style="' . esc_attr($bg_color . $bg_image) . '"' : '';
 $container_class = ( isset( $atts['is_fullwidth'] ) && $atts['is_fullwidth'] ) ? 'fw-container-fluid' : 'fw-container';
 
@@ -39,7 +34,6 @@ if ( ! empty( $atts['id'] ) ) {
   $id = esc_attr($atts['id']);
 }
 
-
 if ( ! empty( $atts['container_class'] ) ) {
   $container_class .= ' ' . esc_attr($atts['container_class']);
 }
@@ -53,26 +47,20 @@ if ( isset( $atts['is_mobile_display'] ) && $atts['is_mobile_display'] ) {
 $container_style .= $bg_color;
 $container_style .= $bg_image;
 
-
 if ( isset( $atts['background_mobile'] ) && $atts['background_mobile'] ) {
   if ($atts['background_mobile']=='no'){
-    $container_class .= ' mobile-background-display-none';
+    $container_class .= ' g_mobile_background_display_none';
   }
 }
 
 $section_max_width = '';
 if ( ! empty( $atts['section_max_width'] ) ) {
-  $section_max_width = 'class="fw-container" style="max-width:'.esc_attr($atts['section_max_width']).'"';
+  $section_max_width = 'style="max-width:'.esc_attr($atts['section_max_width']).'"';
 }
 
 $m_margin_top = 0;
 if ( ! empty( $atts['m_margin_top'] ) ) {
   $m_margin_top = esc_attr($atts['m_margin_top']);
-}
-
-$m_margin_bottom = 0;
-if ( ! empty( $atts['m_margin_bottom'] ) ) {
-  $m_margin_bottom = esc_attr($atts['m_margin_bottom']);
 }
 
 $padding = '0';
@@ -89,15 +77,24 @@ if ( ! empty( $atts['ready_custom_class'] ) ) {
   $section_extra_classes .=  esc_attr($atts['ready_custom_class']);
 }
 
+$padding_mobile = '0';
+if ( ! empty( $atts['padding_mobile'] ) ) {
+  $padding_mobile =  esc_attr($atts['padding_mobile']);
+}
+
+$ipad_margin_top = '0';
+if ( ! empty( $atts['ipad_margin_top'] ) ) {
+  $ipad_margin_top =  esc_attr($atts['ipad_margin_top']);
+}
 
 ?>
 <section data-animated="<?=$animated?>"
          data-m-top="<?=$m_margin_top?>"
-         data-m-bottom="<?=$m_margin_bottom?>"
          data-m-padding="<?=$padding_mobile?>"
+         data-ipad-top="<?=$ipad_margin_top?>"
          id="<?= esc_attr($id) ?>"
          class="animated js_mobile_margin fw-main-row <?php echo esc_attr($section_extra_classes) ?>"
-         style="margin-top: <?= $margin_top ?>; margin-bottom: <?= $margin_bottom ?>;
+         style="margin-top: <?= $margin_top ?>;
          padding:<?=$padding?>;<?=$container_style?>" >
 
   <div <?=$section_max_width?> class="<?php echo esc_attr($container_class); ?>">

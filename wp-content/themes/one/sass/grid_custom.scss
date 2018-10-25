@@ -9,3 +9,25 @@
   width:50%;
   float: left;
 }
+
+/* fw-container-fluid width 100% without padding and margin */
+div.fw-container-fluid {
+  padding-left:0;
+  padding-right:0;
+
+  .fw-row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .fw-row div:first-child{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) { /* mobile */
+  .g_mobile_background_display_none{
+    background-image: none!important;
+  }
+}

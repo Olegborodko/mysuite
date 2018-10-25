@@ -52,12 +52,17 @@ if ( ! empty( $atts['arrow_url'] ) ) {
   $arrow_url = esc_attr($atts['arrow_url']);
 }
 
+$ipad_margin_top = '';
+if ( ! empty( $atts['ipad_margin_top'] ) ) {
+  $ipad_margin_top = esc_attr($atts['ipad_margin_top']);
+}
+
 ?>
 
 <div class="animated home_top js_mobile_margin <?=$mobile_align?>"
      data-animated="<?= $animated?>"
+     data-ipad-top="<?=$ipad_margin_top?>"
      data-m-top="<?= $m_margin_top?>"
-     data-m-bottom="<?= $m_margin_bottom?>"
      style="margin-top: <?= $margin_top ?>;
      margin-bottom: <?= $margin_bottom ?>;
      text-align: <?= $align ?>">

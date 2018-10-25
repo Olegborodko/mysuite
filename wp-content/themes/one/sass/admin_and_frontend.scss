@@ -1,4 +1,4 @@
-span.af_small_top{
+.af_small_top{
   opacity: 0.45;
   color: $color_141414;
   font-family: $font-lyon;
@@ -15,6 +15,23 @@ h3.af_h3{
   font-size: 42px;
   font-weight: 700;
   line-height: 62px;
+}
+
+h2.af_h2{
+    color: $color_141414;
+    font-family: $font-lyon;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.af_type_1_avenir_light{
+  opacity: 0.8;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
 }
 
 span.af_opacity_01{
@@ -51,4 +68,37 @@ span.af_opacity_08{
 
 span.af_opacity_09{
   opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) { /* ipad */
+  /* sm, md */
+  h1.af_h1,
+  h3.af_h3{
+    font-size: 34px;
+  }
+}
+
+
+@media screen and (max-width: 767px) { /* mobile */
+  /* xs */
+  .af_small_top{
+    font-size: 11px;
+    letter-spacing: 1.3px;
+  }
+
+  h1.af_h1,
+  h3.af_h3{
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  h2.af_h2 {
+    font-size: 18px;
+  }
+
+  .af_type_1_avenir_light {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
 }
