@@ -8,18 +8,150 @@
 
 .hotel_style_living__text_1{
   text-align:center;
+  padding-top: 27px;
 }
 
 .hotel_style_living__images_block{
   text-align:center;
   margin-left:30px;
+  margin-top:40px;
 }
 
-.hotel_style_living__images_block img{
+.hotel_style_living__image_div{
   display:inline-block;
   margin-right:30px;
 }
 
 .hotel_style_living__text_2{
   text-align:center;
+  margin-top:60px;
+  margin-bottom:60px;
+}
+
+.hotel_style_living__images_block
+.hotel_style_living__image_div:nth-child(2){
+  position:relative;
+  top:30px;
+}
+
+.hotel_style_living__h2_block{
+  display:flex;
+}
+
+.hotel_style_living__h2_before{
+  flex: 1 1 auto;
+  background: url(../img/line.png) center repeat-x;
+  position:relative;
+}
+
+.hotel_style_living__h2_after{
+  flex: 1 1 auto;
+  background: url(../img/line.png) center repeat-x;
+  position:relative;
+}
+
+.hotel_style_living__h2_center{
+  flex: 0 0 auto;
+  padding: 0 47px;
+}
+
+.hotel_style_living__block2{
+  border-left:1px solid #bfb5d7;
+  border-right:1px solid #bfb5d7;
+  border-bottom:1px solid #bfb5d7;
+}
+
+.hotel_style_living__h2_before_border{
+  height:50%;
+  width:1.4px;
+  background:#bfb5d7;
+  display:block;
+  top:50%;
+  left:0;
+  position:relative;
+}
+
+.hotel_style_living__h2_after_border{
+  height:50%;
+  width:1.4px;
+  background:#bfb5d7;
+  display:block;
+  top:50%;
+  left:calc(100% - 1px);
+  position:relative;
+}
+
+@media screen and (max-width: 1199px) {
+  .hotel_style_living__h2_before{
+    background: none;
+  }
+
+  .hotel_style_living__h2_before_border{
+    display:none;
+  }
+
+  .hotel_style_living__h2_after{
+    background: none;
+  }
+
+  .hotel_style_living__h2_after_border{
+    display:none;
+  }
+
+  .hotel_style_living__block2{
+    border:none;
+  }
+
+
+  .hotel_style_living__images_block{
+    display:flex;
+    width:100%;
+    margin-left:0;
+    justify-content: center;
+
+    .hotel_style_living__image_div:nth-child(3){
+      margin-right:0;
+    }
+  }
+
+  .hotel_style_living__image_div{
+    flex: 1 1 auto;
+  }
+
+  .hotel_style_living__text_1{
+    padding-top:16px;
+  }
+
+  .hotel_style_living__text_2{
+    margin-top:70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hotel_style_living__image_div {
+    margin-right: 20px;
+  }
+
+  .hotel_style_living__images_block .hotel_style_living__image_div:nth-child(2){
+    top:0;
+  }
+
+  .hotel_style_living__h2_center{
+    margin-top:12px;
+  }
+
+  .hotel_style_living__text_2{
+    margin-top:34px;
+  }
+
+  .hotel_style_living__h2_before{
+    background: url(../img/vawe.png) center repeat-x;
+    margin-left:-15px;
+    transform: scale(-1, 1);
+  }
+
+  .hotel_style_living__h2_after{
+    background: url(../img/vawe.png) center repeat-x;
+    margin-right: -15px;
+  }
 }
