@@ -216,3 +216,6 @@ add_action( 'widgets_init', 'kauffman_widgets_init' );
 
 /* opacity */
 require_once( get_stylesheet_directory() . '/php/tinymce/opacity_tinymce.php' );
+
+/* locations taxonomy and post type */
+require_once( get_stylesheet_directory() . '/php/locations/locations.php' );

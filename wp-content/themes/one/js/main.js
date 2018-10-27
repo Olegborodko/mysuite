@@ -73,19 +73,32 @@ jQuery(window).bind("load", function() {
       var attr_padding = this_.attr('data-m-padding');
       var attr_ipad_top = this_.attr('data-ipad-top');
 
+      var attr_b_ipad = this_.attr('data-b-ipad');
+      var attr_b_mobile = this_.attr('data-b-mobile');
+
       if (mobile_size) {
-        if (attr_top.length > 0) {
+        if (attr_top && attr_top.length > 0) {
           this_.css('margin-top', attr_top);
         }
         if (attr_padding && attr_padding.length > 0) {
           this_.css('padding', attr_padding);
         }
+
+        if (attr_b_mobile && attr_b_mobile.length > 0) {
+          this_.css('background-image', 'url(' + attr_b_mobile + ')');
+        }
       }
+
       if (ipad_size) {
         if (attr_ipad_top && attr_ipad_top.length > 0) {
           this_.css('margin-top', attr_ipad_top);
         }
+
+        if (attr_b_ipad && attr_b_ipad.length > 0) {
+          this_.css('background-image', 'url(' + attr_b_ipad + ')');
+        }
       }
+
     });
   }
 
@@ -341,4 +354,20 @@ jQuery(window).bind("load", function() {
       });
     }
   }
+
+  //=========================== initialize swiper reviews_slider__js
+  if ( jQuery(".reviews_slider__js").length ) {
+    var mySwiper = new Swiper('.reviews_slider__js', {
+      slidesPerView: 1,
+      centeredSlides: true,
+      paginationClickable: true,
+      loop: false,
+      allowSwipeToNext: true,
+      allowSwipeToPrev: true,
+      pagination: '.reviews_slider__pagination',
+      nextButton: '.reviews_slider__button_next',
+      prevButton: '.reviews_slider__button_prev'
+    });
+  }
+
 });
