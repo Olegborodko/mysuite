@@ -160,7 +160,7 @@ header ul#primary-menu li a{color:#fff;font-family:"Lyon Display",sans-serif;fon
 header i.has_sub-menu:after{content:"\f107";font-family:FontAwesome,sans-serif;position:relative;display:inline-block}
 header i.tangle.has_sub-menu{color:#fff;font-size:18px;margin-left:10px}
 header a.header_resident_portal_btn{color:#7c7a7d;font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.3px;white-space:nowrap;padding:10px 12px 10px 18px;background-color:#fff;display:inline-block;height:36px;margin-top:12px;cursor:pointer}
-.button_transparent,.button_white{border:1px solid #fff;font-size:14px;letter-spacing:1.52px;font-family:Lora,sans-serif;font-weight:700;text-decoration:none;text-transform:uppercase}
+.button_transparent,.button_white{border:1px solid #fff;font-size:14px;letter-spacing:1.52px;font-family:Lora,sans-serif;font-weight:700;text-transform:uppercase;text-decoration:none}
 header a.header_resident_portal_btn i.fa-key{margin-left:10px;transform:scale(1,-1) rotate(-45deg)}
 header .site-logo-default{display:flex}
 header .site-logo-scroll,header.js_menu_scroll_now .site-logo-default{display:none}
@@ -355,7 +355,8 @@ header .site-logo{width:50%;margin:0 auto}
 .reviews_slider .reviews_slider__container{max-width:970px;width:100%;text-align:center;padding-top:90px;padding-bottom:60px}
 .reviews_slider .reviews_slider__text{max-width:630px;width:100%;margin:0 auto;color:#fff;font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px}
 .reviews_slider .reviews_slider__name{color:#fff;font-family:"Lyon Display",sans-serif;font-size:26px;font-weight:700;line-height:46px;margin-top:20px}
-.reviews_slider .reviews_slider__location{opacity:.6;color:#fff;font-family:"Lyon Display",sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px;margin-top:5px}
+.locations_block__parent,.reviews_slider .reviews_slider__location{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px;font-family:"Lyon Display",sans-serif}
+.reviews_slider .reviews_slider__location{opacity:.6;color:#fff;margin-top:5px}
 .reviews_slider .reviews_slider__pagination{position:relative;margin-top:12px}
 .reviews_slider .reviews_slider__pagination .swiper-pagination-bullet{border-radius:initial;width:12px;height:2px;background-color:#fff;opacity:.4}
 .reviews_slider .reviews_slider__pagination .swiper-pagination-bullet-active{width:22px;height:2px;background-color:#fff;opacity:1}
@@ -373,6 +374,23 @@ header .site-logo{width:50%;margin:0 auto}
 .reviews_slider .reviews_slider__name{margin-top:37px}
 .reviews_slider .reviews_slider__button_next{margin-right:0;background:url(../img/shape_right.png) center center no-repeat}
 .reviews_slider .reviews_slider__button_prev{margin-left:0;background:url(../img/shape_left.png) center center no-repeat}
+}
+.locations_block__arrow_black{background:url(../img/arrow_black.png) center no-repeat;height:10px;margin-top:4px;margin-bottom:4px}
+.locations_block__item{display:inline-block;max-width:350px;width:100%;margin:30px 15px}
+.locations_block{display:flex;text-align:center;flex-wrap:wrap;justify-content:center}
+.locations_block__parent{opacity:.45;color:#141414;margin-top:28px}
+.locations_block__title{color:#141414;font-family:"Lyon Display",sans-serif;font-size:20px;font-weight:700;margin-top:4px}
+.locations_block__count{color:#141414;font-family:Avenir,sans-serif;font-size:13px;font-weight:800;margin-top:6px}
+.locations_block__link{display:inline-block}
+.locations_block__link:hover img{padding:34px}
+.locations_block__link:hover{border:1px solid #bfb5d7}
+@media screen and (max-width:1199px){.locations_block__item{max-width:330px}
+.locations_block__parent{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px;margin-top:28px}
+}
+@media screen and (max-width:767px){.locations_block__item{display:flex;max-width:100%;margin:-4px 5px}
+.locations_block__link{width:50%}
+.locations_block__description{width:50%;padding:5% 5px 0}
+.locations_block__item:nth-child(2n) .locations_block__link{order:1}
 }
 /*! formstone v0.8.35 [background.css] 2015-12-28 | MIT License | formstone.it */
 .fs-background{overflow:hidden;position:relative}

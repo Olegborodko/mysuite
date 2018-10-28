@@ -370,4 +370,19 @@ jQuery(window).bind("load", function() {
     });
   }
 
+  //=========================== initialize swiper location_slider__js
+  if ( jQuery(".location_slider__js").length ) {
+    var mySwiper = new Swiper('.location_slider__js', {
+      slidesPerView: 1,
+      centeredSlides: true,
+      paginationClickable: true,
+      loop: false,
+      allowSwipeToNext: true,
+      allowSwipeToPrev: true,
+      // pagination: '.location_slider__js__pagination',
+      nextButton: '.location_slider__button_next',
+      prevButton: '.location_slider__button_prev'
+    });
+  }
+
 });

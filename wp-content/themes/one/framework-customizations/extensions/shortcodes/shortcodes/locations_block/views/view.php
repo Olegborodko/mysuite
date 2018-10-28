@@ -13,7 +13,7 @@
   <?php
   $taxonomy = 'location_category';
   $args = array(
-    'hide_empty' => false
+    'hide_empty' => true
   );
   $terms = get_terms( $taxonomy, $args );
 
@@ -26,17 +26,38 @@
       if ($term->slug != "undefined") {
         $parents[$term->term_id] = $term->name;
       }else{
-        $parents[$term->term_id] = "";
+        $parents[$term->term_id] = "&nbsp;";
       }
     }
   }
 
+  $i = 0;
   foreach( $terms as $term ){
     if ($term -> parent != 0){
-      echo $term -> name. " ";
-      echo $parents[$term -> parent];
-      echo "<br>";
-      echo "<br>";
+      $i += 1;
+      if ($i > 6){
+        return;
+      }
+      ?>
+    <div class="locations_block__item">
+      <a href="<?=get_term_link($term->slug, 'location_category')?>" class="locations_block__link">
+        <img src="<?=get_field( "location_category_img", "location_category_".$term->term_id )?>"/>
+      </a>
+      <div class="locations_block__description">
+        <div class="locations_block__parent">
+          <?=$parents[$term -> parent]?>
+        </div>
+        <div class="locations_block__title">
+          <?=$term -> name?>
+        </div>
+        <div class="locations_block__arrow_black">
+        </div>
+        <div class="locations_block__count">
+          (<?=$term -> count?>)
+        </div>
+      </div>
+    </div>
+  <?php
     }
   }
   ?>
