@@ -355,11 +355,12 @@ header .site-logo{width:50%;margin:0 auto}
 .reviews_slider .reviews_slider__container{max-width:970px;width:100%;text-align:center;padding-top:90px;padding-bottom:60px}
 .reviews_slider .reviews_slider__text{max-width:630px;width:100%;margin:0 auto;color:#fff;font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px}
 .reviews_slider .reviews_slider__name{color:#fff;font-family:"Lyon Display",sans-serif;font-size:26px;font-weight:700;line-height:46px;margin-top:20px}
-.locations_block__parent,.reviews_slider .reviews_slider__location{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px;font-family:"Lyon Display",sans-serif}
-.reviews_slider .reviews_slider__location{opacity:.6;color:#fff;margin-top:5px}
+.locations_block__parent,.reviews_slider .reviews_slider__location{font-size:11px;font-weight:500;font-family:"Lyon Display",sans-serif}
+.reviews_slider .reviews_slider__location{opacity:.6;color:#fff;text-transform:uppercase;letter-spacing:1.3px;margin-top:5px}
 .reviews_slider .reviews_slider__pagination{position:relative;margin-top:12px}
 .reviews_slider .reviews_slider__pagination .swiper-pagination-bullet{border-radius:initial;width:12px;height:2px;background-color:#fff;opacity:.4}
 .reviews_slider .reviews_slider__pagination .swiper-pagination-bullet-active{width:22px;height:2px;background-color:#fff;opacity:1}
+.location_slider__address_1,.locations_block__parent{opacity:.45;text-transform:uppercase;letter-spacing:1.3px}
 .reviews_slider .reviews_slider__button_next{background:url(../img/b_arrow_right.png) center no-repeat;width:54px;top:50%}
 .reviews_slider .reviews_slider__button_prev{background:url(../img/b_arrow_left.png) center no-repeat;width:54px;top:50%}
 @media screen and (max-width:1199px){.reviews_slider .reviews_slider__container{padding-top:126px;padding-bottom:124px}
@@ -378,7 +379,7 @@ header .site-logo{width:50%;margin:0 auto}
 .locations_block__arrow_black{background:url(../img/arrow_black.png) center no-repeat;height:10px;margin-top:4px;margin-bottom:4px}
 .locations_block__item{display:inline-block;max-width:350px;width:100%;margin:30px 15px}
 .locations_block{display:flex;text-align:center;flex-wrap:wrap;justify-content:center}
-.locations_block__parent{opacity:.45;color:#141414;margin-top:28px}
+.locations_block__parent{color:#141414;margin-top:28px}
 .locations_block__title{color:#141414;font-family:"Lyon Display",sans-serif;font-size:20px;font-weight:700;margin-top:4px}
 .locations_block__count{color:#141414;font-family:Avenir,sans-serif;font-size:13px;font-weight:800;margin-top:6px}
 .locations_block__link{display:inline-block}
@@ -391,6 +392,77 @@ header .site-logo{width:50%;margin:0 auto}
 .locations_block__link{width:50%}
 .locations_block__description{width:50%;padding:5% 5px 0}
 .locations_block__item:nth-child(2n) .locations_block__link{order:1}
+}
+.location_slider__big_text,.location_slider__top_text{text-align:center}
+.location_slider{background-repeat:no-repeat!important;background-size:cover!important;background-position-y:-90px!important}
+.location_slider__center{max-width:820px;margin:0 auto;width:100%;text-align:center;padding-bottom:55px}
+.location_slider__arrow{background:url(../img/arrow_black.png) center no-repeat;height:10px;margin-top:8px;margin-bottom:26px}
+.location_slider__image_block{display:inline-block;text-decoration:none;background:#fff;margin-top:96px;position:relative;-webkit-box-shadow:1px 3px 90px -7px rgba(0,0,0,.62);-moz-box-shadow:1px 3px 90px -7px rgba(0,0,0,.62);box-shadow:1px 3px 90px -7px rgba(0,0,0,.62)}
+.location_slider__address_1,.location_slider__address_2{color:#141414;font-family:"Lyon Display",sans-serif;margin-top:10px}
+.location_slider__address_1{font-size:11px;font-weight:500}
+.location_slider__address_2{font-size:20px;font-weight:700}
+.location_slider__bottom_text_1,.location_slider__bottom_text_2{opacity:.8;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px}
+.location_slider__bottom_block{max-width:1100px;display:flex;margin:50px auto 0}
+.location_slider__bottom_text_1{margin-right:20px}
+.location_slider__bottom_text_2{margin-left:20px}
+.location_slider__triangle{height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:14px solid #fff;display:block;width:18px;position:absolute;left:49%}
+.location_slider .location_slider__button_next{background:url(../img/arrow_right_b.png) center no-repeat;width:54px;top:14%}
+.location_slider .location_slider__button_prev{background:url(../img/arrow_left_b.png) center no-repeat;width:54px;top:14%}
+@media screen and (max-width:1199px){.location_slider{background-position-y:initial}
+.location_slider .location_slider__button_next{margin-right:15px}
+.location_slider .location_slider__button_prev{margin-left:15px}
+.location_slider .location_slider__image_block{margin-top:70px}
+.location_slider .location_slider__bottom_block{display:block;text-align:center}
+.location_slider .location_slider__bottom_text_1{margin-left:20px;text-align:center;max-width:530px;width:100%;display:inline-block}
+.location_slider .location_slider__bottom_text_2{margin-right:20px;margin-top:40px;text-align:center;max-width:530px;width:100%;display:inline-block}
+}
+@media screen and (max-width:767px){.location_slider .location_slider__big_text{max-width:250px;margin:18px auto}
+.location_slider .location_slider__image_block{margin-top:40px}
+.location_slider .location_slider__bottom_block{margin-top:10px}
+.location_slider .location_slider__bottom_text_1,.location_slider .location_slider__bottom_text_2{max-width:320px;font-size:14px;font-weight:400;line-height:26px}
+.location_slider .location_slider__image_block{max-width:260px}
+.location_slider .location_slider__bottom_text_2{margin-top:33px}
+.location_slider .location_slider__button_next{background:url(../img/shape_right_b.png) center no-repeat;margin-right:0}
+.location_slider .location_slider__button_prev{background:url(../img/shape_left_b.png) center no-repeat;margin-left:0}
+.location_slider .location_slider__address_1{font-size:9px;font-weight:500}
+.location_slider .location_slider__address_2{font-size:16px;font-weight:700}
+}
+.my_suite_way__text_1{text-align:center;padding-top:27px;max-width:600px;margin-left:35px;margin-right:35px}
+.my_suite_way__images_block{text-align:center;margin-left:30px}
+.my_suite_way__image_div{display:inline-block;margin-right:30px}
+.my_suite_way__images_block .my_suite_way__image_div:nth-child(2){position:relative;top:30px}
+.my_suite_way__h2_block{display:flex}
+.my_suite_way__h2_after,.my_suite_way__h2_before{flex:1 1 auto;background:url(../img/line.png) center repeat-x;position:relative}
+.my_suite_way__h2_after_border,.my_suite_way__h2_before_border{width:1.4px;background:#bfb5d7;display:block;top:50%;height:50%;position:relative}
+.my_suite_way__block2{border-left:1px solid #bfb5d7;border-right:1px solid #bfb5d7;padding-top:50px;padding-bottom:80px}
+.my_suite_way__h2_before_border{left:0}
+.my_suite_way__h2_after_border{left:calc(100% - 1px)}
+@media screen and (max-width:1199px){.my_suite_way__h2_after,.my_suite_way__h2_before{background:0 0}
+.my_suite_way__h2_after_border,.my_suite_way__h2_before_border{display:none}
+.my_suite_way__block2{border:none;padding-bottom:70px}
+.my_suite_way__images_block{display:flex;width:100%;margin-left:0;justify-content:center}
+.my_suite_way__images_block .my_suite_way__image_div:nth-child(3){margin-right:0}
+.my_suite_way__image_div{flex:1 1 auto}
+.my_suite_way__text_1{padding-top:16px}
+}
+@media screen and (max-width:767px){.my_suite_way__image_div{margin-right:20px}
+.my_suite_way__images_block .my_suite_way__image_div:nth-child(2){top:0}
+}
+.my_suite_way__text_1_bottom{max-width:470px;width:100%;margin:0 110px;text-align:center}
+.my_suite_way__h2_block_bottom{display:flex}
+.my_suite_way__h2_after_bottom,.my_suite_way__h2_before_bottom{flex:1 1 auto;background:url(../img/line.png) center repeat-x;position:relative}
+.my_suite_way__h2_before_border_bottom{height:50%;width:1.4px;background:#bfb5d7;display:block;left:0;position:relative}
+.my_suite_way__h2_after_border_bottom{height:50%;width:1.4px;background:#bfb5d7;display:block;left:calc(100% - 1px);position:relative}
+@media screen and (max-width:1199px){.my_suite_way__h2_after_bottom,.my_suite_way__h2_before_bottom{background:0 0}
+.my_suite_way__h2_after_border_bottom,.my_suite_way__h2_before_border_bottom{display:none}
+}
+@media screen and (max-width:767px){.my_suite_way__text_1{padding-top:0}
+.my_suite_way__images_block{display:block}
+.my_suite_way__block2{padding-top:26px;padding-bottom:30px;margin-left:-15px;margin-right:-15px}
+.my_suite_way__image_div{margin:0;width:100%}
+.my_suite_way__image_hidden_mobile{display:none}
+.my_suite_way__image{width:100%}
+.my_suite_way__text_1_bottom{margin:0}
 }
 /*! formstone v0.8.35 [background.css] 2015-12-28 | MIT License | formstone.it */
 .fs-background{overflow:hidden;position:relative}

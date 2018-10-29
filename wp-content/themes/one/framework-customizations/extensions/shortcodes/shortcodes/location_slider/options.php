@@ -57,6 +57,39 @@ array(),
 'sortable' => true,
 ),
 
+'background_desktop' => array(
+'type'  => 'upload',
+'label' => __('desktop background', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
+'background_ipad' => array(
+'type'  => 'upload',
+'label' => __('ipad background', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
+'background_mobile' => array(
+'type'  => 'upload',
+'label' => __('mobile background', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
+'bottom_text_1' => array(
+'type'  => 'textarea',
+'value' => '',
+'label' => __('Bottom text 1', '{domain}'),
+),
+
+'bottom_text_2' => array(
+'type'  => 'textarea',
+'value' => '',
+'label' => __('Bottom text 2', '{domain}'),
+),
+
 'margin_top' => array(
 'type'  => 'text',
 'value' => '0',
