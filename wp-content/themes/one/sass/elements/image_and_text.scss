@@ -34,6 +34,7 @@
   margin-left:15px;
   order: 1;
   max-width: 480px;
+  width:100%;
 }
 
 .image_and_text__right{
@@ -100,12 +101,12 @@
   .image_and_text__text {
     font-size: 14px;
     line-height: 26px;
-    margin:43px 25px 0;
+    margin:43px 0 0;
+    padding: 0 20px;
   }
 
   .image_and_text__right{
     display: inline-block;
     margin:40px -15px 0 -15px;
   }
-
 }

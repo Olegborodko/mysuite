@@ -60,13 +60,13 @@ array(
     'label' => __('Telephone', '{domain}')
     ),
 
-    'footer_test_1' => array(
+    'footer_text_1' => array(
     'type'  => 'text',
-    'value' => 'For leasing and other inquiries, please complete <a href="">the contact form</a> or give us a call.',
+    'value' => 'For leasing and other inquiries, <br> please complete <a href="">the contact form</a> or give us a call.',
     'label' => __('Footer text 1', '{domain}')
     ),
 
-    'footer_test2' => array(
+    'footer_text_2' => array(
     'type'  => 'text',
     'value' => 'We look forward to hearing from you!',
     'label' => __('Footer text 2', '{domain}')

@@ -59,6 +59,7 @@
 
 .location_slider__bottom_block{
   max-width:1100px;
+  width:100%;
   display:flex;
   margin:50px auto 0;
 }
@@ -153,6 +154,7 @@
     .location_slider__big_text {
       max-width: 250px;
       margin: 18px auto;
+      width:100%;
     }
 
     .location_slider__image_block {
@@ -165,16 +167,22 @@
 
     .location_slider__bottom_text_1{
       max-width: 320px;
+      width:100%;
       font-size: 14px;
       font-weight: 400;
       line-height: 26px;
+      margin-left:0;
+      margin-right:0;
     }
 
     .location_slider__bottom_text_2{
       max-width: 320px;
+      width:100%;
       font-size: 14px;
       font-weight: 400;
       line-height: 26px;
+      margin-left:0;
+      margin-right:0;
     }
 
     .location_slider__image_block{

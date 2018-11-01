@@ -103,18 +103,6 @@ add_action( 'after_setup_theme', 'one_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function one_widgets_init() {
-  register_sidebar( array(
-  'name'          => esc_html__( 'Sidebar', 'one' ),
-  'id'            => 'sidebar-1',
-  'description'   => esc_html__( 'Add widgets here.', 'one' ),
-  'before_widget' => '<section id="%1$s" class="widget %2$s">',
-  'after_widget'  => '</section>',
-  'before_title'  => '<h2 class="widget-title">',
-  'after_title'   => '</h2>',
-  ) );
-}
-add_action( 'widgets_init', 'one_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -213,6 +201,30 @@ function kauffman_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'kauffman_widgets_init' );
+
+function widget_center() {
+  register_sidebar( array(
+  'name'          => 'Footer center',
+  'id'            => 'footer_center',
+  'before_widget' => '<div>',
+  'after_widget'  => '</div>',
+  'before_title'  => '<h2 class="widget-title">',
+  'after_title'   => '</h2>',
+  ) );
+}
+add_action( 'widgets_init', 'widget_center' );
+
+function widget_right() {
+  register_sidebar( array(
+  'name'          => 'Footer right',
+  'id'            => 'footer_right',
+  'before_widget' => '<div>',
+  'after_widget'  => '</div>',
+  'before_title'  => '<h2 class="widget-title">',
+  'after_title'   => '</h2>',
+  ) );
+}
+add_action( 'widgets_init', 'widget_right' );
 
 /* opacity */
 require_once( get_stylesheet_directory() . '/php/tinymce/opacity_tinymce.php' );

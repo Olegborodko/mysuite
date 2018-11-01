@@ -227,7 +227,7 @@ header .site-logo{width:50%;margin:0 auto}
 }
 @media screen and (max-width:767px){.home_top__small_text{margin-top:50px;font-size:11px;font-weight:500;line-height:17px;letter-spacing:1px}
 .home_top__title{font-size:32px;line-height:44px}
-.home_top__buttons .home_top__button1{display:block;max-width:320px;margin:0 auto}
+.home_top__buttons .home_top__button1{display:block;max-width:320px;width:100%;margin:0 auto}
 .home_top__or{display:none}
 .home_top__buttons .home_top__button2{display:block;max-width:320px;margin:20px auto 0}
 .home_top__buttons{margin-top:60px;margin-bottom:20px}
@@ -255,7 +255,7 @@ header .site-logo{width:50%;margin:0 auto}
 .image_and_text__text{opacity:.8;color:rgba(20,20,20,.7);font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px;margin-top:43px}
 .image_and_text__container{display:flex;margin:0 auto;max-height:480px}
 .image_and_text__left,.image_and_text__right{flex:0 0 50%}
-.image_and_text__left{padding:65px 70px 20px;border:1px solid #bfb5d7;margin-left:15px;order:1;max-width:480px}
+.image_and_text__left{padding:65px 70px 20px;border:1px solid #bfb5d7;margin-left:15px;order:1;max-width:480px;width:100%}
 .image_and_text__right{margin-right:15px;max-width:480px;width:100%}
 .image_and_text__after_right{flex:1 1 auto;background:url(../img/line.png) center repeat-x;order:1}
 .title_with_image__left,.title_with_image__right{background:url(../img/vawe.png) center repeat-x}
@@ -267,7 +267,7 @@ header .site-logo{width:50%;margin:0 auto}
 }
 @media screen and (max-width:767px){.image_and_text__container{text-align:center}
 .image_and_text__title{font-size:18px;font-weight:700;line-height:35px;text-align:center}
-.image_and_text__text{font-size:14px;line-height:26px;margin:43px 25px 0}
+.image_and_text__text{font-size:14px;line-height:26px;margin:43px 0 0;padding:0 20px}
 .image_and_text__right{display:inline-block;margin:40px -15px 0}
 }
 .slider_type1 .slider_type1__title,.slider_type2 .slider_type2__title{color:#141414;font-size:14px;font-weight:800;line-height:20px;font-family:Avenir,sans-serif}
@@ -401,8 +401,8 @@ header .site-logo{width:50%;margin:0 auto}
 .location_slider__address_1,.location_slider__address_2{color:#141414;font-family:"Lyon Display",sans-serif;margin-top:10px}
 .location_slider__address_1{font-size:11px;font-weight:500}
 .location_slider__address_2{font-size:20px;font-weight:700}
-.location_slider__bottom_text_1,.location_slider__bottom_text_2{opacity:.8;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px}
-.location_slider__bottom_block{max-width:1100px;display:flex;margin:50px auto 0}
+.location_slider__bottom_text_1,.location_slider__bottom_text_2{color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px;opacity:.8}
+.location_slider__bottom_block{max-width:1100px;width:100%;display:flex;margin:50px auto 0}
 .location_slider__bottom_text_1{margin-right:20px}
 .location_slider__bottom_text_2{margin-left:20px}
 .location_slider__triangle{height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:14px solid #fff;display:block;width:18px;position:absolute;left:49%}
@@ -416,10 +416,10 @@ header .site-logo{width:50%;margin:0 auto}
 .location_slider .location_slider__bottom_text_1{margin-left:20px;text-align:center;max-width:530px;width:100%;display:inline-block}
 .location_slider .location_slider__bottom_text_2{margin-right:20px;margin-top:40px;text-align:center;max-width:530px;width:100%;display:inline-block}
 }
-@media screen and (max-width:767px){.location_slider .location_slider__big_text{max-width:250px;margin:18px auto}
+@media screen and (max-width:767px){.location_slider .location_slider__big_text{max-width:250px;margin:18px auto;width:100%}
 .location_slider .location_slider__image_block{margin-top:40px}
 .location_slider .location_slider__bottom_block{margin-top:10px}
-.location_slider .location_slider__bottom_text_1,.location_slider .location_slider__bottom_text_2{max-width:320px;font-size:14px;font-weight:400;line-height:26px}
+.location_slider .location_slider__bottom_text_1,.location_slider .location_slider__bottom_text_2{max-width:320px;width:100%;font-size:14px;font-weight:400;line-height:26px;margin-left:0;margin-right:0}
 .location_slider .location_slider__image_block{max-width:260px}
 .location_slider .location_slider__bottom_text_2{margin-top:33px}
 .location_slider .location_slider__button_next{background:url(../img/shape_right_b.png) center no-repeat;margin-right:0}
@@ -463,6 +463,67 @@ header .site-logo{width:50%;margin:0 auto}
 .my_suite_way__image_hidden_mobile{display:none}
 .my_suite_way__image{width:100%}
 .my_suite_way__text_1_bottom{margin:0}
+}
+.footer{margin-top:40px}
+.footer ul{list-style:none}
+.footer .footer_part_1 a,.footer .footer_part_2 a,.footer .footer_part_3 a{text-decoration:none;margin-top:28px}
+.footer .footer_part_1 li,.footer .footer_part_2 li,.footer .footer_part_3 li{margin-bottom:20px}
+.footer_block{display:flex}
+.footer_part_1,.footer_part_2,.footer_part_3{flex:1 1 auto}
+.footer_part_4{flex:1 1 auto;max-width:330px;width:100%}
+.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px;text-transform:uppercase;letter-spacing:1.3px}
+.footer .menu a,.footer_test_1{font-weight:300}
+.footer .menu a,.footer_copyright_desktop,.footer_phone,.footer_test_1{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
+.footer .menu a{opacity:.8}
+.footer_copyright_desktop{opacity:.5;font-weight:300;position:absolute;bottom:20px}
+.footer_test_1 a{font-family:Avenir,sans-serif;font-weight:500;text-decoration:underline}
+.footer_phone{opacity:.8;font-weight:300;margin-top:40px}
+.footer_phone i{margin-right:14px}
+.footer_social i{font-size:18px}
+.footer_copyright_ipad,.footer_text_2{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
+.footer_social{margin-top:23px}
+.footer_social a{text-decoration:none}
+.footer_text_2{font-weight:500;margin-top:20px}
+.footer_facebook{margin-right:18px}
+.footer a{color:#000}
+.footer_copyright_ipad{display:none;opacity:.5;font-weight:300}
+.footer_mobile_logo{display:none}
+@media screen and (max-width:1199px){.footer_part_3,.footer_part_4{margin-top:30px}
+.footer_block{display:inline-flex;width:100%;flex-direction:row;flex-wrap:wrap;justify-content:space-between}
+.footer_part_1{width:55%}
+.footer_part_2{width:45%}
+.footer_part_3,.footer_part_4{width:100%}
+.footer_part_3 .menu li{width:55%}
+.footer_part_3 .menu li:nth-child(2n){width:45%}
+.footer_flex_part_4 div{width:55%}
+.footer_flex_part_4 div:nth-child(2n){width:45%}
+.footer_part_4{flex:1 1 auto;max-width:initial}
+.footer_part_3 .menu{display:flex;flex-wrap:wrap}
+.between_block,.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_2 .menu,.footer_part_2 .widget-title,.footer_part_3 .menu li,.footer_part_3 .menu li:nth-child(2n),.footer_part_3 .widget-title,.footer_part_4 .widget-title,.footer_test_1{padding-left:110px}
+.footer_flex_part_4{display:flex;flex-wrap:wrap}
+.footer_phone{margin-top:0}
+.footer_copyright_desktop{display:none}
+.footer_copyright_ipad{display:block;text-align:center}
+.footer_text_2{margin-top:50px;text-align:center}
+.footer{padding-bottom:40px}
+.between_block{position:relative;top:-22px}
+}
+@media screen and (max-width:990px){.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_3 .menu li,.footer_part_3 .widget-title,.footer_part_4 .widget-title,.footer_test_1{padding-left:96px}
+.between_block,.footer_part_2 .menu,.footer_part_2 .widget-title,.footer_part_3 .menu li:nth-child(2n){padding-left:75px}
+}
+@media screen and (max-width:767px){.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_3 .menu li,.footer_part_3 .widget-title,.footer_part_4 .widget-title,.footer_test_1{padding-left:20px}
+.between_block,.footer_part_2 .menu,.footer_part_2 .widget-title,.footer_part_3 .menu li:nth-child(2n){padding-left:0}
+.footer_part_1 .widget-title{max-width:160px;width:100%}
+.widget-title{line-height:26px}
+.footer_flex_part_4{display:block}
+.footer_flex_part_4 div{width:100%}
+.between_block{top:20px}
+.footer_phone,.footer_social{margin-left:20px}
+.footer_copyright_ipad,.footer_text_2{text-align:left;margin-left:20px}
+.footer_flex_part_4 .footer_mobile_logo{display:block;width:96px;float:right;margin-top:-5px;margin-right:30px}
+.footer_social i{font-size:22px}
+.footer_social{margin-top:40px}
+.footer_text_2{margin-top:64px}
 }
 /*! formstone v0.8.35 [background.css] 2015-12-28 | MIT License | formstone.it */
 .fs-background{overflow:hidden;position:relative}
