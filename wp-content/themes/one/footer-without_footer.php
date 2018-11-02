@@ -14,13 +14,6 @@
 </div><!-- #content -->
 </div><!-- #page -->
 
-<!-- #footer -->
-<?php
-$logo_black = true;
-require_once( get_stylesheet_directory() . '/php/part_code/footer.php' );
-?>
-<!-- #end footer -->
-
 <?php wp_footer(); ?>
 
 </body>

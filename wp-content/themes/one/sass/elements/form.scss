@@ -1,0 +1,238 @@
+.form_el{
+  padding-top:180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form_el__block{
+  max-width:850px;
+  width:100%;
+  margin:0 auto;
+  padding:83px 165px 86px;
+  background: $color_ffffff;
+}
+
+.form_el__top_text{
+  text-align:center;
+}
+
+.form_el__title{
+  text-align:center;
+}
+
+.form_el__under_title{
+  margin-top:37px;
+}
+
+.form_el__under_title{
+  text-align:center;
+  margin-bottom:68px;
+}
+
+.form_el__form_shortcode{
+  margin:0 auto;
+  max-width:520px;
+  width:100%;
+}
+
+.form_el__bottom_text{
+  max-width:520px;
+  margin:0 auto;
+  width:100%;
+  margin-top:20px;
+}
+
+.contact_form__block{
+  display:flex;
+}
+
+.contact_form__left{
+  margin-right:40px;
+}
+
+.form_el{
+  .wpcf7-text,
+  .wpcf7-date{
+    background: none;
+    max-width:240px;
+    border:0;
+    border-radius:0;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    border-bottom: 1px solid rgba(20, 20, 20, .3);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+}
+
+.contact_form__label{
+  opacity: 0.8;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 28px;
+  left:3.5px;
+  display:none;
+  position: absolute;
+  top: -28px;
+}
+
+.form_el
+input{
+  color: #141414;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.form_el {
+  .wpcf7-submit {
+    width: 100%;
+    color: $color_ffffff;
+    font-family: $font-lyon;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid $color_141414;
+    background-color: $color_141414;
+    margin-top: 61px;
+    padding: 13px;
+  }
+}
+
+.contact_form__email_block,
+.contact_form__block{
+  margin-top:61px;
+}
+
+.contact_form__left,
+.contact_form__right,
+.contact_form__email_block{
+  position: relative;
+}
+
+.form_el .contact_form__email input.wpcf7-email{
+  width:100%;
+  max-width: 100%;
+}
+
+.form_el__under_title a{
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.contact_form__date i {
+  float: right;
+  margin-top: -23px;
+  margin-right: 20px;
+  color: rgba(20, 20, 20, .3);
+}
+
+/* --- */
+
+.form_el__footer{
+  .footer {
+    margin-top: 156px;
+
+    .widget-title,
+    .menu li a,
+    .footer_test_1,
+    .footer_text_2,
+    .footer_phone,
+    .footer_social a,
+    .footer_test_1 a,
+    .footer_copyright_ipad,
+    .footer_copyright_desktop{
+      color: $color_ffffff;
+    }
+  }
+}
+
+/* --- */
+
+@media screen and (max-width: 1199px) {
+  .form_el{
+    background-repeat: no-repeat!important;
+    background-size: cover !important;
+  }
+
+  .form_el {
+    padding-top: 0;
+  }
+
+  .form_el__block{
+    background: none;
+    padding-bottom:0;
+  }
+
+  .form_el__footer .footer{
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form_el{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: bottom left !important;
+    background-position-y: 143px!important;
+  }
+
+  .form_el__block {
+    padding-top:0;
+    padding-bottom: 0;
+  }
+
+  .form_el__under_title,
+  .contact_form__block,
+  .contact_form__email,
+  .contact_form__button,
+  .form_el__bottom_text{
+    padding:0 20px;
+  }
+
+  .form_el__under_title{
+    margin: 35px auto 0;
+  }
+
+  .contact_form__block{
+    display:block;
+    margin-top:0;
+  }
+
+  .form_el .wpcf7-date,
+  .form_el .wpcf7-text{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contact_form__left{
+   margin:0;
+  }
+
+  .contact_form__email_block,
+  .contact_form__left,
+  .contact_form__right{
+    margin-top:50px;
+
+  }
+
+  .form_el__footer .footer{
+    margin-top: 73px;
+  }
+
+  .contact_form__label_email{
+    padding-left:20px!important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form_el{
+    background-size: contain !important;
+    background-position-y: bottom!important;
+  }
+}

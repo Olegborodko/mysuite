@@ -76,7 +76,6 @@ div.fw-container-fluid,div.fw-container-fluid .fw-row div:first-child{padding-le
 .alignleft{display:inline;float:left;margin-right:1.5em}
 .alignright{display:inline;float:right;margin-left:1.5em}
 .aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto}
-.hentry,.widget{margin:0 0 1.5em}
 .clear:after,.clear:before,.comment-content:after,.comment-content:before,.entry-content:after,.entry-content:before,.site-content:after,.site-content:before,.site-footer:after,.site-footer:before,.site-header:after,.site-header:before{content:"";display:table;table-layout:fixed}
 .clear:after,.comment-content:after,.entry-content:after,.site-content:after,.site-footer:after,.site-header:after{clear:both}
 .sticky{display:block}
@@ -122,10 +121,12 @@ body p{margin-top:18px;margin-bottom:18px}
 .ready_top_background{background:url(../img/top.jpg);min-height:783px;background-size:cover}
 }
 .af_small_top{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.54px}
-h1.af_h1,h2.af_h2,h3.af_h3{font-family:"Lyon Display",sans-serif;font-weight:700;color:#141414}
+h1.af_h1,h2.af_h2,h3.af_h3{color:#141414;font-family:"Lyon Display",sans-serif;font-weight:700}
 h1.af_h1,h3.af_h3{font-size:42px;line-height:62px}
 h2.af_h2{font-size:26px;line-height:46px}
-.af_type_1_avenir_light{opacity:.8;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:300;line-height:28px}
+.af_type_1_avenir_light,.af_type_small_avenir_light{opacity:.8;color:#141414;font-family:Avenir,sans-serif;font-weight:300}
+.af_type_1_avenir_light{font-size:16px;line-height:28px}
+.af_type_small_avenir_light{font-size:10px;line-height:16px}
 span.af_opacity_01{opacity:.1}
 span.af_opacity_02{opacity:.2}
 span.af_opacity_03{opacity:.3}
@@ -143,7 +144,7 @@ h1.af_h1,h3.af_h3{font-size:34px}
 .af_small_top{font-size:11px;letter-spacing:1.3px}
 h1.af_h1,h3.af_h3{font-size:26px;line-height:34px}
 h2.af_h2{font-size:18px}
-.af_type_1_avenir_light{font-size:14px;font-weight:400;line-height:26px}
+.af_type_small_avenir_light{font-size:14px;font-weight:400;line-height:26px}
 }
 header{position:fixed;width:100%;top:0;z-index:10000;padding-top:0;will-change:transform;transition:height .5s linear;-moz-transition:height .5s linear,opacity .3s linear;-webkit-transition:height .5s linear,opacity .3s linear;-o-transition:height .5s linear,opacity .3s linear;-ms-transition:height .5s linear,opacity .3s linear;overflow:initial;opacity:1;margin-top:20px;transition-property:margin-top;transition-duration:.3s}
 header .container{display:flex}
@@ -427,6 +428,7 @@ header .site-logo{width:50%;margin:0 auto}
 .location_slider .location_slider__address_1{font-size:9px;font-weight:500}
 .location_slider .location_slider__address_2{font-size:16px;font-weight:700}
 }
+.contact_form__label,.form_el input{color:#141414;font-family:Avenir,sans-serif;font-weight:300;line-height:28px}
 .my_suite_way__text_1{text-align:center;padding-top:27px;max-width:600px;margin-left:35px;margin-right:35px}
 .my_suite_way__images_block{text-align:center;margin-left:30px}
 .my_suite_way__image_div{display:inline-block;margin-right:30px}
@@ -464,14 +466,50 @@ header .site-logo{width:50%;margin:0 auto}
 .my_suite_way__image{width:100%}
 .my_suite_way__text_1_bottom{margin:0}
 }
-.footer{margin-top:40px}
+.form_el{padding-top:180px;background-repeat:no-repeat;background-size:cover}
+.form_el__block{max-width:850px;width:100%;margin:0 auto;padding:83px 165px 86px;background:#fff}
+.form_el__title,.form_el__top_text{text-align:center}
+.form_el__under_title{margin-top:37px;text-align:center;margin-bottom:68px}
+.form_el__form_shortcode{margin:0 auto;max-width:520px;width:100%}
+.form_el__bottom_text{max-width:520px;margin:20px auto 0;width:100%}
+.contact_form__block{display:flex}
+.contact_form__left{margin-right:40px}
+.form_el .wpcf7-date,.form_el .wpcf7-text{background:0 0;max-width:240px;border:0;border-radius:0;border-bottom:1px solid #141414;border-bottom:1px solid rgba(20,20,20,.3);-webkit-background-clip:padding-box;background-clip:padding-box}
+.contact_form__label{opacity:.8;font-size:12px;left:3.5px;display:none;position:absolute;top:-28px}
+.form_el input{font-size:16px}
+.form_el .wpcf7-submit,.widget-title{font-size:12px;text-transform:uppercase}
+.form_el .wpcf7-submit{width:100%;color:#fff;font-family:"Lyon Display",sans-serif;font-weight:700;letter-spacing:1px;border:1px solid #141414;background-color:#141414;margin-top:61px;padding:13px}
+.contact_form__block,.contact_form__email_block{margin-top:61px}
+.contact_form__email_block,.contact_form__left,.contact_form__right{position:relative}
+.form_el .contact_form__email input.wpcf7-email{width:100%;max-width:100%}
+.form_el__under_title a{color:#141414;font-family:Avenir,sans-serif;font-weight:500;text-decoration:underline}
+.contact_form__date i{float:right;margin-top:-23px;margin-right:20px;color:rgba(20,20,20,.3)}
+.form_el__footer .footer{margin-top:156px}
+.form_el__footer .footer .footer_copyright_desktop,.form_el__footer .footer .footer_copyright_ipad,.form_el__footer .footer .footer_phone,.form_el__footer .footer .footer_social a,.form_el__footer .footer .footer_test_1,.form_el__footer .footer .footer_test_1 a,.form_el__footer .footer .footer_text_2,.form_el__footer .footer .menu li a,.form_el__footer .footer .widget-title{color:#fff}
+@media screen and (max-width:1199px){.form_el{background-repeat:no-repeat!important;background-size:cover!important;padding-top:0}
+.form_el__block{background:0 0;padding-bottom:0}
+}
+@media screen and (max-width:767px){.form_el{background-repeat:no-repeat!important;background-size:cover!important;background-position:bottom left!important;background-position-y:143px!important}
+.form_el__block{padding-top:0;padding-bottom:0}
+.contact_form__block,.contact_form__button,.contact_form__email,.form_el__bottom_text,.form_el__under_title{padding:0 20px}
+.form_el__under_title{margin:35px auto 0}
+.contact_form__block{display:block;margin-top:0}
+.form_el .wpcf7-date,.form_el .wpcf7-text{max-width:100%;width:100%}
+.contact_form__left{margin:0}
+.contact_form__email_block,.contact_form__left,.contact_form__right{margin-top:50px}
+.form_el__footer .footer{margin-top:73px}
+.contact_form__label_email{padding-left:20px!important}
+}
+@media screen and (max-width:600px){.form_el{background-size:contain!important;background-position-y:bottom!important}
+}
+.footer{margin-top:40px;padding-bottom:20px}
 .footer ul{list-style:none}
 .footer .footer_part_1 a,.footer .footer_part_2 a,.footer .footer_part_3 a{text-decoration:none;margin-top:28px}
 .footer .footer_part_1 li,.footer .footer_part_2 li,.footer .footer_part_3 li{margin-bottom:20px}
 .footer_block{display:flex}
 .footer_part_1,.footer_part_2,.footer_part_3{flex:1 1 auto}
 .footer_part_4{flex:1 1 auto;max-width:330px;width:100%}
-.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px;text-transform:uppercase;letter-spacing:1.3px}
+.widget-title{font-family:"Lyon Display",sans-serif;font-weight:700;line-height:36px;letter-spacing:1.3px}
 .footer .menu a,.footer_test_1{font-weight:300}
 .footer .menu a,.footer_copyright_desktop,.footer_phone,.footer_test_1{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
 .footer .menu a{opacity:.8}
@@ -499,7 +537,9 @@ header .site-logo{width:50%;margin:0 auto}
 .footer_flex_part_4 div:nth-child(2n){width:45%}
 .footer_part_4{flex:1 1 auto;max-width:initial}
 .footer_part_3 .menu{display:flex;flex-wrap:wrap}
-.between_block,.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_2 .menu,.footer_part_2 .widget-title,.footer_part_3 .menu li,.footer_part_3 .menu li:nth-child(2n),.footer_part_3 .widget-title,.footer_part_4 .widget-title,.footer_test_1{padding-left:110px}
+.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_3 .menu li,.footer_part_3 .widget-title,.footer_part_4 .widget-title{padding-left:110px}
+.footer_test_1{padding-left:110px!important}
+.between_block,.footer_part_2 .menu,.footer_part_2 .widget-title,.footer_part_3 .menu li:nth-child(2n){padding-left:110px}
 .footer_flex_part_4{display:flex;flex-wrap:wrap}
 .footer_phone{margin-top:0}
 .footer_copyright_desktop{display:none}
@@ -508,15 +548,17 @@ header .site-logo{width:50%;margin:0 auto}
 .footer{padding-bottom:40px}
 .between_block{position:relative;top:-22px}
 }
-@media screen and (max-width:990px){.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_3 .menu li,.footer_part_3 .widget-title,.footer_part_4 .widget-title,.footer_test_1{padding-left:96px}
+@media screen and (max-width:990px){.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_3 .menu li,.footer_part_3 .widget-title,.footer_part_4 .widget-title{padding-left:96px}
+.footer_test_1{padding-left:96px!important}
 .between_block,.footer_part_2 .menu,.footer_part_2 .widget-title,.footer_part_3 .menu li:nth-child(2n){padding-left:75px}
 }
-@media screen and (max-width:767px){.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_3 .menu li,.footer_part_3 .widget-title,.footer_part_4 .widget-title,.footer_test_1{padding-left:20px}
+@media screen and (max-width:767px){.footer_flex_part_4 div,.footer_part_1 .widget-title{width:100%}
+.footer{padding-bottom:30px}
+.footer_part_1 .menu,.footer_part_1 .widget-title,.footer_part_3 .menu li,.footer_part_3 .widget-title,.footer_part_4 .widget-title{padding-left:20px}
+.footer_test_1{padding-left:20px!important}
 .between_block,.footer_part_2 .menu,.footer_part_2 .widget-title,.footer_part_3 .menu li:nth-child(2n){padding-left:0}
-.footer_part_1 .widget-title{max-width:160px;width:100%}
 .widget-title{line-height:26px}
 .footer_flex_part_4{display:block}
-.footer_flex_part_4 div{width:100%}
 .between_block{top:20px}
 .footer_phone,.footer_social{margin-left:20px}
 .footer_copyright_ipad,.footer_text_2{text-align:left;margin-left:20px}
@@ -524,6 +566,9 @@ header .site-logo{width:50%;margin:0 auto}
 .footer_social i{font-size:22px}
 .footer_social{margin-top:40px}
 .footer_text_2{margin-top:64px}
+.footer .footer_part_3,.footer .footer_part_4{margin-top:20px}
+}
+@media screen and (max-width:420px){.footer_part_1 .widget-title,.footer_part_2 .widget-title{max-width:140px}
 }
 /*! formstone v0.8.35 [background.css] 2015-12-28 | MIT License | formstone.it */
 .fs-background{overflow:hidden;position:relative}

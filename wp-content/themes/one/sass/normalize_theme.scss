@@ -744,10 +744,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */
-}
 
 .widget select {
   max-width: 100%;
@@ -761,10 +757,6 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .sticky {
   display: block;
-}
-
-.hentry {
-  margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {

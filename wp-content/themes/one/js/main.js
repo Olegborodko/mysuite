@@ -385,4 +385,30 @@ jQuery(window).bind("load", function() {
     });
   }
 
+  //============================  form
+  function label_show(element, label){
+    jQuery(element + " input").on('input',function(e){
+      if (jQuery(this).val().length > 0) {
+        jQuery(label).css("display", "block");
+      }else{
+        jQuery(label).css("display", "none");
+      }
+    });
+  }
+
+  if ( jQuery(".form_el").length ) {
+    label_show('.contact_form__name', '.contact_form__label_name');
+    label_show('.contact_form__surname', '.contact_form__label_surname');
+    label_show('.contact_form__email', '.contact_form__label_email');
+    label_show('.contact_form__phone', '.contact_form__label_phone');
+  }
+
+  jQuery(".form_el .contact_form__date").change(function() {
+      if ( jQuery(".contact_form__date input").val().length > 0 ) {
+        jQuery(".contact_form__label_date").css("display", "block");
+      }else{
+        jQuery(".contact_form__label_date").css("display", "none");
+      }
+  });
+
 });

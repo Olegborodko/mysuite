@@ -1,5 +1,6 @@
 .footer{
   margin-top:40px;
+  padding-bottom: 20px;
 }
 
 .footer ul{
@@ -190,10 +191,13 @@
   .footer_part_1 .widget-title,
   .footer_part_3 .widget-title,
   .footer_part_4 .widget-title,
-  .footer_test_1,
   .footer_part_3 .widget-title,
   .footer_part_3 .menu li{
     padding-left: 110px;
+  }
+
+  .footer_test_1{
+    padding-left: 110px!important;
   }
 
   .footer_part_2 .widget-title,
@@ -245,10 +249,13 @@
   .footer_part_1 .widget-title,
   .footer_part_3 .widget-title,
   .footer_part_4 .widget-title,
-  .footer_test_1,
   .footer_part_3 .widget-title,
   .footer_part_3 .menu li{
     padding-left: 96px;
+  }
+
+  .footer_test_1{
+    padding-left: 96px!important;
   }
 
   .footer_part_2 .widget-title,
@@ -260,14 +267,21 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer{
+    padding-bottom: 30px;
+  }
+
   .footer_part_1 .menu,
   .footer_part_1 .widget-title,
   .footer_part_3 .widget-title,
   .footer_part_4 .widget-title,
-  .footer_test_1,
   .footer_part_3 .widget-title,
   .footer_part_3 .menu li{
     padding-left: 20px;
+  }
+
+  .footer_test_1 {
+    padding-left: 20px!important;
   }
 
   .footer_part_2 .widget-title,
@@ -278,7 +292,6 @@
   }
 
   .footer_part_1 .widget-title{
-    max-width: 160px;
     width: 100%;
   }
 
@@ -331,4 +344,17 @@
     margin-top: 64px;
   }
 
+  .footer {
+    .footer_part_3,
+    .footer_part_4 {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer_part_1 .widget-title,
+  .footer_part_2 .widget-title{
+    max-width: 140px;
+  }
 }

@@ -28,26 +28,29 @@ if ( !empty( $atts['mobile_background'] ) && !empty($atts['mobile_background']['
      background: url(<?= $desktop_background ?>);">
 
   <div class="form_el__block">
-    <div class="form_el__top_text">
+    <div class="form_el__top_text af_small_top">
       <?= $atts['top_text'] ?>
     </div>
-    <div class="form_el__title">
+    <h3 class="form_el__title af_h3">
       <?= $atts['title'] ?>
-    </div>
-    <div class="form_el__under_title">
+    </h3>
+    <div class="form_el__under_title af_type_1_avenir_light">
       <?= $atts['under_title'] ?>
     </div>
     <div class="form_el__form_shortcode">
       <?= do_shortcode($atts['form_shortcode']); ?>
     </div>
-    <div class="form_el__bottom_text">
+    <div class="form_el__bottom_text af_type_small_avenir_light">
       <?= $atts['bottom_text'] ?>
     </div>
   </div>
 
   <?php
     if (esc_attr($atts['show_footer']) == "yes"){
-      echo 'footer';
+      echo "<div class='form_el__footer'>";
+      $logo_black = false;
+      require_once( get_stylesheet_directory() . '/php/part_code/footer.php' );
+      echo "</div>";
     }
   ?>
 

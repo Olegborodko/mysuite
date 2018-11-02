@@ -34,6 +34,15 @@ h2.af_h2{
   line-height: 28px;
 }
 
+.af_type_small_avenir_light{
+  opacity: 0.8;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
 span.af_opacity_01{
   opacity: 0.1;
 }
@@ -96,7 +105,7 @@ span.af_opacity_09{
     font-size: 18px;
   }
 
-  .af_type_1_avenir_light {
+  .af_type_small_avenir_light {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
