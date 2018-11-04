@@ -361,7 +361,7 @@ header .site-logo{width:50%;margin:0 auto}
 .reviews_slider .reviews_slider__pagination{position:relative;margin-top:12px}
 .reviews_slider .reviews_slider__pagination .swiper-pagination-bullet{border-radius:initial;width:12px;height:2px;background-color:#fff;opacity:.4}
 .reviews_slider .reviews_slider__pagination .swiper-pagination-bullet-active{width:22px;height:2px;background-color:#fff;opacity:1}
-.location_slider__address_1,.locations_block__parent{opacity:.45;text-transform:uppercase;letter-spacing:1.3px}
+.location_slider__address_1,.locations_block__parent{opacity:.45;letter-spacing:1.3px;text-transform:uppercase}
 .reviews_slider .reviews_slider__button_next{background:url(../img/b_arrow_right.png) center no-repeat;width:54px;top:50%}
 .reviews_slider .reviews_slider__button_prev{background:url(../img/b_arrow_left.png) center no-repeat;width:54px;top:50%}
 @media screen and (max-width:1199px){.reviews_slider .reviews_slider__container{padding-top:126px;padding-bottom:124px}
@@ -476,13 +476,14 @@ header .site-logo{width:50%;margin:0 auto}
 .contact_form__left{margin-right:40px}
 .form_el .wpcf7-date,.form_el .wpcf7-text{background:0 0;max-width:240px;border:0;border-radius:0;border-bottom:1px solid #141414;border-bottom:1px solid rgba(20,20,20,.3);-webkit-background-clip:padding-box;background-clip:padding-box}
 .contact_form__label{opacity:.8;font-size:12px;left:3.5px;display:none;position:absolute;top:-28px}
+.team:before,.team__text{width:100%;left:0}
+.contact_form__email_block,.contact_form__left,.contact_form__right,.team,.team__item{position:relative}
 .form_el input{font-size:16px}
-.form_el .wpcf7-submit,.widget-title{font-size:12px;text-transform:uppercase}
-.form_el .wpcf7-submit{width:100%;color:#fff;font-family:"Lyon Display",sans-serif;font-weight:700;letter-spacing:1px;border:1px solid #141414;background-color:#141414;margin-top:61px;padding:13px}
+.form_el .wpcf7-submit{width:100%;color:#fff;font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;border:1px solid #141414;background-color:#141414;margin-top:61px;padding:13px}
 .contact_form__block,.contact_form__email_block{margin-top:61px}
-.contact_form__email_block,.contact_form__left,.contact_form__right{position:relative}
 .form_el .contact_form__email input.wpcf7-email{width:100%;max-width:100%}
 .form_el__under_title a{color:#141414;font-family:Avenir,sans-serif;font-weight:500;text-decoration:underline}
+.page_top__small_text,.page_top__title,.team__position{font-family:"Lyon Display",sans-serif}
 .contact_form__date i{float:right;margin-top:-23px;margin-right:20px;color:rgba(20,20,20,.3)}
 .form_el__footer .footer{margin-top:156px}
 .form_el__footer .footer .footer_copyright_desktop,.form_el__footer .footer .footer_copyright_ipad,.form_el__footer .footer .footer_phone,.form_el__footer .footer .footer_social a,.form_el__footer .footer .footer_test_1,.form_el__footer .footer .footer_test_1 a,.form_el__footer .footer .footer_text_2,.form_el__footer .footer .menu li a,.form_el__footer .footer .widget-title{color:#fff}
@@ -502,6 +503,30 @@ header .site-logo{width:50%;margin:0 auto}
 }
 @media screen and (max-width:600px){.form_el{background-size:contain!important;background-position-y:bottom!important}
 }
+.page_top{min-height:566px;padding-top:204px;background-size:cover!important}
+.page_top__small_text{text-align:center;opacity:.7;color:#fff;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.18px}
+.team__position,.widget-title{text-transform:uppercase;letter-spacing:1.3px}
+.page_top__title{text-align:center;margin-top:10px;color:#fff;font-size:46px;font-weight:700;line-height:66px}
+.team{display:flex;padding:38px 60px 68px;background:#fff;flex-wrap:wrap;justify-content:space-around}
+.team__item{display:block;max-width:318px;width:100%;cursor:pointer;margin-top:30px}
+.team__position{opacity:.45;color:#141414;font-size:11px;font-weight:500}
+.team__name,.team__text{font-family:Avenir,sans-serif;font-weight:400;line-height:28px}
+.team__under_image{padding:30px 36px}
+.team__name{opacity:.9;color:#141414;font-size:20px;margin-top:4px}
+.footer .menu a,.team__text span{opacity:.8}
+.team__text{margin-top:22px;color:rgba(20,20,20,.7);font-size:16px;display:none;position:absolute;z-index:10;background:#fff;padding:0 30px 36px}
+.team__item:hover .team__text{display:block;-webkit-box-shadow:0 4px 10px -4px rgba(0,0,0,.75);-moz-box-shadow:0 4px 10px -4px rgba(0,0,0,.75);box-shadow:0 4px 10px -4px rgba(0,0,0,.75)}
+.team__item:hover{-webkit-box-shadow:0 0 10px -4px rgba(0,0,0,.75);-moz-box-shadow:0 0 10px -4px rgba(0,0,0,.75);box-shadow:0 0 10px -4px rgba(0,0,0,.75)}
+.team:after,.team:before{content:'';height:50%;top:0;box-shadow:-15px 0 12px -20px inset;position:absolute}
+.team:after{width:10px;left:-10px}
+.team a{text-decoration:none}
+@media screen and (max-width:1199px){.team__item{max-width:31.5%}
+.team__under_image{padding:30px 10px}
+}
+@media screen and (max-width:767px){.team{padding:4px}
+.team__item{max-width:47.5%}
+.team__under_image{padding:30px 0}
+}
 .footer{margin-top:40px;padding-bottom:20px}
 .footer ul{list-style:none}
 .footer .footer_part_1 a,.footer .footer_part_2 a,.footer .footer_part_3 a{text-decoration:none;margin-top:28px}
@@ -509,10 +534,9 @@ header .site-logo{width:50%;margin:0 auto}
 .footer_block{display:flex}
 .footer_part_1,.footer_part_2,.footer_part_3{flex:1 1 auto}
 .footer_part_4{flex:1 1 auto;max-width:330px;width:100%}
-.widget-title{font-family:"Lyon Display",sans-serif;font-weight:700;line-height:36px;letter-spacing:1.3px}
+.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px}
 .footer .menu a,.footer_test_1{font-weight:300}
 .footer .menu a,.footer_copyright_desktop,.footer_phone,.footer_test_1{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
-.footer .menu a{opacity:.8}
 .footer_copyright_desktop{opacity:.5;font-weight:300;position:absolute;bottom:20px}
 .footer_test_1 a{font-family:Avenir,sans-serif;font-weight:500;text-decoration:underline}
 .footer_phone{opacity:.8;font-weight:300;margin-top:40px}

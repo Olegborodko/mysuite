@@ -237,3 +237,6 @@ require_once( get_stylesheet_directory() . '/php/tinymce/opacity_tinymce.php' );
 
 /* locations taxonomy and post type */
 require_once( get_stylesheet_directory() . '/php/locations/locations.php' );
+
+/* question taxonomy and post type */
+require_once( get_stylesheet_directory() . '/php/question/question.php' );

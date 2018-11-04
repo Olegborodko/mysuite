@@ -1,0 +1,123 @@
+.team{
+  display:flex;
+  padding:38px 60px 68px;
+  background:$color_ffffff;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position:relative;
+}
+
+.team__item{
+  display:block;
+  max-width:318px;
+  width:100%;
+  position: relative;
+  cursor:pointer;
+  margin-top:30px;
+}
+
+.team__position{
+  opacity: 0.45;
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* Text style for "Human Reso" */
+  letter-spacing: 1.3px;
+}
+
+.team__under_image{
+  padding:30px 36px;
+}
+
+.team__name{
+  opacity: 0.9;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top:4px;
+}
+
+.team__text{
+  margin-top:22px;
+  color: rgba(20, 20, 20, 0.7);
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  display:none;
+  position: absolute;
+  z-index: 10;
+  background: $color_ffffff;
+  left: 0;
+  width: 100%;
+  padding: 0 30px 36px;
+}
+
+.team__text span {
+  opacity: 0.8;
+}
+
+.team__item:hover .team__text{
+  display:block;
+  -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.75);
+}
+
+.team__item:hover {
+  -webkit-box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
+}
+
+.team:before{
+  content:'';
+  height:50%;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  box-shadow: -15px 0 12px -20px inset;
+}
+
+.team:after{
+  content:'';
+  height:50%;
+  width:10px;
+  position:absolute;
+  left:-10px;
+  top:0;
+  box-shadow: -15px 0 12px -20px inset;
+}
+
+.team a{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .team__item{
+    max-width: 31.5%;
+  }
+
+  .team__under_image{
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team {
+    padding: 4px;
+  }
+
+  .team__item{
+    max-width: 47.5%;
+  }
+
+  .team__under_image{
+    padding: 30px 0;
+  }
+}

@@ -1,0 +1,27 @@
+.page_top{
+  min-height:566px;
+  padding-top:204px;
+  background-size: cover!important;
+}
+
+.page_top__small_text{
+  text-align:center;
+  opacity: 0.7;
+  color: $color_ffffff;
+  font-family: $font-lyon;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.18px;
+}
+
+.page_top__title{
+  text-align:center;
+  margin-top:10px;
+  color: $color_ffffff;
+  font-family: $font-lyon;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
