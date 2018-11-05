@@ -411,4 +411,45 @@ jQuery(window).bind("load", function() {
       }
   });
 
+  //============================================
+  if ( jQuery(".js_questions__item_title").length ) {
+
+    jQuery(".js_questions__item_title").click(function () {
+      this_ = jQuery(this);
+      el_ = this_.next(".js_questions__item_content");
+      console.log(el_);
+      if (el_.css("display") === "none") {
+        el_.show("slow");
+        this_.find(".js_questions__plus").toggleClass('questions__minus questions__plus');
+      } else {
+        el_.hide("slow");
+        this_.find(".js_questions__plus").toggleClass('questions__plus questions__minus');
+      }
+    });
+
+    //only first element
+    //jQuery("li.js_nomination_text").slice(0, 1).show("slow");
+  }
+
+  //======================================== question scroll
+
+    jQuery('.js_questions__category_title a').click(function (e) {
+
+      var this_ = jQuery(this);
+
+      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        var target = jQuery(this.hash);
+        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          jQuery('html, body').animate({
+            scrollTop: target.offset().top - 67
+          }, 500, function () {
+            window.history.pushState("", "", this_.attr("href"));
+          });
+          return false;
+        }
+      }
+    });
+
+
 });

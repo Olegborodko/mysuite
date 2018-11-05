@@ -1,0 +1,116 @@
+.questions{
+  background: $color_ffffff;
+  padding:80px 80px 0;
+  display:flex;
+  position:relative;
+}
+
+.questions:before{
+  content: '';
+  height: 50%;
+  top: 0;
+  box-shadow: -15px 0 12px -20px inset;
+  position: absolute;
+  width: 10px;
+  right: 0;
+}
+
+.questions:after{
+  content: '';
+  height: 50%;
+  top: 0;
+  box-shadow: -15px 0 12px -20px inset;
+  position: absolute;
+  width: 10px;
+  left: -10px;
+}
+
+.questions__categories{
+  max-width:240px;
+  width:100%;
+  padding-right:30px;
+}
+
+.questions__block{
+  position: relative;
+  top: -10px;
+  flex: 1 1 auto;
+}
+
+.questions__category_title{
+  color: $color_rgba_20_20_20__45;
+  font-family: $font-lyon;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-bottom:30px;
+  cursor:pointer;
+}
+
+
+.questions__category_title.questions__current{
+  color: $color_141414;
+}
+
+.questions__center_category_title{
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.questions__item{
+  border-bottom: 1px solid rgba(168, 159, 189, 0.4);
+  margin-left:20px;
+  padding:25px 20px 15px 0;
+}
+
+.questions__item_title{
+  opacity: 0.9;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  cursor:pointer;
+}
+
+.questions__item_content{
+  opacity: 0.8;
+  color: $color_rgba_20_20_20__70;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top:10px;
+  margin-left:20px;
+  display:none;
+}
+
+.questions__block_item{
+  margin-bottom:60px;
+}
+
+.questions__plus,
+.questions__minus{
+  float:right;
+  position:relative;
+  color:#a89fbd;
+}
+
+.questions__plus:before,
+.questions__plus:after,
+.questions__minus:after{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 2px;
+  background-color: rgba(168,159,189,.4);
+}
+
+.questions__plus:after,
+.questions__minus:after{
+  transform: rotate(90deg);
+}
