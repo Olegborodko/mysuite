@@ -20,6 +20,7 @@ gulp.task('js', function () {
       'js/skip-link-focus-fix.js',
       //'js/swiper.jquery.min.js',
       'js/swiper.min.js',
+      //'js/bootstrap-slider.min.js',
       'js/main.js'
     ]).pipe(uglify())
 	     .pipe(concat('app.js'))

@@ -396,19 +396,27 @@ jQuery(window).bind("load", function() {
     });
   }
 
-  if ( jQuery(".form_el").length ) {
+  if ( jQuery(".js_form_el").length ) {
     label_show('.contact_form__name', '.contact_form__label_name');
     label_show('.contact_form__surname', '.contact_form__label_surname');
     label_show('.contact_form__email', '.contact_form__label_email');
     label_show('.contact_form__phone', '.contact_form__label_phone');
   }
 
-  jQuery(".form_el .contact_form__date").change(function() {
+  jQuery(".js_form_el .contact_form__date").change(function() {
       if ( jQuery(".contact_form__date input").val().length > 0 ) {
         jQuery(".contact_form__label_date").css("display", "block");
       }else{
         jQuery(".contact_form__label_date").css("display", "none");
       }
+  });
+
+  jQuery(".js_form_el textarea").on('input',function(e){
+    if (jQuery(this).val().length > 0) {
+      jQuery(".contact_form__label_textarea").css("display", "block");
+    }else{
+      jQuery(".contact_form__label_textarea").css("display", "none");
+    }
   });
 
   //============================================
@@ -450,6 +458,10 @@ jQuery(window).bind("load", function() {
         }
       }
     });
+
+  //========================================== slider
+
+
 
 
 });

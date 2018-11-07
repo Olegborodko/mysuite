@@ -1,0 +1,297 @@
+.filter {
+  background: #ffffff;
+  padding: 60px 80px;
+  position: relative;
+
+  .filter__title {
+    color: #141414;
+    font-family: "Lyon Display - Bold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 16px;
+  }
+
+  .filter_ico {
+    position: relative;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .filter:before {
+    content: '';
+    height: 50%;
+    position: absolute;
+    top: 0;
+    box-shadow: -15px 0 12px -20px inset;
+    right: 0;
+    width: 10px;
+  }
+
+  .filter:after {
+    content: '';
+    height: 50%;
+    position: absolute;
+    top: 0;
+    box-shadow: -15px 0 12px -20px inset;
+    width: 10px;
+    left: -10px;
+  }
+
+  .filter__block {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 10px rgba(100, 94, 112, 0.15);
+    background-color: #ffffff;
+    padding: 45px;
+  }
+
+  .filter__block ul {
+    list-style-type: none;
+  }
+
+  .filter__block ul li {
+    margin-bottom: 24px;
+  }
+
+  .filter__block_left {
+    flex: 1 1 auto;
+  }
+
+  .filter__block_center {
+    flex: 1 1 auto;
+  }
+
+  .filter__block_right {
+    flex: 1 1 auto;
+  }
+
+  .filter__buttons {
+    width: 100%;
+  }
+
+  .filter__buttons {
+    text-align: right;
+  }
+
+  .filter__button_clear {
+    display: inline-block;
+    color: #a89fbd;
+    font-family: Lora;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.41px;
+    cursor: pointer;
+  }
+
+  .filter__button_filter {
+    display: inline-block;
+    border: 1px solid #141414;
+    color: #141414;
+    font-family: Lora;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.41px;
+    padding: 25px 43px;
+    margin-left: 34px;
+    cursor: pointer;
+  }
+
+  .filter__block_title {
+    opacity: 0.45;
+    color: #141414;
+    font-family: "Lyon Display - Medium";
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(20, 20, 20, 0.4);
+  }
+
+  .filter__the_feature_select {
+    display: flex;
+    position: relative;
+  }
+
+  .filter__the_feature_select .filter__the_feature_item {
+    border-radius: 2px;
+    background-color: #F1F0F4;
+    color: #a89fbd;
+    font-family: "Avenir Black";
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 9px 33px 10px 15px;
+    position: relative;
+    margin-right: 15px;
+  }
+
+  .filter__the_feature {
+    margin-top: 40px;
+  }
+
+  .filter__the_feature input {
+    width: 100%;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+  }
+
+  .filter__input_block {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+  }
+
+  .filter__input_block i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000000;
+    opacity: 0.3;
+  }
+
+  .filter__locations input,
+  .filter__type_of_living input {
+    width: 20px;
+    height: 21px;
+    border-radius: 1px;
+    background-color: #a89fbd;
+    opacity: 0.15;
+  }
+
+  .filter__the_feature_select
+  .filter__the_feature_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .filter__the_feature_select
+  .filter__the_feature_close:before {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 2px;
+    background-color: rgba(168, 159, 189, .4);
+    top: 11px;
+    right: 15px;
+    transform: rotate(-45deg);
+  }
+
+  .filter__the_feature_select
+  .filter__the_feature_close:after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 2px;
+    right: 15px;
+    top: 11px;
+    background-color: rgba(168, 159, 189, .4);
+    transform: rotate(45deg);
+  }
+
+  /* --- */
+
+  .filter__special_offers_text {
+    color: #141414;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+  }
+
+  .filter__special_offers_tumbler {
+    display: inline-block;
+    float: right;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  /* The slider */
+  .slider-checkbox {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider-checkbox:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input.primary:checked + .slider-checkbox {
+    background-color: #2196F3;
+  }
+
+  input:checked + .slider-checkbox:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider-checkbox.round {
+    border-radius: 34px;
+  }
+
+  .slider-checkbox.round:before {
+    border-radius: 50%;
+  }
+
+  input[type=checkbox].css-checkbox + label.css-label.css-parent{
+    padding-left:32px;
+  }
+
+  //.filter__locations
+  //input:checked {
+  //  opacity: 1
+  //}
+
+  .slider.slider-horizontal .tooltip{
+    transform: none;
+  }
+}

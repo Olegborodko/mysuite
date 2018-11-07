@@ -18,7 +18,7 @@ if ( !empty( $atts['mobile_background'] ) && !empty($atts['mobile_background']['
 }
 ?>
 
-<div class="animated js_mobile_margin form_el"
+<div class="animated js_mobile_margin form_el js_form_el"
      data-animated="<?= esc_attr($atts['animated']) ?>"
      data-ipad-top="<?= esc_attr($atts['ipad_margin_top']) ?>"
      data-m-top="<?= esc_attr($atts['m_margin_top']) ?>"

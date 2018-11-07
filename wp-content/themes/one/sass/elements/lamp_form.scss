@@ -1,0 +1,316 @@
+.lamp_form{
+  padding-top:180px;
+  background-repeat: no-repeat;
+  background-size: cover!important;
+}
+
+.lamp_form__block{
+  max-width:850px;
+  width:100%;
+  margin:0 auto;
+  background: $color_ffffff;
+  padding-top:83px!important;
+  padding-bottom: 86px!important;
+  padding-left:165px!important;
+  padding-right:165px!important;
+}
+
+.lamp_form__top_text{
+  text-align:center;
+  margin-top:20px;
+}
+
+.lamp_form__title{
+  text-align:center;
+}
+
+.lamp_form__under_title{
+  margin-top:37px;
+}
+
+.lamp_form__under_title{
+  text-align:center;
+  margin-bottom:68px;
+}
+
+.lamp_form__form_shortcode{
+  margin:0 auto;
+  max-width:520px;
+  width:100%;
+}
+
+.lamp_form__bottom_text{
+  max-width:520px;
+  margin:0 auto;
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+}
+
+.contact_form__block{
+  display:flex;
+}
+
+.contact_form__left{
+  margin-right:40px;
+}
+
+.lamp_form{
+  .wpcf7-text,
+  .wpcf7-date{
+    background: none;
+    max-width:240px;
+    border:0;
+    border-radius:0;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    border-bottom: 1px solid rgba(20, 20, 20, .3);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+}
+
+.contact_form__label{
+  opacity: 0.8;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 28px;
+  left:3.5px;
+  display:none;
+  position: absolute;
+  top: -28px;
+}
+
+.lamp_form
+input{
+  color: #141414;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.lamp_form {
+  .wpcf7-submit {
+    width: 100%;
+    color: $color_ffffff;
+    font-family: $font-lyon;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid $color_141414;
+    background-color: $color_141414;
+    margin-top: 61px;
+    padding: 13px;
+  }
+}
+
+.contact_form__email_block,
+.contact_form__block{
+  margin-top:61px;
+}
+
+.contact_form__left,
+.contact_form__right,
+.contact_form__email_block{
+  position: relative;
+}
+
+.lamp_form .contact_form__email input.wpcf7-email{
+  width:100%;
+  max-width: 100%;
+}
+
+.lamp_form__under_title a{
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.contact_form__date i {
+  float: right;
+  margin-top: -23px;
+  margin-right: 20px;
+  color: rgba(20, 20, 20, .3);
+}
+
+/* --- */
+
+.lamp_form__footer{
+  .footer {
+    margin-top: 156px;
+
+    .widget-title,
+    .menu li a,
+    .footer_test_1,
+    .footer_text_2,
+    .footer_phone,
+    .footer_social a,
+    .footer_test_1 a,
+    .footer_copyright_ipad,
+    .footer_copyright_desktop{
+      color: $color_ffffff;
+    }
+  }
+}
+
+.contact_form__email textarea{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  height: 84px;
+}
+
+/* --- */
+
+
+.lamp_form__ico{
+  text-align:center;
+}
+
+.lamp_form__contacts{
+  display:flex;
+  margin-top:41px;
+  justify-content:center;
+}
+
+.lamp_form__phone,
+.lamp_form__email{
+  color: $color_a89fbd;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.lamp_form__phone{
+  margin-right:14px;
+}
+
+.lamp_form__email{
+  position: relative;
+}
+
+.lamp_form__email:before{
+  content:'';
+  width:1px;
+  height:50%;
+  top:30%;
+  left: 0;
+  background: $color_a89fbd;
+  position:absolute;
+  display:block;
+  opacity:0.5;
+}
+
+.lamp_form__email{
+  padding-left:14px;
+}
+
+.lamp_form__email i{
+  color: $color_a89fbd;
+  font-size:24px;
+
+  margin-right:10px;
+  position:relative;
+  top:3px;
+}
+
+.lamp_form__phone i{
+  margin-right:10px;
+  color: $color_a89fbd;
+  font-size:24px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position:relative;
+  top:2px;
+}
+
+/* --- */
+
+@media screen and (max-width: 1199px) {
+  .lamp_form{
+    background-repeat: no-repeat!important;
+    background-size: cover !important;
+  }
+
+  .lamp_form__email:before{
+    display: none;
+  }
+
+  .lamp_form__block{
+    padding-bottom:0;
+    text-align: center;
+  }
+
+  .lamp_form__contacts{
+    margin-top:40px;
+    display: block;
+  }
+
+  .lamp_form__email{
+    margin-top:16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lamp_form{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .lamp_form__block{
+    padding: 83px 20px 86px!important;
+  }
+
+  .lamp_form__form_shortcode{
+    max-width: 100%;
+  }
+
+  .lamp_form__under_title,
+  .contact_form__block,
+  .contact_form__email,
+  .contact_form__button,
+  .lamp_form__bottom_text{
+    padding:0 20px;
+  }
+
+  .lamp_form__under_title{
+    margin: 35px auto 0;
+  }
+
+  .contact_form__block{
+    display:block;
+    margin-top:0;
+  }
+
+  .lamp_form .wpcf7-date,
+  .lamp_form .wpcf7-text{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contact_form__left{
+    margin:0;
+  }
+
+  .contact_form__email_block,
+  .contact_form__left,
+  .contact_form__right{
+    margin-top:50px;
+
+  }
+
+  .lamp_form__footer .footer{
+    margin-top: 73px;
+  }
+
+  .contact_form__label_email{
+    padding-left:20px!important;
+  }
+}
