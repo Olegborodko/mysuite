@@ -4,18 +4,24 @@
     <div class="filter__block_title">
       Bedrooms
     </div>
+    <input type="text" class="filter__bedrooms_slider" value="" />
+    <div class="filter__bedrooms_start"></div>&nbsp;-&nbsp;<div class="filter__bedrooms_end"></div>
   </div>
 
   <div class="filter__bathrooms">
     <div class="filter__block_title">
       Bathrooms
     </div>
+    <input type="text" class="filter__bathrooms_slider" value="" />
+    <div class="filter__bathrooms_start"></div>&nbsp;-&nbsp;<div class="filter__bathrooms_end"></div>
   </div>
 
   <div class="filter__price_range">
     <div class="filter__block_title">
       Price Range
     </div>
+    <input type="text" class="filter__price_slider" value="" />
+    <div class="filter__price_start"></div>&nbsp;-&nbsp;<div class="filter__price_end"></div>
   </div>
 
   <div class="filter__special_offers_only">

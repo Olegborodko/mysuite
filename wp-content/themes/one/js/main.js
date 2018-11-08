@@ -404,11 +404,11 @@ jQuery(window).bind("load", function() {
   }
 
   jQuery(".js_form_el .contact_form__date").change(function() {
-      if ( jQuery(".contact_form__date input").val().length > 0 ) {
-        jQuery(".contact_form__label_date").css("display", "block");
-      }else{
-        jQuery(".contact_form__label_date").css("display", "none");
-      }
+    if ( jQuery(".contact_form__date input").val().length > 0 ) {
+      jQuery(".contact_form__label_date").css("display", "block");
+    }else{
+      jQuery(".contact_form__label_date").css("display", "none");
+    }
   });
 
   jQuery(".js_form_el textarea").on('input',function(e){
@@ -441,26 +441,88 @@ jQuery(window).bind("load", function() {
 
   //======================================== question scroll
 
-    jQuery('.js_questions__category_title a').click(function (e) {
+  jQuery('.js_questions__category_title a').click(function (e) {
 
-      var this_ = jQuery(this);
+    var this_ = jQuery(this);
 
-      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-        var target = jQuery(this.hash);
-        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          jQuery('html, body').animate({
-            scrollTop: target.offset().top - 67
-          }, 500, function () {
-            window.history.pushState("", "", this_.attr("href"));
-          });
-          return false;
-        }
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+      var target = jQuery(this.hash);
+      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        jQuery('html, body').animate({
+          scrollTop: target.offset().top - 67
+        }, 500, function () {
+          window.history.pushState("", "", this_.attr("href"));
+        });
+        return false;
       }
-    });
+    }
+  });
 
   //========================================== slider
+  //.filter__bedrooms_slider .filter__bedrooms_start .filter__bedrooms_end
 
+  function slider_line(slider_el, start_el, end_el, value_min, value_max, step, prefix) {
+    if (jQuery(slider_el).length) {
+      var filter_start = jQuery(start_el);
+      var filter_end = jQuery(end_el);
+
+      jQuery(slider_el).ionRangeSlider({
+        hide_min_max: true,
+        hide_from_to: true,
+        keyboard: true,
+        min: value_min,
+        max: value_max,
+        type: 'double',
+        step: step,
+        prefix: prefix,
+        grid: false,
+        onStart: function (data) {
+          jQuery(filter_start).html(prefix + data.from);
+          jQuery(filter_end).html(prefix + data.to);
+        },
+        onChange: function (data) {
+          jQuery(filter_start).html(prefix + data.from);
+          jQuery(filter_end).html(prefix + data.to);
+        },
+        onFinish: function (data) {
+          jQuery(filter_start).html(prefix + data.from);
+          jQuery(filter_end).html(prefix + data.to);
+        },
+        onUpdate: function (data) {
+          jQuery(filter_start).html(prefix + data.from);
+          jQuery(filter_end).html(prefix + data.to);
+        }
+      });
+    }
+  }
+
+  slider_line
+  (".filter__bedrooms_slider",
+  ".filter__bedrooms_start",
+  ".filter__bedrooms_end",
+  "1",
+  "8",
+  "1",
+  "");
+
+  slider_line
+  (".filter__bathrooms_slider",
+  ".filter__bathrooms_start",
+  ".filter__bathrooms_end",
+  "1",
+  "4",
+  "1",
+  "");
+
+  slider_line
+  (".filter__price_slider",
+  ".filter__price_start",
+  ".filter__price_end",
+  "400",
+  "3000",
+  "50",
+  "$");
 
 
 
