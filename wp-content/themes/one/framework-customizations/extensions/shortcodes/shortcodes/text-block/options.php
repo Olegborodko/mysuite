@@ -43,7 +43,7 @@ $options = array(
 'padding_mobile' => array(
 'type'  => 'text',
 'value' => '0',
-'label' => __('padding mobile', '{domain}'),
+'label' => __('padding ipad and mobile', '{domain}'),
 'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
 ),
 

@@ -74,7 +74,7 @@ if ( ! empty( $atts['padding_mobile'] ) ) {
 }
 
 if ( ! empty( $atts['ready_custom_class'] ) ) {
-  $section_extra_classes .=  esc_attr($atts['ready_custom_class']);
+  $container_class .=  " ".esc_attr($atts['ready_custom_class']);
 }
 
 $padding_mobile = '0';
@@ -92,6 +92,7 @@ if ( ! empty( $atts['ipad_margin_top'] ) ) {
          data-m-top="<?=$m_margin_top?>"
          data-m-padding="<?=$padding_mobile?>"
          data-ipad-top="<?=$ipad_margin_top?>"
+
          id="<?= esc_attr($id) ?>"
          class="animated js_mobile_margin fw-main-row <?php echo esc_attr($section_extra_classes) ?>"
          style="margin-top: <?= $margin_top ?>;

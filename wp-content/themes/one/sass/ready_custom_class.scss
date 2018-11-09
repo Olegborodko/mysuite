@@ -1,0 +1,28 @@
+.r_c_white_and_shadow{
+  background:#ffffff;
+  position:relative;
+}
+
+.r_c_white_and_shadow:before{
+  display: block!important;
+  height: 100%;
+  max-height:600px;
+  top: 0;
+  box-shadow: -15px 0 12px -20px inset;
+  position: absolute;
+  width: 10px;
+  content: '';
+  right: 0;
+}
+
+.r_c_white_and_shadow:after{
+  display: block!important;
+  height: 100%;
+  max-height:600px;
+  top: 0;
+  box-shadow: -15px 0 12px -20px inset;
+  position: absolute;
+  width: 10px;
+  content: '';
+  left: -10px;
+}

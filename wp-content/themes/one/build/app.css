@@ -2,9 +2,9 @@ body,button,input,optgroup,select,textarea{margin:0}
 button,hr,input{overflow:visible}
 progress,sub,sup{vertical-align:baseline}
 [type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}
+.widget select,.wp-caption,embed,iframe,img,legend,object,pre{max-width:100%}
 pre,textarea{overflow:auto}
 #content[tabindex="-1"]:focus,a:active,a:hover{outline:0}
-.widget select,.wp-caption,embed,iframe,img,legend,object,pre{max-width:100%}
 html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box}
 body{background:#fff}
 h1,h2,h3,h4,h5,h6{margin-top:18px;margin-bottom:18px;clear:both}
@@ -117,9 +117,18 @@ section{position:relative}
 :-moz-placeholder{opacity:.3;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:300;line-height:28px}
 @media screen and (min-width:1200px){.fw-visible-lg{display:block}
 }
+@media screen and (min-width:768px) and (max-width:1199px){.fw-visible-sm-md{display:block}
+}
+@media screen and (max-width:767px){.g_mobile_background_display_none{background-image:none!important}
+.fw-visible-xs{display:block}
+}
 .fw-text-left{text-align:left}
 .fw-text-right{text-align:right}
 .fw-text-center{text-align:center}
+.r_c_white_and_shadow{background:#fff;position:relative}
+.r_c_white_and_shadow:after,.r_c_white_and_shadow:before{display:block!important;height:100%;max-height:600px;box-shadow:-15px 0 12px -20px inset;position:absolute;width:10px;content:'';top:0}
+.r_c_white_and_shadow:before{right:0}
+.r_c_white_and_shadow:after{left:-10px}
 .af_small_top{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.54px}
 h1.af_h1,h2.af_h2,h3.af_h3{color:#141414;font-family:"Lyon Display",sans-serif;font-weight:700}
 h1.af_h1,h3.af_h3{font-size:42px;line-height:62px}
@@ -136,12 +145,9 @@ span.af_opacity_06{opacity:.6}
 span.af_opacity_07{opacity:.7}
 span.af_opacity_08{opacity:.8}
 span.af_opacity_09{opacity:.9}
-@media screen and (min-width:768px) and (max-width:1199px){.fw-visible-sm-md{display:block}
-h1.af_h1,h3.af_h3{font-size:34px}
+@media screen and (min-width:768px) and (max-width:1199px){h1.af_h1,h3.af_h3{font-size:34px}
 }
-@media screen and (max-width:767px){.g_mobile_background_display_none{background-image:none!important}
-.fw-visible-xs{display:block}
-.af_small_top{font-size:11px;letter-spacing:1.3px}
+@media screen and (max-width:767px){.af_small_top{font-size:11px;letter-spacing:1.3px}
 h1.af_h1,h3.af_h3{font-size:26px;line-height:34px}
 h2.af_h2{font-size:18px}
 .af_type_small_avenir_light{font-size:14px;font-weight:400;line-height:26px}

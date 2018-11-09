@@ -94,6 +94,10 @@ jQuery(window).bind("load", function() {
           this_.css('margin-top', attr_ipad_top);
         }
 
+        if (attr_padding && attr_padding.length > 0) {
+          this_.css('padding', attr_padding);
+        }
+
         if (attr_b_ipad && attr_b_ipad.length > 0) {
           this_.css('background-image', 'url(' + attr_b_ipad + ')');
         }
