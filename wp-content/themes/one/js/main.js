@@ -104,6 +104,8 @@ jQuery(window).bind("load", function() {
       }
 
     });
+  }else{
+
   }
 
   //=========================== animation on scroll
@@ -528,6 +530,40 @@ jQuery(window).bind("load", function() {
   "50",
   "$");
 
+  // =========================== video_custom
+  if ( jQuery(".js_video_player").length ) {
+    jQuery(".js_video_player").each(function (i, el) {
+      var this_ = jQuery(el);
+      var video_ = this_.find('video');
+      var custom_video__play_ = this_.find('.custom_video__play');
+
+      var height_ = video_.css('height');
+      var width_ = video_.css('width');
+
+      var video_position_ = video_.position();
+
+      custom_video__play_.css('width', width_);
+      custom_video__play_.css('height', height_);
+
+      custom_video__play_.css('top', video_position_.top);
+      custom_video__play_.css('left', video_position_.left);
+      custom_video__play_.css('display', 'block');
+    });
 
 
+    jQuery(".custom_video .custom_video__play").click(function (i, el) {
+      var this_ = jQuery(this);
+      var parent_ = this_.parent();
+      var video_ = parent_.find('video')[0];
+      var img_ = this_.find('img');
+
+      if (video_.paused) {
+        img_.css('display', 'none');
+        video_.play();
+      } else {
+        img_.css('display', 'inline');
+        video_.pause();
+      }
+    });
+  }
 });

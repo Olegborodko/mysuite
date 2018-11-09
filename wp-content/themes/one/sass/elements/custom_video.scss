@@ -1,0 +1,17 @@
+.custom_video{
+  position:relative;
+}
+
+.custom_video__play{
+  position:absolute;
+  cursor:pointer;
+  top:0;
+  left:0;
+  text-align: center;
+  display:none;
+}
+
+.custom_video__play img {
+  position: relative;
+  top: calc(100%/2 - 90px);
+}

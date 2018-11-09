@@ -618,7 +618,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .filter .filter__block ul li{margin-bottom:24px}
 .filter .filter__block_center,.filter .filter__block_left,.filter .filter__block_right{flex:1 1 auto}
 .filter .filter__buttons{width:100%;text-align:right;margin-top:40px}
-.partner_up__ico,.partner_up__title,.partner_up__top_text{text-align:center}
+.custom_video__play,.partner_up__ico,.partner_up__title,.partner_up__top_text{text-align:center}
 .filter .filter__button_clear{color:#a89fbd}
 .filter .filter__button_filter{border:1px solid #141414;color:#141414;padding:25px 43px;margin-left:34px}
 .filter .filter__block_title{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px}
@@ -679,7 +679,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 }
 .filter__pagination_right_arrow{background:url(../img/arrow_right_b.png)}
 .filter__pagination{position:relative;display:flex;justify-content:space-between;margin-top:60px;flex-wrap:wrap}
-.filter__pagination_item,.filter__pagination_item_active,.filter__pagination_left_arrow,.filter__pagination_right_arrow{padding:15px 22px;width:52px;height:52px;cursor:pointer;margin:8px}
+.filter__pagination_item,.filter__pagination_item_active,.filter__pagination_left_arrow,.filter__pagination_right_arrow{padding:15px 22px;width:52px;height:52px;margin:8px;cursor:pointer}
 .filter__pagination_left_arrow{background:url(../img/arrow_left.png) center no-repeat;background-size:contain}
 .filter__pagination_item_active{color:#fff;border:1px solid #141414;background-color:#141414}
 .filter__pagination_item{border:1px solid rgba(20,20,20,.45);color:#141414}
@@ -711,6 +711,9 @@ header div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li{bac
 .contact_form__block{display:block;margin-top:0}
 .partner_up__footer .footer{margin-top:73px}
 }
+.custom_video{position:relative}
+.custom_video__play{position:absolute;cursor:pointer;top:0;left:0;display:none}
+.custom_video__play img{position:relative;top:calc(100%/2 - 90px)}
 header ul#primary-menu.primary-black i.has_sub-menu:after,header ul#primary-menu.primary-black li a{color:#141414}
 header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;background-color:#141414}
 .footer{margin-top:40px;padding-bottom:20px}
