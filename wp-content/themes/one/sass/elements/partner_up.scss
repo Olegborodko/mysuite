@@ -1,0 +1,140 @@
+.partner_up{
+  padding-top:180px;
+  background-repeat: no-repeat;
+  background-size: cover!important;
+}
+
+.partner_up__block{
+  max-width:850px;
+  width:100%;
+  margin:0 auto;
+  background: $color_ffffff;
+  padding-top:83px!important;
+  padding-bottom: 86px!important;
+  padding-left:165px!important;
+  padding-right:165px!important;
+}
+
+.partner_up__top_text{
+  text-align:center;
+  margin-top:20px;
+}
+
+.partner_up__title{
+  text-align:center;
+}
+
+.partner_up__under_title{
+  margin-top:37px;
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.partner_up__under_title a{
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* --- */
+
+.partner_up__footer{
+  .footer {
+    margin-top: 156px;
+
+    .widget-title,
+    .menu li a,
+    .footer_test_1,
+    .footer_text_2,
+    .footer_phone,
+    .footer_social a,
+    .footer_test_1 a,
+    .footer_copyright_ipad,
+    .footer_copyright_desktop{
+      color: $color_ffffff;
+    }
+  }
+}
+
+/* --- */
+
+
+.partner_up__ico{
+  text-align:center;
+}
+
+.partner_up__contacts{
+  display:flex;
+  justify-content:center;
+}
+
+.partner_up__email{
+  position: relative;
+  color: $color_a89fbd;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 800;
+  padding-left:14px;
+}
+
+.partner_up__email i{
+  color: $color_a89fbd;
+  font-size:24px;
+
+  margin-right:10px;
+  position:relative;
+  top:3px;
+}
+
+/* --- */
+
+@media screen and (max-width: 1199px) {
+  .partner_up{
+    background-repeat: no-repeat!important;
+    background-size: cover !important;
+  }
+
+  .partner_up__email:before{
+    display: none;
+  }
+
+  .partner_up__block{
+    padding-bottom:0;
+    text-align: center;
+  }
+
+  .partner_up__contacts{
+    margin-top:40px;
+    display: block;
+  }
+
+  .partner_up__email{
+    margin-top:16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .partner_up{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .partner_up__block{
+    padding: 83px 20px 86px!important;
+  }
+
+  .partner_up__under_title{
+    padding:0 20px;
+    margin: 35px auto 0;
+  }
+
+  .contact_form__block{
+    display:block;
+    margin-top:0;
+  }
+
+  .partner_up__footer .footer{
+    margin-top: 73px;
+  }
+}

@@ -1,0 +1,23 @@
+header {
+  ul#primary-menu.primary-black li a {
+    color: #141414;
+  }
+
+  ul#primary-menu.primary-black i.has_sub-menu:after{
+    color: #141414;
+  }
+
+  a.header_resident_portal_btn.header_resident_portal_btn_black{
+    color: #ffffff;
+    background-color: #141414;
+  }
+}
+
+
+@media screen and (max-width: 1199px){
+  header {
+    div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li {
+      background-color: #141414;
+    }
+  }
+}

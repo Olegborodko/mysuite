@@ -153,9 +153,9 @@ header.js_menu_scroll_now{
     color: #ffffff;
   }
 
-  ul#js_i_menu li.menu_mobile_bar__one,
-  ul#js_i_menu li.menu_mobile_bar__two,
-  ul#js_i_menu li.menu_mobile_bar__three{
+  ul.menu_mobile_bar li.menu_mobile_bar__one,
+  ul.menu_mobile_bar li.menu_mobile_bar__two,
+  ul.menu_mobile_bar li.menu_mobile_bar__three{
     background-color: #141414;
   }
 
@@ -255,18 +255,18 @@ header.js_menu_scroll_now{
       text-align: center;
     }
 
-    ul#js_i_menu {
+    ul.menu_mobile_bar {
       display: block;
     }
 
-    ul#js_i_menu li.menu_mobile_bar__one {
+    ul.menu_mobile_bar li.menu_mobile_bar__one {
       width: 26px;
       height: 2px;
       background-color: #ffffff;
       float: none;
     }
 
-    ul#js_i_menu li.menu_mobile_bar__two {
+    ul.menu_mobile_bar li.menu_mobile_bar__two {
       width: 20px;
       height: 2px;
       background-color: #ffffff;
@@ -274,7 +274,7 @@ header.js_menu_scroll_now{
       margin-top: 8px;
     }
 
-    ul#js_i_menu li.menu_mobile_bar__three {
+    ul.menu_mobile_bar li.menu_mobile_bar__three {
       width: 26px;
       height: 2px;
       background-color: #ffffff;
