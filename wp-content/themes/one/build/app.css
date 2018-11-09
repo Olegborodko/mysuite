@@ -109,21 +109,17 @@ div.fw-container-fluid .fw-row{margin-left:0;margin-right:0}
 @font-face{font-family:Avenir;src:url(../fonts/Avenir-Light.eot);src:url(../fonts/Avenir-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Avenir-Light.woff2) format("woff2"),url(../fonts/Avenir-Light.woff) format("woff"),url(../fonts/Avenir-Light.ttf) format("truetype"),url(../fonts/Avenir-Light.svg#Avenir-Light) format("svg");font-weight:300;font-style:normal}
 @font-face{font-family:'Lyon Display';src:url(../fonts/LyonDisplay-Regular.eot);src:url(../fonts/LyonDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/LyonDisplay-Regular.woff2) format("woff2"),url(../fonts/LyonDisplay-Regular.woff) format("woff"),url(../fonts/LyonDisplay-Regular.ttf) format("truetype"),url(../fonts/LyonDisplay-Regular.svg#LyonDisplay-Regular) format("svg");font-weight:400;font-style:normal}
 body p{margin-top:18px;margin-bottom:18px}
+section{position:relative}
 .fw-hidden-lg,.fw-hidden-sm-md,.fw-hidden-xs,.fw-visible-lg,.fw-visible-sm-md,.fw-visible-xs{display:none}
 ::-webkit-input-placeholder{opacity:.3;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:300;line-height:28px}
 ::-moz-placeholder{opacity:.3;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:300;line-height:28px}
 :-ms-input-placeholder{opacity:.3;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:300;line-height:28px}
 :-moz-placeholder{opacity:.3;color:#141414;font-family:Avenir,sans-serif;font-size:16px;font-weight:300;line-height:28px}
-@media screen and (max-width:767px){.g_mobile_background_display_none{background-image:none!important}
-.fw-visible-xs{display:block}
+@media screen and (min-width:1200px){.fw-visible-lg{display:block}
 }
 .fw-text-left{text-align:left}
 .fw-text-right{text-align:right}
 .fw-text-center{text-align:center}
-.ready_top_background{padding-top:82px!important}
-@media screen and (min-width:1200px){.fw-visible-lg{display:block}
-.ready_top_background{background:url(../img/top.jpg);min-height:783px;background-size:cover}
-}
 .af_small_top{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.54px}
 h1.af_h1,h2.af_h2,h3.af_h3{color:#141414;font-family:"Lyon Display",sans-serif;font-weight:700}
 h1.af_h1,h3.af_h3{font-size:42px;line-height:62px}
@@ -141,10 +137,10 @@ span.af_opacity_07{opacity:.7}
 span.af_opacity_08{opacity:.8}
 span.af_opacity_09{opacity:.9}
 @media screen and (min-width:768px) and (max-width:1199px){.fw-visible-sm-md{display:block}
-.ready_top_background{background:url(../img/top_laptop.jpg);min-height:1024px;background-size:cover}
 h1.af_h1,h3.af_h3{font-size:34px}
 }
-@media screen and (max-width:767px){.ready_top_background{background:url(../img/top_mobile.jpg);min-height:667px;background-size:cover}
+@media screen and (max-width:767px){.g_mobile_background_display_none{background-image:none!important}
+.fw-visible-xs{display:block}
 .af_small_top{font-size:11px;letter-spacing:1.3px}
 h1.af_h1,h3.af_h3{font-size:26px;line-height:34px}
 h2.af_h2{font-size:18px}
@@ -228,11 +224,14 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .slider_type1 div.slider_type1__pagination,.slider_type2 div.slider_type2__pagination{top:8px;position:relative}
 .ready_top_background{position:relative}
 .home_top__arrow_down_block{margin-left:20px}
+.home_top{padding-top:82px!important}
 @media screen and (min-width:1200px){.home_top__arrow_down_block{margin-top:130px}
+.home_top{min-height:783px;background-size:cover!important}
 }
 @media screen and (min-width:768px) and (max-width:1199px){.home_top__small_text{margin-top:80px}
 .home_top__arrow_down_block{margin-top:390px}
 .home_top__title{font-size:36px;font-weight:700;line-height:54px}
+.home_top{min-height:1024px;background-size:cover!important}
 }
 @media screen and (max-width:767px){.home_top__small_text{margin-top:50px;font-size:11px;font-weight:500;line-height:17px;letter-spacing:1px}
 .home_top__title{font-size:32px;line-height:44px}
@@ -240,6 +239,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .home_top__or{display:none}
 .home_top__buttons .home_top__button2{display:block;max-width:320px;margin:20px auto 0}
 .home_top__buttons{margin-top:60px;margin-bottom:20px}
+.home_top{min-height:667px;background-size:cover!important}
 }
 .text_and_image__title{color:#141414;font-family:"Lyon Display",sans-serif;font-size:26px;font-weight:700;line-height:35px}
 .text_and_image__text{opacity:.8;color:rgba(20,20,20,.7);font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px;margin-top:43px}

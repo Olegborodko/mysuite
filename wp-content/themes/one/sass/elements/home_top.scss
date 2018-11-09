@@ -131,6 +131,32 @@
     margin-top: 60px;
     margin-bottom: 20px;
   }
+}
+
+/* --- fix ready_top_background --- */
+
+.home_top {
+  padding-top: 82px!important;
+}
+
+@media screen and (min-width: 1200px) {
+  .home_top {
+    min-height: 783px;
+    background-size: cover!important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) { /* ipad */
+  .home_top {
+    min-height: 1024px;
+    background-size: cover!important;
+  }
+}
 
 
+@media screen and (max-width: 767px) { /* mobile */
+  .home_top {
+    min-height: 667px;
+    background-size: cover!important;
+  }
 }

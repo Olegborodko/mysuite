@@ -70,6 +70,27 @@ $options = array(
 'label' => __('arrow url', '{domain}')
 ),
 
+'desktop_background' => array(
+'type'  => 'upload',
+'label' => __('desktop background', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
+'ipad_background' => array(
+'type'  => 'upload',
+'label' => __('ipad background', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
+'mobile_background' => array(
+'type'  => 'upload',
+'label' => __('mobile background', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
 'margin_top' => array(
 'type'  => 'text',
 'value' => '0',

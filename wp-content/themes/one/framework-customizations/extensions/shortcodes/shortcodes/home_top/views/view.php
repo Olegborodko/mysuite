@@ -57,15 +57,32 @@ if ( ! empty( $atts['ipad_margin_top'] ) ) {
   $ipad_margin_top = esc_attr($atts['ipad_margin_top']);
 }
 
+$desktop_background = '';
+if ( !empty( $atts['desktop_background'] ) && !empty($atts['desktop_background']['url']) ) {
+  $desktop_background = esc_attr($atts['desktop_background']['url']);
+}
+
+$ipad_background = '';
+if ( !empty( $atts['ipad_background'] ) && !empty($atts['ipad_background']['url']) ) {
+  $ipad_background = esc_attr($atts['ipad_background']['url']);
+}
+
+$mobile_background = '';
+if ( !empty( $atts['mobile_background'] ) && !empty($atts['mobile_background']['url']) ) {
+  $mobile_background = esc_attr($atts['mobile_background']['url']);
+}
+
 ?>
 
 <div class="animated home_top js_mobile_margin <?=$mobile_align?>"
      data-animated="<?= $animated?>"
      data-ipad-top="<?=$ipad_margin_top?>"
      data-m-top="<?= $m_margin_top?>"
+     data-b-ipad="<?= $ipad_background ?>"
+     data-b-mobile="<?= $mobile_background ?>"
      style="margin-top: <?= $margin_top ?>;
      margin-bottom: <?= $margin_bottom ?>;
-     text-align: <?= $align ?>">
+     background: url(<?= $desktop_background ?>);">
 
   <div data-desktop="<?=esc_attr($atts['small_text_desktop'])?>"
        data-ipad="<?=esc_attr($atts['small_text_ipad'])?>"

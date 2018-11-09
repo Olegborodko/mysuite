@@ -49,7 +49,6 @@ $options = array(
   'label' => __('Ready custom class', '{domain}'),
   'choices' => array(
   'default' => '',
-  'ready_top_background' => 'ready_top_background',
   'container_without_margin' => 'container_without_margin'
   ),
   'no-validate' => false
