@@ -46,6 +46,7 @@ if ( ! empty( $atts['max_width'] ) ) {
 
 <div data-animated="<?=$animated?>"
      data-m-padding="<?=$padding_mobile?>"
+     data-ipad-padding="<?= esc_attr($atts['padding_ipad'])?>"
      data-ipad-top="<?=$ipad_margin_top?>"
      class="animated g_text js_mobile_margin unyson_wp_editor <?=$class?>"
      data-m-top="<?=$m_margin_top?>"

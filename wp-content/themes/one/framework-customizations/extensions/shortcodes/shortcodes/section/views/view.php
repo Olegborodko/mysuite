@@ -91,8 +91,8 @@ if ( ! empty( $atts['ipad_margin_top'] ) ) {
 <section data-animated="<?=$animated?>"
          data-m-top="<?=$m_margin_top?>"
          data-m-padding="<?=$padding_mobile?>"
+         data-ipad-padding="<?= esc_attr($atts['padding_ipad'])?>"
          data-ipad-top="<?=$ipad_margin_top?>"
-
          id="<?= esc_attr($id) ?>"
          class="animated js_mobile_margin fw-main-row <?php echo esc_attr($section_extra_classes) ?>"
          style="margin-top: <?= $margin_top ?>;

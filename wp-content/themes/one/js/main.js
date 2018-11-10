@@ -71,6 +71,7 @@ jQuery(window).bind("load", function() {
       var this_ = jQuery(el);
       var attr_top = this_.attr('data-m-top');
       var attr_padding = this_.attr('data-m-padding');
+      var attr_padding_ipad = this_.attr('data-ipad-padding');
       var attr_ipad_top = this_.attr('data-ipad-top');
 
       var attr_b_ipad = this_.attr('data-b-ipad');
@@ -94,8 +95,8 @@ jQuery(window).bind("load", function() {
           this_.css('margin-top', attr_ipad_top);
         }
 
-        if (attr_padding && attr_padding.length > 0) {
-          this_.css('padding', attr_padding);
+        if (attr_padding_ipad && attr_padding_ipad.length > 0) {
+          this_.css('padding', attr_padding_ipad);
         }
 
         if (attr_b_ipad && attr_b_ipad.length > 0) {

@@ -6,7 +6,7 @@ $options = array(
 'url'    => array(
 'type'  => 'text',
 'label' => __( 'Insert Video URL', 'fw' ),
-'desc'  => __( 'Can play only local files', 'fw' )
+'desc'  => __( 'Can play only local files (format mp4)', 'fw' )
 ),
 
 'align' => array(

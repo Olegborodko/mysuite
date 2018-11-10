@@ -87,14 +87,21 @@ $options = array(
 'padding' => array(
 'type'  => 'text',
 'value' => '0',
-'label' => __('padding', '{domain}'),
+'label' => __('padding desktop', '{domain}'),
+'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
+),
+
+'padding_ipad' => array(
+'type'  => 'text',
+'value' => '0',
+'label' => __('padding ipad', '{domain}'),
 'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
 ),
 
 'padding_mobile' => array(
 'type'  => 'text',
 'value' => '0',
-'label' => __('padding ipad and mobile', '{domain}'),
+'label' => __('padding mobile', '{domain}'),
 'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
 ),
 
