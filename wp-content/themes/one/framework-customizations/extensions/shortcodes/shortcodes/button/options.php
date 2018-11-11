@@ -26,6 +26,41 @@ $options = array(
 'no-validate' => false
 ),
 
+'is_mobile_center_align' => array(
+'label' => __('Mobile align center', 'fw'),
+'type'  => 'switch',
+'value' => 'no',
+'left-choice' => array(
+'value' => 'yes',
+'label' => __('YES', 'fw'),
+),
+'right-choice' => array(
+'value' => 'no',
+'label' => __('NO', 'fw'),
+)
+),
+
+'padding' => array(
+'type'  => 'text',
+'value' => '0',
+'label' => __('padding desktop', '{domain}'),
+'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
+),
+
+'padding_ipad' => array(
+'type'  => 'text',
+'value' => '0',
+'label' => __('padding ipad ', '{domain}'),
+'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
+),
+
+'padding_mobile' => array(
+'type'  => 'text',
+'value' => '0',
+'label' => __('padding mobile', '{domain}'),
+'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
+),
+
 'margin_top' => array(
 'type'  => 'text',
 'value' => '0',

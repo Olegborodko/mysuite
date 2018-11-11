@@ -61,6 +61,34 @@ $options = array(
 'desc'  => __('44px, 50%, ...', 'fw'),
 ),
 
+'is_center_margin_left_right' => array(
+'label' => __('Desktop block center', 'fw'),
+'type'  => 'switch',
+'value' => 'no',
+'left-choice' => array(
+'value' => 'yes',
+'label' => __('YES', 'fw'),
+),
+'right-choice' => array(
+'value' => 'no',
+'label' => __('NO', 'fw'),
+)
+),
+
+'is_mobile_center_margin_left_right' => array(
+'label' => __('Mobile and ipad block center', 'fw'),
+'type'  => 'switch',
+'value' => 'no',
+'left-choice' => array(
+'value' => 'yes',
+'label' => __('YES', 'fw'),
+),
+'right-choice' => array(
+'value' => 'no',
+'label' => __('NO', 'fw'),
+)
+),
+
 'class' => array(
 'type'  => 'text',
 'value' => '',

@@ -52,17 +52,30 @@ if ( ! empty( $atts['ipad_margin_top'] ) ) {
   $ipad_margin_top = esc_attr($atts['ipad_margin_top']);
 }
 
+$margin_left = 'initial';
+$margin_right = 'initial';
+if ( isset( $atts['is_center_margin_left_right'] ) && $atts['is_center_margin_left_right'] ) {
+  if ($atts['is_center_margin_left_right']=='yes') {
+    $margin_left = 'auto';
+    $margin_right = 'auto';
+  }
+}
+
 ?>
 
 <div data-animated="<?=$animated?>"
      data-m-padding="<?=$padding_mobile?>"
      data-ipad-padding="<?= esc_attr($atts['padding_ipad'])?>"
      data-ipad-top="<?=$ipad_margin_top?>"
+     data-im-margin-left-right="<?=esc_attr($atts['is_mobile_center_margin_left_right'])?>"
+
      class="animated g_text js_mobile_margin unyson_wp_editor <?=$class?>"
      data-m-top="<?=$m_margin_top?>"
      style="margin-top: <?= $margin_top ?>;
      padding:<?=$padding?>;
-     max-width:<?=$max_width?>;">
+     max-width:<?=$max_width?>;
+     margin-left:<?=$margin_left?>;
+     margin-right:<?=$margin_right?>">
 	<?php echo do_shortcode( $atts['text'] ); ?>
 </div>
 	
