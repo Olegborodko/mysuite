@@ -1,26 +1,5 @@
-.filter:before {
-  content: '';
-  height: 50%;
-  position: absolute;
-  top: 0;
-  box-shadow: -15px 0 12px -20px inset;
-  right: 0;
-  width: 10px;
-}
-
-.filter:after {
-  content: '';
-  height: 50%;
-  position: absolute;
-  top: 0;
-  box-shadow: -15px 0 12px -20px inset;
-  width: 10px;
-  left: -10px;
-}
-
 .filter {
-  background: $color_ffffff;
-  padding: 60px 80px;
+  padding: 60px 80px 0;
   position: relative;
 
   .filter__title {

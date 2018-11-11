@@ -1,7 +1,6 @@
 .team{
   display:flex;
   padding:38px 60px 68px;
-  background:$color_ffffff;
   flex-wrap: wrap;
   justify-content: space-around;
   position:relative;
@@ -72,26 +71,12 @@
   -webkit-box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
-}
 
-.team:before{
-  content:'';
-  height:50%;
-  width:100%;
-  position:absolute;
-  left:0;
-  top:0;
-  box-shadow: -15px 0 12px -20px inset;
-}
-
-.team:after{
-  content:'';
-  height:50%;
-  width:10px;
-  position:absolute;
-  left:-10px;
-  top:0;
-  box-shadow: -15px 0 12px -20px inset;
+  .team__under_image {
+    background: #ffffff;
+    position: relative;
+    top: -4px;
+  }
 }
 
 .team a{

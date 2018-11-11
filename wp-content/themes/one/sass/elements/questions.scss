@@ -1,28 +1,8 @@
 .questions{
-  background: $color_ffffff;
+  background: $color_gradient_f7f6f9_ffffff;
   padding:80px 80px 0;
   display:flex;
   position:relative;
-}
-
-.questions:before{
-  content: '';
-  height: 50%;
-  top: 0;
-  box-shadow: -15px 0 12px -20px inset;
-  position: absolute;
-  width: 10px;
-  right: 0;
-}
-
-.questions:after{
-  content: '';
-  height: 50%;
-  top: 0;
-  box-shadow: -15px 0 12px -20px inset;
-  position: absolute;
-  width: 10px;
-  left: -10px;
 }
 
 .questions__categories{
