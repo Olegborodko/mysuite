@@ -170,6 +170,7 @@ function mce_custom_fonts( $init ) {
   "Avenir=Avenir,Helvetica,sans-serif;" .
   "Lyon Display=Lyon Display,Times New Roman,sans-serif;".
   "Arial=arial,helvetica,sans-serif;" .
+  "Kalam=Kalam,sans-serif;" .
   "Arial Black=arial black,avant garde;" .
   "Book Antiqua=book antiqua,palatino;" .
   "Comic Sans MS=comic sans ms,sans-serif;" .
