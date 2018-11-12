@@ -1,0 +1,72 @@
+.locations_block_line__text_top{
+  text-align:center;
+  margin-top:150px;
+}
+
+.locations_block_line__title{
+  text-align:center;
+}
+
+.locations_block_line__text{
+  text-align:center;
+  max-width: 850px;
+  margin: 30px auto 0;
+}
+
+.locations_block_line{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:relative;
+}
+
+.locations_block_line__locations{
+  display:flex;
+  justify-content: space-between;
+  margin-top:60px;
+}
+
+.locations_block_line__item{
+  width:180px;
+}
+
+.locations_block_line__button_block{
+  text-align:center;
+  margin-top:80px;
+}
+
+.locations_block_line__title{
+  color: #141414;
+  font-family: "Lyon Display - Bold";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.locations_block_line__parent{
+  text-align:center;
+  opacity: 0.45;
+  color: #141414;
+  font-family: "Lyon Display - Medium";
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* Text style for "LOS ANGELE" */
+  letter-spacing: 1.3px;
+  margin-top:40px;
+}
+
+.locations_block_line__count{
+  text-align:center;
+  color: #141414;
+  font-family: "Avenir Heavy";
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.locations_block_line__arrow_black{
+  background: url(../img/arrow_black.png);
+  height:10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top:4px;
+  margin-bottom:4px;
+}

@@ -669,7 +669,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .filter__r_button{margin-top:30px;float:right;border-radius:2px;background-color:#a89fbd;padding:10px 15px}
 .filter__r_description_left{flex:1 1 auto;padding-right:16px}
 .filter__r_premium{border-radius:0 0 2px 2px;background-color:#fac800;display:inline-block;position:absolute;top:1px;padding:10px 12px;opacity:.9;left:40px}
-.filter__pagination_item,.filter__pagination_item_active{font-family:Lora,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.41px;text-transform:uppercase}
+.filter__pagination_item,.filter__pagination_item_active{font-family:Lora,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.41px}
 .filter__r_premium img{margin-right:6px;position:relative;top:2px}
 @media screen and (max-width:768px){.filter__r_item{width:100%}
 }
@@ -680,6 +680,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .filter__pagination_item_active{color:#fff;border:1px solid #141414;background-color:#141414}
 .filter__pagination_item{border:1px solid rgba(20,20,20,.45);color:#141414}
 .partner_up__email,.partner_up__under_title a{font-family:Avenir,sans-serif}
+.locations_block_line__parent,.widget-title{text-transform:uppercase;letter-spacing:1.3px}
 .filter__pagination_right_arrow{background-position:center;background-repeat:no-repeat;background-size:contain}
 .filter__pagination_center{display:flex}
 .irs-slider{width:17px!important;height:17px!important;top:20px!important}
@@ -725,7 +726,6 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .you_will_save .you_will_save__image_block{text-align:right}
 .you_will_save .you_will_save__image_block img{position:relative;left:27px}
 .you_will_save .you_will_save__space{width:0}
-header div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li{background-color:#141414}
 }
 @media screen and (max-width:660px){.you_will_save .you_will_save__block{max-width:320px;margin:0 auto;font-size:24px}
 .you_will_save .you_will_save__block img{left:22px;width:133px}
@@ -733,8 +733,20 @@ header div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li{bac
 @media screen and (max-width:374px){.you_will_save .you_will_save__block{margin:0 auto;font-size:19px}
 .you_will_save .you_will_save__block img{display:none}
 }
+.locations_block_line__text_top{text-align:center;margin-top:150px}
+.locations_block_line__title{text-align:center;color:#141414;font-family:"Lyon Display - Bold";font-size:20px;font-weight:700}
+.locations_block_line__text{text-align:center;max-width:850px;margin:30px auto 0}
+.locations_block_line{background-size:contain;background-repeat:no-repeat;position:relative}
+.locations_block_line__locations{display:flex;justify-content:space-between;margin-top:60px}
+.locations_block_line__item{width:180px}
+.locations_block_line__button_block{text-align:center;margin-top:80px}
+.locations_block_line__parent{text-align:center;opacity:.45;color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500;margin-top:40px}
+.locations_block_line__count{text-align:center;color:#141414;font-family:"Avenir Heavy";font-size:13px;font-weight:800}
+.locations_block_line__arrow_black{background:url(../img/arrow_black.png) center no-repeat;height:10px;margin-top:4px;margin-bottom:4px}
 header ul#primary-menu.primary-black i.has_sub-menu:after,header ul#primary-menu.primary-black li a{color:#141414}
 header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;background-color:#141414}
+@media screen and (max-width:1199px){header div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li{background-color:#141414}
+}
 .footer{padding-top:40px;padding-bottom:20px;background:#f7f6f9}
 .footer ul{list-style:none}
 .footer .footer_part_1 a,.footer .footer_part_2 a,.footer .footer_part_3 a{text-decoration:none;margin-top:28px}
@@ -742,7 +754,7 @@ header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;
 .footer_block{display:flex}
 .footer_part_1,.footer_part_2,.footer_part_3{flex:1 1 auto}
 .footer_part_4{flex:1 1 auto;max-width:330px;width:100%}
-.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px;text-transform:uppercase;letter-spacing:1.3px}
+.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px}
 .footer .menu a,.footer_test_1{font-weight:300}
 .footer .menu a,.footer_copyright_desktop,.footer_phone,.footer_test_1{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
 .footer .menu a{opacity:.8}
@@ -759,10 +771,11 @@ header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;
 .footer a{color:#000}
 .footer_copyright_ipad{display:none;opacity:.5;font-weight:300}
 .footer_mobile_logo{display:none}
-@media screen and (max-width:1199px){.footer_block{display:inline-flex;width:100%;flex-direction:row;flex-wrap:wrap;justify-content:space-between}
+@media screen and (max-width:1199px){.footer_part_3,.footer_part_4{margin-top:30px}
+.footer_block{display:inline-flex;width:100%;flex-direction:row;flex-wrap:wrap;justify-content:space-between}
 .footer_part_1{width:55%}
 .footer_part_2{width:45%}
-.footer_part_3,.footer_part_4{margin-top:30px;width:100%}
+.footer_part_3,.footer_part_4{width:100%}
 .footer_part_3 .menu li{width:55%}
 .footer_part_3 .menu li:nth-child(2n){width:45%}
 .footer_flex_part_4 div{width:55%}
