@@ -34,6 +34,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Kalam';
+  src: url('../fonts/Kalam-Regular.eot');
+  src: url('../fonts/Kalam-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Kalam-Regular.woff2') format('woff2'),
+  url('../fonts/Kalam-Regular.woff') format('woff'),
+  url('../fonts/Kalam-Regular.ttf') format('truetype'),
+  url('../fonts/Kalam-Regular.svg#Kalam-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $font-lora: 'Lora', sans-serif;
 $font-avenir: 'Avenir', sans-serif;
 $font-lyon: 'Lyon Display', sans-serif;

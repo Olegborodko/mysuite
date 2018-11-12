@@ -1,13 +1,15 @@
 @font-face{font-family:Lora;src:url(../fonts/Lora-Regular.eot);src:url(../fonts/Lora-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Lora-Regular.woff2) format("woff2"),url(../fonts/Lora-Regular.woff) format("woff"),url(../fonts/Lora-Regular.ttf) format("truetype"),url(../fonts/Lora-Regular.svg#Lora-Regular) format("svg");font-weight:400;font-style:normal}
 @font-face{font-family:Avenir;src:url(../fonts/Avenir-Light.eot);src:url(../fonts/Avenir-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Avenir-Light.woff2) format("woff2"),url(../fonts/Avenir-Light.woff) format("woff"),url(../fonts/Avenir-Light.ttf) format("truetype"),url(../fonts/Avenir-Light.svg#Avenir-Light) format("svg");font-weight:300;font-style:normal}
 @font-face{font-family:'Lyon Display';src:url(../fonts/LyonDisplay-Regular.eot);src:url(../fonts/LyonDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/LyonDisplay-Regular.woff2) format("woff2"),url(../fonts/LyonDisplay-Regular.woff) format("woff"),url(../fonts/LyonDisplay-Regular.ttf) format("truetype"),url(../fonts/LyonDisplay-Regular.svg#LyonDisplay-Regular) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:Kalam;src:url(../fonts/Kalam-Regular.eot);src:url(../fonts/Kalam-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Kalam-Regular.woff2) format("woff2"),url(../fonts/Kalam-Regular.woff) format("woff"),url(../fonts/Kalam-Regular.ttf) format("truetype"),url(../fonts/Kalam-Regular.svg#Kalam-Regular) format("svg");font-weight:400;font-style:normal}
 .af_small_top{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.54px}
 h1.af_h1,h2.af_h2,h3.af_h3{color:#141414;font-family:"Lyon Display",sans-serif;font-weight:700}
 h1.af_h1,h3.af_h3{font-size:42px;line-height:62px}
 h2.af_h2{font-size:26px;line-height:46px}
-.af_type_1_avenir_light,.af_type_small_avenir_light{opacity:.8;color:#141414;font-family:Avenir,sans-serif;font-weight:300}
+.af_type_1_avenir_light,.af_type_small_avenir_light{opacity:.8;font-weight:300;color:#141414;font-family:Avenir,sans-serif}
 .af_type_1_avenir_light{font-size:16px;line-height:28px}
 .af_type_small_avenir_light{font-size:10px;line-height:16px}
+.af_type_2_avenir_heavy{opacity:.7;color:#141414;font-family:Avenir,sans-serif;font-size:14px;font-weight:800;line-height:20px}
 span.af_opacity_01{opacity:.1}
 span.af_opacity_02{opacity:.2}
 span.af_opacity_03{opacity:.3}
