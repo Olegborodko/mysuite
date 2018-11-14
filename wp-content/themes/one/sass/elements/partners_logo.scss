@@ -1,0 +1,31 @@
+.partners_logo__block{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+.partners_logo__item{
+  display:inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width:190px;
+  margin-bottom:70px;
+}
+
+.partners_logo__item a{
+  display:inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .partners_logo__item {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 150px;
+    margin-bottom: 70px;
+  }
+}

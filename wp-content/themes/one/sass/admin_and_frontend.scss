@@ -59,6 +59,38 @@ h2.af_h2{
   font-weight: 700;
 }
 
+.af_quote{
+  color: $color_a89fbd;
+  font-family: $font-lyon;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  position: relative;
+}
+
+.af_quote:after{
+  content: '”';
+  display: block;
+  opacity: .14;
+  color: #a89fbd;
+  font-size: 150px;
+  font-weight: 900;
+  position: absolute;
+  left: -70px;
+  top: 58px;
+}
+
+.af_founder_11px{
+  opacity: 0.45;
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* Text style for "Founder" */
+  letter-spacing: 1.3px;
+}
+
 
 span.af_opacity_01{
   opacity: 0.1;

@@ -45,7 +45,8 @@ if(!empty($height)){
      data-ipad-mobile-align="<?=esc_attr($atts['is_mobile_center_align'])?>"
 
      style="margin-top: <?= esc_attr($atts['margin_top']) ?>;
-     padding:<?=esc_attr($atts['padding'])?>;">
+     padding:<?=esc_attr($atts['padding'])?>;
+     text-align: <?= esc_attr($atts['align']);?>">
 
 <?php
 if ( empty( $atts['link'] ) ) {

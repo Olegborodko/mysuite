@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face{font-family:Lora;src:url(../fonts/Lora-Regular.eot);src:url(../fonts/Lora-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Lora-Regular.woff2) format("woff2"),url(../fonts/Lora-Regular.woff) format("woff"),url(../fonts/Lora-Regular.ttf) format("truetype"),url(../fonts/Lora-Regular.svg#Lora-Regular) format("svg");font-weight:400;font-style:normal}
 @font-face{font-family:Avenir;src:url(../fonts/Avenir-Light.eot);src:url(../fonts/Avenir-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/Avenir-Light.woff2) format("woff2"),url(../fonts/Avenir-Light.woff) format("woff"),url(../fonts/Avenir-Light.ttf) format("truetype"),url(../fonts/Avenir-Light.svg#Avenir-Light) format("svg");font-weight:300;font-style:normal}
 @font-face{font-family:'Lyon Display';src:url(../fonts/LyonDisplay-Regular.eot);src:url(../fonts/LyonDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/LyonDisplay-Regular.woff2) format("woff2"),url(../fonts/LyonDisplay-Regular.woff) format("woff"),url(../fonts/LyonDisplay-Regular.ttf) format("truetype"),url(../fonts/LyonDisplay-Regular.svg#LyonDisplay-Regular) format("svg");font-weight:400;font-style:normal}
@@ -11,6 +12,10 @@ h2.af_h2{font-size:26px;line-height:46px}
 .af_type_small_avenir_light{font-size:10px;line-height:16px}
 .af_type_2_avenir_heavy{opacity:.7;color:#141414;font-family:Avenir,sans-serif;font-size:14px;font-weight:800;line-height:20px}
 .af_kalam_18{color:#8968d7;font-family:Kalam,sans-serif;font-size:18px;font-weight:700}
+.af_founder_11px,.af_quote{font-family:"Lyon Display",sans-serif}
+.af_quote{color:#a89fbd;font-size:26px;font-weight:700;line-height:40px;position:relative}
+.af_quote:after{content:'”';display:block;opacity:.14;color:#a89fbd;font-size:150px;font-weight:900;position:absolute;left:-70px;top:58px}
+.af_founder_11px{opacity:.45;color:#141414;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px}
 span.af_opacity_01{opacity:.1}
 span.af_opacity_02{opacity:.2}
 span.af_opacity_03{opacity:.3}

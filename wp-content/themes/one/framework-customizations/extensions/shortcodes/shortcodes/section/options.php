@@ -49,7 +49,8 @@ $options = array(
   'label' => __('Ready custom class', '{domain}'),
   'choices' => array(
   'default' => '',
-  'r_c_white_and_shadow' => 'white and shadow'
+  'r_c_white_and_shadow' => 'white and shadow',
+  'r_c_white_and_shadow_without_margin' => 'white and shadow without margin'
   ),
   'no-validate' => false
   ),

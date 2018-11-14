@@ -49,6 +49,17 @@ $options = array(
 		)
 	),
 
+'align' => array(
+'type'  => 'select',
+'value' => 'left',
+'label' => __('align', '{domain}'),
+'choices' => array(
+'left' => 'left',
+'center' => 'center',
+'right' => 'right'),
+'no-validate' => false
+),
+
 'is_mobile_center_align' => array(
 'label' => __('Mobile align center', 'fw'),
 'type'  => 'switch',
