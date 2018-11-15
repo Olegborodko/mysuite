@@ -80,6 +80,11 @@ jQuery(window).bind("load", function() {
 
             var attr_im_margin_left_right = this_.attr('data-im-margin-left-right');
 
+            var attr_data_left_ipad = this_.attr('data-left-ipad');
+            var attr_data_left_mobile = this_.attr('data-left-mobile');
+            var attr_data_top_ipad = this_.attr('data-top-ipad');
+            var attr_data_top_mobile = this_.attr('data-top-mobile');
+
             if (attr_ipad_mobile_align && attr_ipad_mobile_align.length > 0) {
                 if (attr_ipad_mobile_align=='yes') {
                     this_.css('text-align', 'center');
@@ -104,6 +109,14 @@ jQuery(window).bind("load", function() {
                 if (attr_b_mobile && attr_b_mobile.length > 0) {
                     this_.css('background-image', 'url(' + attr_b_mobile + ')');
                 }
+
+                if (attr_data_left_mobile && attr_data_left_mobile.length > 0) {
+                    this_.css('left', attr_data_left_mobile);
+                }
+
+                if (attr_data_top_mobile && attr_data_top_mobile.length > 0) {
+                    this_.css('top', attr_data_top_mobile);
+                }
             }
 
             if (ipad_size) {
@@ -117,6 +130,15 @@ jQuery(window).bind("load", function() {
 
                 if (attr_b_ipad && attr_b_ipad.length > 0) {
                     this_.css('background-image', 'url(' + attr_b_ipad + ')');
+                }
+
+                if (attr_data_left_ipad && attr_data_left_ipad.length > 0) {
+                    this_.css('left', attr_data_left_ipad);
+                    console.log('123');
+                }
+
+                if (attr_data_top_ipad && attr_data_top_ipad.length > 0) {
+                    this_.css('top', attr_data_top_ipad);
                 }
             }
 
@@ -583,4 +605,16 @@ jQuery(window).bind("load", function() {
             }
         });
     }
+
+    //=======================================
+
+    if ( jQuery(".js_social_icon_fixed").length ) {
+        jQuery(".js_social_icon_fixed").each(function (i, el) {
+            var this_ = jQuery(el);
+            var data_social_fixed = this_.attr('data-social-fixed');
+            var data_social_class = this_.attr('data-social-class');
+            jQuery('<style>.'+data_social_class+':before{content:"'+data_social_fixed+'"}</style>').appendTo('head');
+        });
+    }
+
 });

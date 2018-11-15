@@ -51,6 +51,23 @@
   padding:25px 43px;
 }
 
+.js_button{
+  position:absolute;
+  display:inline-block;
+}
+
+.g_button_back{
+  color: $color_141414;
+  font-family: $font-lora;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.41px;
+  text-decoration:none;
+  padding:14px 21px;
+  border: 1px solid $color_rgba_20_20_20__45;
+}
+
 @media screen and (max-width: 767px) { /* mobile */
   .button_white {
     max-width: 320px;

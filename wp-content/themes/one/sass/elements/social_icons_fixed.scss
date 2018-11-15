@@ -1,0 +1,26 @@
+.social_icons_fixed{
+  position:fixed;
+  display:flex;
+  flex-direction: column;
+  z-index: 10000;
+}
+
+.social_icons_fixed__link{
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+.social_icons_fixed__icon {
+  border: 1px solid $color_rgba_20_20_20__45;
+  width:45px;
+  height:45px;
+  text-align: center;
+}
+
+.social_icons_fixed__icon:before{
+  display:inline-block;
+  content: '';
+  font-family: FontAwesome;
+  position: relative;
+  top: 9px;
+}

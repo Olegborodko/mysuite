@@ -129,7 +129,7 @@ section{position:relative}
 .fw-text-left{text-align:left}
 .fw-text-right{text-align:right}
 .fw-text-center{text-align:center}
-.r_c_white_and_shadow{background:linear-gradient(to top,#f7f6f9,#fff);position:relative;top:-140px;margin-bottom:-140px;padding-bottom:20px;background-size:100% 50%;background-repeat:no-repeat}
+.r_c_white_and_shadow{background:#fff;background:-moz-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-webkit-gradient(left top,left bottom,color-stop(70%,#fff),color-stop(100%,rgba(255,255,255,0)));background:-webkit-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-o-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-ms-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:linear-gradient(to bottom,#fff 70%,rgba(255,255,255,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );position:relative;background-size:100% 100%;background-repeat:no-repeat;top:-140px;margin-bottom:-140px;padding-bottom:20px}
 .r_c_white_and_shadow:after,.r_c_white_and_shadow:before{display:block!important;height:100%;max-height:600px;top:0;box-shadow:-15px 0 12px -20px inset;position:absolute;width:10px;content:''}
 .r_c_white_and_shadow:before{right:0}
 .r_c_white_and_shadow:after{left:-10px}
@@ -182,7 +182,7 @@ header ul#primary-menu li a{color:#fff;font-size:12px;font-weight:700}
 header i.has_sub-menu:after{content:"\f107";font-family:FontAwesome,sans-serif;position:relative;display:inline-block}
 header i.tangle.has_sub-menu{color:#fff;font-size:18px;margin-left:10px}
 header a.header_resident_portal_btn{color:#7c7a7d;font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;white-space:nowrap;padding:10px 12px 10px 18px;background-color:#fff;display:inline-block;height:36px;margin-top:12px;cursor:pointer}
-.button_transparent,.button_white{border:1px solid #fff;font-size:14px;letter-spacing:1.52px;font-family:Lora,sans-serif;font-weight:700;text-transform:uppercase;text-decoration:none}
+.button_transparent,.button_white{border:1px solid #fff;text-decoration:none;font-family:Lora,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1.52px}
 header a.header_resident_portal_btn i.fa-key{margin-left:10px;transform:scale(1,-1) rotate(-45deg)}
 header .site-logo-default{display:flex}
 header .site-logo-scroll,header.js_menu_scroll_now .site-logo-default{display:none}
@@ -221,12 +221,15 @@ header ul.menu_mobile_bar li.menu_mobile_bar__three{width:26px;height:2px;backgr
 header .site-logo img{margin:0 auto}
 header .site-logo{width:50%;margin:0 auto}
 }
-.button_white,.g_button,.home_top__or{display:inline-block}
+.button_white,.g_button,.home_top__or,.js_button{display:inline-block}
 .button_white{background-color:#fff;padding:24px 40px;color:#818181}
 .button_white:hover{background-color:transparent;color:#fff;border:1px solid #fff}
 .button_transparent{padding:26px 42px;color:#fff}
 .button_transparent:hover{background-color:#fff;color:#818181;border:1px solid #818181}
-.g_button{color:#141414;font-family:Lora,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.41px;text-decoration:none;border:1px solid #141414;padding:25px 43px}
+.g_button,.g_button_back{color:#141414;font-family:Lora,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.41px;text-transform:uppercase;text-decoration:none}
+.g_button{border:1px solid #141414;padding:25px 43px}
+.js_button{position:absolute}
+.g_button_back{padding:14px 21px;border:1px solid rgba(20,20,20,.45)}
 .home_top__small_text,.home_top__title{font-family:"Lyon Display",sans-serif;color:#fff;text-align:center}
 @media screen and (max-width:767px){.button_transparent,.button_white{max-width:320px}
 .g_button{font-size:14px;letter-spacing:1.52px}
@@ -720,7 +723,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .title_with_line__block:before,.title_with_line__line{background:url(../img/line.png) center repeat-x}
 .custom_video{position:relative}
 .custom_video__play{position:absolute;cursor:pointer;top:0;left:0;display:none}
-.custom_video__play img{position:relative;top:calc(100%/2 - 90px)}
+.custom_video__play img{position:relative;top:calc(100%/2 - 11%);width:11%!important}
 .title_with_line__line{flex:1 1 auto}
 .title_with_line__block{display:flex;position:relative}
 .title_with_line__title{text-align:left;flex:1 1 auto;margin-left:40px}
@@ -770,6 +773,10 @@ header div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li{bac
 .partners_logo__item{margin-left:25px;margin-right:25px;max-width:190px;margin-bottom:70px}
 @media screen and (max-width:767px){.partners_logo__item{margin-left:10px;margin-right:10px;max-width:150px;margin-bottom:70px}
 }
+.social_icons_fixed{position:fixed;display:flex;flex-direction:column;z-index:10000}
+.social_icons_fixed__link{display:inline-block;margin-bottom:10px}
+.social_icons_fixed__icon{border:1px solid rgba(20,20,20,.45);width:45px;height:45px;text-align:center}
+.social_icons_fixed__icon:before{display:inline-block;content:'';font-family:FontAwesome;position:relative;top:9px}
 header ul#primary-menu.primary-black i.has_sub-menu:after,header ul#primary-menu.primary-black li a{color:#141414}
 header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;background-color:#141414}
 .footer{padding-top:40px;padding-bottom:20px;background:#f7f6f9}

@@ -56,7 +56,7 @@ if ( !empty( $atts['mobile_background'] ) && !empty($atts['mobile_background']['
     if (esc_attr($atts['show_footer']) == "yes"){
       echo "<div class='partner_up__footer'>";
       $logo_black = false;
-      require_once( get_stylesheet_directory() . '/php/part_code/footer.php' );
+      require( get_stylesheet_directory() . '/php/part_code/footer.php' );
       echo "</div>";
     }
   ?>

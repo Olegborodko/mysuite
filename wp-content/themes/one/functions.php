@@ -241,3 +241,18 @@ require_once( get_stylesheet_directory() . '/php/locations/locations.php' );
 
 /* question taxonomy and post type */
 require_once( get_stylesheet_directory() . '/php/question/question.php' );
+
+/* unyson enable on posts */
+
+function _thz_filter_auto_activate_builder() {
+
+  $auto = array(
+  'post' => true,
+  'page' => true
+  //'press_releases' => true,
+  //'team' => true
+  );
+
+  return  $auto;
+}
+add_filter( 'fw_ext_page_builder_settings_options_post_types_default_value', '_thz_filter_auto_activate_builder' );

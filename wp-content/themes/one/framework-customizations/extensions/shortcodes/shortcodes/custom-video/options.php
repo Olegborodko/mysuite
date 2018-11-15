@@ -48,3 +48,5 @@ $options = array(
 'desc'  => __('0, 44px, ...', 'fw')
 )
 );
+
+require( get_stylesheet_directory() . '/php/shortcodes/padding.php' );

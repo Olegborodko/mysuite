@@ -19,9 +19,9 @@
 
   <div class="filter__block">
     <?php
-    require_once( 'filter__block_left.php' );
-    require_once( 'filter__block_center.php' );
-    require_once( 'filter__block_right.php' );
+    require( 'filter__block_left.php' );
+    require( 'filter__block_center.php' );
+    require( 'filter__block_right.php' );
     ?>
 
     <div class="filter__buttons">
@@ -35,7 +35,7 @@
   </div>
 
   <?php
-  require_once( 'results.php' );
+  require( 'results.php' );
   ?>
 
   <div class="filter__pagination">

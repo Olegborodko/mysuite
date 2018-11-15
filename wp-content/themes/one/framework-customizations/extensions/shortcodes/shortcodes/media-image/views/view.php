@@ -10,8 +10,8 @@ if ( empty( $atts['image'] ) ) {
 	return;
 }
 
-$width  = ( is_numeric( $atts['width'] ) && ( $atts['width'] > 0 ) ) ? $atts['width'] : '';
-$height = ( is_numeric( $atts['height'] ) && ( $atts['height'] > 0 ) ) ? $atts['height'] : '';
+$width  = ( ( $atts['width'] ) && ( $atts['width'].length>0 ) ) ? $atts['width'] : '';
+$height = ( ( $atts['height'] ) && ( $atts['height'].length>0 ) ) ? $atts['height'] : '';
 
 if ( ! empty( $width ) && ! empty( $height ) ) {
 	$image = fw_resize( $atts['image']['attachment_id'], $width, $height, true );
