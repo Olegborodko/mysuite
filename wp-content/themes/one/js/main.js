@@ -606,7 +606,7 @@ jQuery(window).bind("load", function() {
         });
     }
 
-    //=======================================
+    //======================================= social-fixed-icons
 
     if ( jQuery(".js_social_icon_fixed").length ) {
         jQuery(".js_social_icon_fixed").each(function (i, el) {
@@ -614,6 +614,22 @@ jQuery(window).bind("load", function() {
             var data_social_fixed = this_.attr('data-social-fixed');
             var data_social_class = this_.attr('data-social-class');
             jQuery('<style>.'+data_social_class+':before{content:"'+data_social_fixed+'"}</style>').appendTo('head');
+        });
+    }
+
+    //========================================
+
+    if ( jQuery(".slider_type3__js").length ) {
+        var mySwiper = new Swiper('.slider_type3__js', {
+            slidesPerView: 2,
+            centeredSlides: false,
+            paginationClickable: true,
+            loop: false,
+            allowSwipeToNext: true,
+            allowSwipeToPrev: true,
+            // pagination: '.location_slider__js__pagination',
+            nextButton: '.slider_type3__button_next',
+            prevButton: '.slider_type3__button_prev'
         });
     }
 
