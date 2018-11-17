@@ -18,15 +18,15 @@
 
   $myposts = $my_posts->query( array(
   'post_type' => 'post',
-  //'posts_per_page' => -1,
+    //'posts_per_page' => -1,
   'order' => 'ASC' //DESC
-  //category_name
+    //category_name
   ) );
 
-//  echo "<pre>";
-//          var_dump($myposts);
-//          echo "</pre>";
-//
+  //  echo "<pre>";
+  //          var_dump($myposts);
+  //          echo "</pre>";
+  //
   ?>
 
 
@@ -54,16 +54,22 @@
 //    var_dump($post);
 //    echo "</pre>";
         ?>
-        <div class="swiper-slide slider_type2__slide">
+        <div class="swiper-slide slider_type3__slide">
           <?php
-          echo get_the_date($post_id);
-          echo $post -> post_title;
           //echo $post -> id + "<------------";
           //echo get_the_post_thumbnail_url($post_id);
           ?>
 
           <?php if (strlen($image) > 0) { ?>
-          <img src="<?=$image?>"/>
+            <img src="<?=$image?>"/>
+            <div class="related_post__bottom">
+              <div class="related_post__date">
+                <?=get_the_date('F j,Y',$post_id)?>
+              </div>
+              <div class="related_post__post_title">
+                <?=$post -> post_title?>
+              </div>
+            </div>
           <?php } ?>
         </div>
         <?php

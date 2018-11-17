@@ -625,11 +625,18 @@ jQuery(window).bind("load", function() {
             centeredSlides: false,
             paginationClickable: true,
             loop: false,
+            spaceBetween: 20,
             allowSwipeToNext: true,
             allowSwipeToPrev: true,
             // pagination: '.location_slider__js__pagination',
             nextButton: '.slider_type3__button_next',
-            prevButton: '.slider_type3__button_prev'
+            prevButton: '.slider_type3__button_prev',
+            breakpoints: {
+              767: {
+                slidesPerView: 1,
+                spaceBetween: 0
+              }
+            }
         });
     }
 
