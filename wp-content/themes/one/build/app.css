@@ -776,14 +776,20 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .social_icons_fixed__link{display:inline-block;margin-bottom:10px}
 .social_icons_fixed__icon{border:1px solid rgba(20,20,20,.45);width:45px;height:45px;text-align:center}
 .social_icons_fixed__icon:before{display:inline-block;content:'';font-family:FontAwesome;position:relative;top:9px}
-.related_post__title{color:#141414;font-family:"Lyon Display - Bold";font-size:24px;font-weight:700;line-height:35px}
+.related_post__date,.related_post__title{font-family:"Lyon Display",sans-serif;color:#141414}
+.related_post__title{font-size:24px;font-weight:700;line-height:35px}
 .swiper-button-next.slider_type3__button_next{background:url(../img/arrow_right_b.png) center no-repeat;position:relative;float:right;width:54px;height:35px;left:0;display:block;top:-15px}
 .swiper-button-prev.slider_type3__button_prev{background:url(../img/arrow_left_b.png) center no-repeat;position:relative;width:54px;float:right;margin-right:20px;height:35px;left:0;display:block;top:-15px}
-.related_post__date{opacity:.45;color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500}
-.related_post__post_title{opacity:.9;color:#141414;font-family:Avenir;font-size:20px;font-weight:400;line-height:28px;margin-top:10px}
+.footer_block,.news__block{display:flex}
+.related_post__date{opacity:.45;font-size:11px;font-weight:500}
+.related_post__post_title{opacity:.9;color:#141414;font-family:Avenir,sans-serif;font-size:20px;font-weight:400;line-height:28px;margin-top:10px}
+.news__top_title,.widget-title{font-family:"Lyon Display",sans-serif;font-weight:700}
 .related_post__bottom{padding:20px 30px 30px;text-align:left}
 .related_post__top{margin-bottom:50px}
 .slider_type3__slide{text-align:center}
+.news__block{padding:60px}
+.news__top_title{color:#141414;font-size:24px;line-height:35px}
+.news__right{min-width:220px}
 header ul#primary-menu.primary-black i.has_sub-menu:after,header ul#primary-menu.primary-black li a{color:#141414}
 header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;background-color:#141414}
 @media screen and (max-width:1199px){header div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li{background-color:#141414}
@@ -792,10 +798,9 @@ header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;
 .footer ul{list-style:none}
 .footer .footer_part_1 a,.footer .footer_part_2 a,.footer .footer_part_3 a{text-decoration:none;margin-top:28px}
 .footer .footer_part_1 li,.footer .footer_part_2 li,.footer .footer_part_3 li{margin-bottom:20px}
-.footer_block{display:flex}
 .footer_part_1,.footer_part_2,.footer_part_3{flex:1 1 auto}
 .footer_part_4{flex:1 1 auto;max-width:330px;width:100%}
-.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px}
+.widget-title{font-size:12px;line-height:36px}
 .footer .menu a,.footer_test_1{font-weight:300}
 .footer .menu a,.footer_copyright_desktop,.footer_phone,.footer_test_1{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
 .footer .menu a{opacity:.8}
