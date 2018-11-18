@@ -640,4 +640,12 @@ jQuery(window).bind("load", function() {
         });
     }
 
+    //================================= js_news__filter_button
+
+    if ( jQuery(".js_news__filter_button").length ) {
+        jQuery(".js_news__filter_button").click(function (i, el) {
+            jQuery(".js_news__filter_submenu").css("display","flex");
+        });
+    };
+
 });

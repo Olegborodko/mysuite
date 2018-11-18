@@ -19,7 +19,8 @@ while ( have_posts() ) :
 endwhile; // End of the loop.
 ?>
 
-  <div class="fw-container r_c_white_and_shadow">
+<section class="news">
+  <div class="fw-container r_c_white_and_shadow_news">
     <div class="fw-row">
       <div class="fw-col-xs-12 fw-col-lg-12">
         <div class="news__block">
@@ -37,6 +38,7 @@ endwhile; // End of the loop.
       </div>
     </div>
   </div>
+</section>
 
 <?php
 get_footer();

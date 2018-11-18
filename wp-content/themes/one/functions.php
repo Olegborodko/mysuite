@@ -256,3 +256,10 @@ function _thz_filter_auto_activate_builder() {
   return  $auto;
 }
 add_filter( 'fw_ext_page_builder_settings_options_post_types_default_value', '_thz_filter_auto_activate_builder' );
+
+/* add custom parameters to query_vars */
+//function myplugin_register_query_vars( $vars ) {
+//  $vars[] = 'category_name';
+//  return $vars;
+//}
+//add_filter( 'query_vars', 'myplugin_register_query_vars' );

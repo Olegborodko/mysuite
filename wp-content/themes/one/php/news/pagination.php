@@ -11,6 +11,6 @@ echo paginate_links( array(
 'prev_next'    => true,
 'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
 'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
-'add_args'     => false,
+'add_args'     =>  array( 'category_name' => $category_name), #add custom variables
 'add_fragment' => '',
 ) );

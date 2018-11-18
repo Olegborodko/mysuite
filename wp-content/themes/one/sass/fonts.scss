@@ -46,8 +46,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'AvenirBook';
+  src: url('../fonts/Avenir-Book.eot');
+  src: url('../fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Avenir-Book.woff2') format('woff2'),
+  url('../fonts/Avenir-Book.woff') format('woff'),
+  url('../fonts/Avenir-Book.ttf') format('truetype'),
+  url('../fonts/Avenir-Book.svg#Avenir-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $font-lora: 'Lora', sans-serif;
 $font-avenir: 'Avenir', sans-serif;
+$font-avenir-book: 'AvenirBook', sans-serif;
 $font-lyon: 'Lyon Display', sans-serif;
 $font-kalam: 'Kalam', sans-serif;
 
