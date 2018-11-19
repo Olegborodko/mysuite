@@ -49,13 +49,18 @@ $categories = get_categories( array(
 global $wp;
 $link = home_url( $wp->request );
 $link_to_category = home_url( $wp->request ) . "/?category_name=";
+
+global $post;
+$page_slug = $post->post_name;
+$url=get_site_url().'/'.$page_slug;
+$url_with_category = $url."/?category_name=";
 ?>
 
   <div class="news__top_title">
     Blog
   </div>
   <div class="news__filter">
-    <div class="news__filter_button js_news__filter_button">
+    <div id="js_news__filter_button" class="news__filter_button js_news__filter_button">
       <?php if ($category_name==''){ ?>
         Show All <i class="fa fa-angle-down" aria-hidden="true"></i>
       <?php }else{ ?>
@@ -64,13 +69,21 @@ $link_to_category = home_url( $wp->request ) . "/?category_name=";
     </div>
     <div class="news__filter_submenu js_news__filter_submenu">
       <?php if ($category_name!=''){ ?>
-        <a href="<?=$link?>">Show All</a>
+        <a href="<?=$url?>">Show All</a>
       <?php } ?>
+
       <?php
+      function strposX($haystack, $needle, $number) {
+        // decode utf8 because of this behaviour: https://bugs.php.net/bug.php?id=37391
+        preg_match_all("/$needle/", utf8_decode($haystack), $matches, PREG_OFFSET_CAPTURE);
+        return $matches[0][$number-1][1];
+      }
+
       foreach( $categories as $el ){
         if ($category_name != $el->slug) {
+          echo $pos;
           ?>
-          <a href="<?= $link_to_category . $el->slug ?>"><?= $el->cat_name ?></a>
+          <a href="<?= $url_with_category . $el->slug ?>"><?= $el->cat_name ?></a>
           <?php
         }
       }

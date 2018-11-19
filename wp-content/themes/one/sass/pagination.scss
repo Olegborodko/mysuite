@@ -1,0 +1,46 @@
+.pagination {
+  position: relative;
+  margin-top: 60px;
+  text-align: center;
+
+  .next.page-numbers {
+    background: url(../img/arrow_right_b.png) center no-repeat;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    background-size: contain;
+    float: right;
+    border:0;
+  }
+
+  .prev.page-numbers {
+    background: url(../img/arrow_left_b.png) center no-repeat;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    background-size: contain;
+    float: left;
+    border:0;
+  }
+
+  .page-numbers {
+    border: 1px solid $color_rgba_20_20_20__45;
+    color: $color_141414;
+    font-family: $font-lora;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.41px;
+    padding: 15px 22px;
+    margin: 8px;
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+  }
+
+  .page-numbers.current {
+    color: $color_ffffff;
+    border: 1px solid $color_141414;
+    background-color: $color_141414;
+  }
+}

@@ -632,10 +632,10 @@ jQuery(window).bind("load", function() {
             nextButton: '.slider_type3__button_next',
             prevButton: '.slider_type3__button_prev',
             breakpoints: {
-              767: {
-                slidesPerView: 1,
-                spaceBetween: 0
-              }
+                767: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
             }
         });
     }
@@ -643,9 +643,13 @@ jQuery(window).bind("load", function() {
     //================================= js_news__filter_button
 
     if ( jQuery(".js_news__filter_button").length ) {
-        jQuery(".js_news__filter_button").click(function (i, el) {
+        jQuery(".js_news__filter_button").click(function (e) {
+            e.stopPropagation(); //хорошее решение что-б не закрывалось по клику на body
             jQuery(".js_news__filter_submenu").css("display","flex");
         });
     };
 
+    jQuery(document).on('click', function (event) {
+        jQuery(".js_news__filter_submenu").css("display", "none");
+    });
 });
