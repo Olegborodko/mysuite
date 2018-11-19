@@ -13,6 +13,14 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  header {
+    ul#primary-menu.primary-black ul.sub-menu {
+      background: $color_ffffff;
+    }
+  }
+}
+
 
 @media screen and (max-width: 1199px){
   header {

@@ -175,6 +175,10 @@ header.js_menu_scroll_now{
     ul#primary-menu ul.sub-menu li a{
       min-width: 100%;
     }
+
+    ul#primary-menu ul.sub-menu {
+      background: $color_000000;
+    }
   }
 
   header.js_menu_scroll_now{

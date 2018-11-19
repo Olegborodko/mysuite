@@ -199,6 +199,7 @@ header.js_menu_scroll_now i.tangle.has_sub-menu{color:#141414}
 @media screen and (min-width:1200px){header .button-menu-toggle{display:none}
 header .main-navigation ul{display:block}
 header ul#primary-menu ul.sub-menu li a{min-width:100%}
+header ul#primary-menu ul.sub-menu{background:#000}
 header.js_menu_scroll_now ul#primary-menu ul.sub-menu{background-color:#fff}
 }
 @media screen and (max-width:1199px){header .button-menu-toggle{display:inline-block;float:right;margin-top:-48px;margin-right:20px}
@@ -250,10 +251,10 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .slider_type1 div.slider_type1__pagination,.slider_type2 div.slider_type2__pagination{top:8px;position:relative}
 .ready_top_background{position:relative}
 .home_top__arrow_down_block{margin-left:20px}
-.home_top{padding-top:82px!important}
 @media screen and (min-width:1200px){.home_top__arrow_down_block{margin-top:130px}
 .home_top{min-height:783px;background-size:cover!important}
 }
+.home_top{padding-top:82px!important}
 @media screen and (min-width:768px) and (max-width:1199px){.home_top__small_text{margin-top:80px}
 .home_top__arrow_down_block{margin-top:390px}
 .home_top__title{font-size:36px;font-weight:700;line-height:54px}
@@ -840,8 +841,12 @@ section.news{background:#f7f6f9}
 .pagination .prev.page-numbers{background:url(../img/arrow_left_b.png) center no-repeat;display:inline-block;position:relative;top:-20px;background-size:contain;float:left;border:0}
 .pagination .page-numbers{border:1px solid rgba(20,20,20,.45);color:#141414;font-family:Lora,sans-serif;font-size:13px;letter-spacing:1.41px;padding:15px 22px;margin:8px;cursor:pointer;width:52px;height:52px}
 .pagination .page-numbers.current{color:#fff;border:1px solid #141414;background-color:#141414}
+header.property{margin-top:0;background:#fff}
+.property__top_image{min-height:566px;padding-top:204px;background-size:cover!important;background:url(../img/property/pr_top.jpg) center no-repeat}
 header ul#primary-menu.primary-black i.has_sub-menu:after,header ul#primary-menu.primary-black li a{color:#141414}
 header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;background-color:#141414}
+@media screen and (min-width:1200px){header ul#primary-menu.primary-black ul.sub-menu{background:#fff}
+}
 @media screen and (max-width:1199px){header div.button-menu-toggle-black.button-menu-toggle ul.menu_mobile_bar li{background-color:#141414}
 }
 .footer{padding-top:40px;padding-bottom:20px;background:#f7f6f9}
