@@ -647,9 +647,29 @@ jQuery(window).bind("load", function() {
             e.stopPropagation(); //хорошее решение что-б не закрывалось по клику на body
             jQuery(".js_news__filter_submenu").css("display","flex");
         });
-    };
+    }
 
     jQuery(document).on('click', function (event) {
         jQuery(".js_news__filter_submenu").css("display", "none");
     });
+
+    //================================== js_apartments__top
+    if ( jQuery(".js_apartments__top").length ) {
+        jQuery(".js_apartments__top").click(function(){
+            el_ = jQuery(this);
+            el_next = el_.next(".js_apartments__table");
+            el_arrow_up = el_.find(".js_apartments__arrow_up");
+            el_arrow_down = el_.find(".js_apartments__arrow_down");
+
+            if (el_next.css("display") === "none") {
+                el_next.show();
+                el_arrow_up.css("display","inline");
+                el_arrow_down.css("display","none");
+            }else{
+                el_next.hide();
+                el_arrow_down.css("display","inline");
+                el_arrow_up.css("display","none");
+            }
+        });
+    }
 });

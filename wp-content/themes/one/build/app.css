@@ -680,12 +680,12 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .filter__r_item_price,.filter__r_item_title{color:#141414;font-family:Avenir,sans-serif;line-height:28px}
 .filter__r_item_title{opacity:.9;font-size:20px;font-weight:400;margin-top:10px}
 .filter__r_item_price{opacity:.7;font-size:14px;font-weight:300}
-.filter__r_button,.filter__r_premium{font-family:Avenir,sans-serif;font-size:10px;font-weight:900;letter-spacing:1px;color:#fff}
+.filter__r_button,.filter__r_premium{font-family:Avenir,sans-serif;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#fff}
 .filter__r_description{display:flex;flex-wrap:wrap;padding:30px}
-.filter__r_button{margin-top:30px;float:right;border-radius:2px;background-color:#a89fbd;padding:10px 15px;text-transform:uppercase}
+.filter__r_button{margin-top:30px;float:right;border-radius:2px;background-color:#a89fbd;padding:10px 15px}
 .filter__r_description_left{flex:1 1 auto;padding-right:16px}
-.filter__r_premium{border-radius:0 0 2px 2px;background-color:#fac800;display:inline-block;position:absolute;top:1px;padding:10px 12px;opacity:.9;text-transform:uppercase;left:40px}
-.filter__pagination_item,.filter__pagination_item_active{font-family:Lora,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase}
+.filter__r_premium{border-radius:0 0 2px 2px;background-color:#fac800;display:inline-block;position:absolute;top:1px;padding:10px 12px;opacity:.9;left:40px}
+.filter__pagination_item,.filter__pagination_item_active{font-family:Lora,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.41px;text-transform:uppercase}
 .filter__r_premium img{margin-right:6px;position:relative;top:2px}
 @media screen and (max-width:768px){.filter__r_item{width:100%}
 }
@@ -693,8 +693,8 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .filter__pagination{position:relative;display:flex;justify-content:space-between;margin-top:60px;flex-wrap:wrap}
 .filter__pagination_item,.filter__pagination_item_active,.filter__pagination_left_arrow,.filter__pagination_right_arrow{padding:15px 22px;width:52px;height:52px;margin:8px;cursor:pointer}
 .filter__pagination_left_arrow{background:url(../img/arrow_left.png) center no-repeat;background-size:contain}
-.filter__pagination_item_active{color:#fff;letter-spacing:1.41px;border:1px solid #141414;background-color:#141414}
-.filter__pagination_item{border:1px solid rgba(20,20,20,.45);color:#141414;letter-spacing:1.41px}
+.filter__pagination_item_active{color:#fff;border:1px solid #141414;background-color:#141414}
+.filter__pagination_item{border:1px solid rgba(20,20,20,.45);color:#141414}
 .partner_up__email,.partner_up__under_title a{font-family:Avenir,sans-serif}
 .filter__pagination_right_arrow{background-position:center;background-repeat:no-repeat;background-size:contain}
 .filter__pagination_center{display:flex}
@@ -813,12 +813,12 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .news__center_block{display:flex;flex-wrap:wrap;justify-content:space-between}
 .news__center_item{width:49%;margin-top:20px;margin-bottom:20px;text-decoration:none;display:inline-block;position:relative}
 .news__center_title{text-decoration:none;opacity:.9;color:#141414;font-family:Avenir;font-size:20px;font-weight:400;line-height:28px;margin-top:7px;display:inline-block}
-.news__center_date{opacity:.45;color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px}
-.news__center_read_more_title,.pagination .page-numbers,.widget-title{font-weight:700;text-transform:uppercase}
+.news__center_date,.pr__top_title{opacity:.45;text-transform:uppercase}
+.news__center_date{color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500;letter-spacing:1.3px}
 .news__center_description{padding:20px}
 .news__center_read_more_arrow{background:url(../img/b_arrow_right.png) center no-repeat;display:inline-block;opacity:.7;height:4px;width:50px;background-size:cover}
 .news__center_read_more,.news__center_shadow{display:none;position:absolute;top:0;left:0;width:100%;height:100%}
-.news__center_read_more_title{opacity:.9;color:#fff;font-family:"Lyon Display - Bold";font-size:12px;letter-spacing:1.3px;margin-top:33%}
+.news__center_read_more_title{opacity:.9;color:#fff;font-family:"Lyon Display - Bold";font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.3px;margin-top:33%}
 .news__center_shadow{background:#000;opacity:.5}
 .news__center_image_block{position:relative}
 .news__center_image_block img{vertical-align:bottom}
@@ -826,7 +826,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .news__center_item:hover .news__center_read_more,.news__center_item:hover .news__center_shadow{display:block}
 section.news{background:#f7f6f9}
 .r_c_white_and_shadow_news{background:#fff;background:-moz-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-webkit-gradient(left top,left bottom,color-stop(70%,#fff),color-stop(100%,rgba(255,255,255,0)));background:-webkit-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-o-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-ms-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:linear-gradient(to bottom,#fff 70%,rgba(255,255,255,0) 100%);position:relative;background-size:100% 700px;background-repeat:no-repeat;top:-140px;margin-bottom:-140px;padding-bottom:20px}
-.r_c_white_and_shadow_news:after,.r_c_white_and_shadow_news:before{display:block!important;height:100%;max-height:600px;top:0;box-shadow:-15px 0 12px -20px inset;width:10px;content:'';position:absolute}
+.r_c_white_and_shadow_news:after,.r_c_white_and_shadow_news:before{display:block!important;height:100%;max-height:600px;top:0;box-shadow:-15px 0 12px -20px inset;width:10px;position:absolute;content:''}
 .r_c_white_and_shadow_news:before{right:0}
 .news__filter a{text-decoration:none;display:inline-block;color:#000}
 .news__filter_submenu{display:none;flex-wrap:wrap;flex-direction:column;position:absolute;top:20px;left:0;background:#f7f6f9;padding:10px}
@@ -839,10 +839,77 @@ section.news{background:#f7f6f9}
 .pagination{position:relative;margin-top:60px}
 .pagination .next.page-numbers{background:url(../img/arrow_right_b.png) center no-repeat;display:inline-block;position:relative;top:-20px;background-size:contain;float:right;border:0}
 .pagination .prev.page-numbers{background:url(../img/arrow_left_b.png) center no-repeat;display:inline-block;position:relative;top:-20px;background-size:contain;float:left;border:0}
-.pagination .page-numbers{border:1px solid rgba(20,20,20,.45);color:#141414;font-family:Lora,sans-serif;font-size:13px;letter-spacing:1.41px;padding:15px 22px;margin:8px;cursor:pointer;width:52px;height:52px}
+.pagination .page-numbers{border:1px solid rgba(20,20,20,.45);color:#141414;font-family:Lora,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.41px;padding:15px 22px;margin:8px;cursor:pointer;width:52px;height:52px}
 .pagination .page-numbers.current{color:#fff;border:1px solid #141414;background-color:#141414}
 header.property{margin-top:0;background:#fff}
+@media (min-width:1200px){.property .fw-big-container{width:1290px}
+}
 .property__top_image{min-height:566px;padding-top:204px;background-size:cover!important;background:url(../img/property/pr_top.jpg) center no-repeat}
+.pr__description{background:#fff;background:-moz-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-webkit-gradient(left top,left bottom,color-stop(70%,#fff),color-stop(100%,rgba(255,255,255,0)));background:-webkit-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-o-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:-ms-linear-gradient(top,#fff 70%,rgba(255,255,255,0) 100%);background:linear-gradient(to bottom,#fff 70%,rgba(255,255,255,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);position:relative;background-size:100% 80%;background-repeat:no-repeat;top:-50px;margin-bottom:-50px;padding:43px 60px}
+.pr__top_title{color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500;letter-spacing:1.3px}
+.pr__title{color:#141414;font-family:"Lyon Display - Bold";font-size:32px;font-weight:700;line-height:40px}
+.pr__price{opacity:.7;color:#141414;font-family:"Avenir Book";font-size:20px;font-weight:300;line-height:28px;margin-top:10px}
+.pr__text_block{opacity:.8;color:rgba(20,20,20,.7);font-family:Avenir;font-size:16px;font-weight:400;line-height:28px;display:flex}
+.pr__one_month_free,.pr__semi_private{border-radius:0 0 2px 2px;position:absolute;top:0;color:#fff;opacity:.9;font-family:Avenir,sans-serif;font-size:10px;font-weight:900;letter-spacing:1px;cursor:pointer;text-transform:uppercase}
+.pr__arrow_back{background:url(../img/arrow_left_b.png) center no-repeat;width:54px;height:34px;cursor:pointer}
+.pr__one_month_free{background-color:#fac800;display:inline-block;padding:6px 14px;right:200px}
+.pr__semi_private{background-color:#a89fbd;display:inline-block;padding:8px 14px;right:80px}
+.property{background:#f7f6f9}
+.pr__text_left,.pr__text_right{margin-top:40px;width:50%}
+.pr__text_left{padding-right:10px}
+.pr__text_right{padding-left:10px}
+.pr__view_gallery_title,.pr__virtual_tour_title{display:inline-block;position:relative;top:-6px;left:6px}
+.pr__view_gallery_title,.pr__virtual_tour{color:#141414;font-family:Lora;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.19px}
+.pr__view_gallery,.pr__virtual_tour{display:inline-block;position:absolute;top:-70px;background:#fff;cursor:pointer}
+.pr__virtual_tour{right:0;padding:12px 28px 6px 20px}
+.pr__view_gallery{right:190px;padding:12px 28px 4px 20px}
+.pr__one_month_free_title{display:inline-block;position:relative;top:-2px;margin-left:6px}
+.pr__available_block{margin-top:60px;text-align:center}
+.pr__available_top_title{opacity:.45;color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px}
+.pr__available_title{color:#141414;font-family:"Lyon Display - Bold";font-size:24px;font-weight:700;line-height:35px;max-width:260px;margin:10px auto}
+.pr__browse_available{color:#fff;font-family:Lora;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.41px;padding:20px 40px;display:inline-block;background-color:#141414;margin-top:20px;margin-bottom:20px}
+.pr__available_text{color:rgba(20,20,20,.7);font-family:"Avenir Light";font-size:16px;font-weight:300;line-height:28px;padding-top:20px;border-top:1px solid rgba(168,159,189,.4);max-width:230px;margin:0 auto}
+.pr__available_bottom_form,.pr__available_bottom_number{margin-left:10px;color:#a89fbd;font-family:"Avenir Heavy";font-size:16px;font-weight:800}
+.pr__available_bottom_block{margin-top:24px}
+.pr__available_bottom_form,.pr__available_bottom_number{display:inline-block}
+.pr__available_bottom_form{padding-right:18px;position:relative;margin-right:13px}
+.pr__available_bottom_form:after{display:block;position:absolute;top:4px;height:14px;width:1px;background:rgba(168,159,189,.4);content:'';right:0}
+.pr__available_bottom_block img{position:relative;top:4px}
+.apartments__title{color:#141414;font-family:"Lyon Display - Bold";font-size:24px;font-weight:700;line-height:35px}
+.apartments__table td,.apartments__top{font-family:Avenir;font-weight:400;line-height:28px}
+.apartments__top{margin-top:40px;opacity:.9;color:#141414;font-size:20px;border-bottom:1px solid rgba(168,159,189,.4);padding-bottom:6px;cursor:pointer}
+.apartments__top i{float:right;position:relative;top:5px;font-size:26px}
+.apartments__table{margin-top:20px;border-collapse:collapse;display:none}
+.apartments__table td{color:rgba(20,20,20,.7);font-size:14px}
+.apartments__table .apartments__table_title td{opacity:.45;color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px}
+.apartments .apartments__table tr.apartments__table_title{background:0 0}
+.apartments__table tr:nth-child(2n){background:#f8f7fa}
+.apartments__table tr:nth-child(2n+1){background:#fefefe}
+.apartments__table_one a{text-decoration:none;display:inline-block;position:relative}
+.apartments__table_one{padding-left:12px}
+.apartments__table_one img{margin-right:10px;position:relative;top:0}
+.apartments__table_view{opacity:.7;color:#141414;font-family:"Avenir Medium";font-size:11px;font-weight:500;line-height:21px;text-decoration:underline;position:absolute;bottom:-8px}
+.apartments__table_avaliable,.apartments__table_contact{color:#fff!important;font-family:Lora;font-size:13px;font-weight:700;letter-spacing:1.41px;display:inline-block;padding:12px 0;width:100%;text-align:center;text-transform:uppercase}
+.apartments__table_contact{background-color:#a89fbd}
+.apartments__table_avaliable{background-color:#141414}
+.apartments__table .apartments__table_one{width:25%}
+.apartments__table_four,.apartments__table_three,.apartments__table_two{width:20%}
+.apartments__top .js_apartments__arrow_up{display:none}
+.apartments__quote{margin-top:30px;text-align:center}
+.apartments__quote_center{display:inline-block;border:1px solid rgba(20,20,20,.1);border-radius:2px;padding:10px;opacity:.5;color:#141414;font-family:"Avenir Light";font-size:12px;font-weight:300;line-height:21px}
+.apartments__quote img{margin-right:10px;position:relative;top:2px}
+.apartments__free{margin-top:50px;border:1px solid #fac800}
+.apartments__free_top{background:#fac800;padding:5px 10px;opacity:.9;color:#fff;font-family:"Avenir Black";font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
+.apartments__free_right_top,.widget-title{text-transform:uppercase;letter-spacing:1.3px}
+.apartments__free_top img{position:relative;top:2px;margin-right:6px}
+.apartments__free_center{padding:30px;display:flex}
+.apartments__free_left{flex-shrink:0;margin-right:30px}
+.apartments__free_right_top{opacity:.45;color:#141414;font-family:"Lyon Display - Medium";font-size:11px;font-weight:500}
+.apartments__free_right_title{opacity:.9;color:#141414;font-family:Avenir;font-size:20px;font-weight:400;line-height:28px;margin-top:8px}
+.apartments__free_right_title img{margin-right:6px}
+.apartments__free_right_description{opacity:.7;color:#141414;font-family:"Avenir Book";font-size:14px;font-weight:300;line-height:28px;margin-top:14px}
+.building{margin-top:60px}
+.building__title{color:#141414;font-family:"Lyon Display - Bold";font-size:24px;font-weight:700;line-height:35px}
 header ul#primary-menu.primary-black i.has_sub-menu:after,header ul#primary-menu.primary-black li a{color:#141414}
 header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;background-color:#141414}
 @media screen and (min-width:1200px){header ul#primary-menu.primary-black ul.sub-menu{background:#fff}
@@ -856,7 +923,7 @@ header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;
 .footer_block{display:flex}
 .footer_part_1,.footer_part_2,.footer_part_3{flex:1 1 auto}
 .footer_part_4{flex:1 1 auto;max-width:330px;width:100%}
-.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;line-height:36px;letter-spacing:1.3px}
+.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px}
 .footer .menu a,.footer_test_1{font-weight:300}
 .footer .menu a,.footer_copyright_desktop,.footer_phone,.footer_test_1{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
 .footer .menu a{opacity:.8}
