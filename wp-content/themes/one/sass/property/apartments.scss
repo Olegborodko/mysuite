@@ -1,0 +1,146 @@
+
+.apartments__title{
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.apartments__top{
+  margin-top:40px;
+  opacity: 0.9;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  border-bottom:1px solid rgba(168, 159, 189, 0.4);
+  padding-bottom:6px;
+  cursor:pointer;
+}
+
+.apartments__top i{
+  float:right;
+  position:relative;
+  top:5px;
+  font-size:26px;
+}
+
+.apartments__table{
+  margin-top:20px;
+  border-collapse: collapse;
+  display: none;
+}
+
+.apartments__table td{
+  color: $color_rgba_20_20_20__70;
+  font-family: $font-avenir;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.apartments__table
+.apartments__table_title td{
+  opacity: 0.45;
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.apartments
+.apartments__table
+tr.apartments__table_title {
+  background:none;
+}
+
+.apartments__table tr:nth-child(2n) {
+  background:#f8f7fa;
+}
+
+.apartments__table tr:nth-child(2n+1) {
+  background:#fefefe;
+}
+
+.apartments__table_one a{
+  text-decoration:none;
+  display:inline-block;
+  position:relative;
+}
+
+.apartments__table_one{
+  padding-left:12px;
+}
+
+.apartments__table_one img{
+  margin-right:10px;
+  position:relative;
+  top:0px;
+}
+
+.apartments__table_view{
+  opacity: 0.7;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 21px;
+  text-decoration: underline;
+  position:absolute;
+  bottom:-8px;
+}
+
+.apartments__table_contact{
+  color: $color_ffffff!important;
+  font-family: $font-lora;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.41px;
+  display:inline-block;
+  padding:12px 0;
+  background-color: $color_a89fbd;
+  text-align:center;
+  width:100%;
+}
+
+.apartments__table_avaliable{
+  color: $color_ffffff!important;
+  font-family: $font-lora;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.41px;
+  display:inline-block;
+  padding:12px 0;
+  background-color: $color_141414;
+  width:100%;
+  text-align:center;
+}
+
+.apartments__table
+.apartments__table_one{
+  width:25%;
+}
+
+.apartments__table_two{
+  width:20%;
+}
+
+.apartments__table_three{
+  width:20%;
+}
+
+.apartments__table_four{
+  width:20%;
+}
+
+.apartments__top {
+  .js_apartments__arrow_up {
+    display: none;
+  }
+}

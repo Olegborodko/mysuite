@@ -1,0 +1,66 @@
+.apartments__free{
+  margin-top:50px;
+  border:1px solid $color_fac800;
+}
+
+.apartments__free_top{
+  background: $color_fac800;
+  padding:5px 10px;
+  opacity: 0.9;
+  color: $color_ffffff;
+  font-family: $font-avenir-black;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.apartments__free_top img{
+  position:relative;
+  top:2px;
+  margin-right:6px;
+}
+
+.apartments__free_center{
+  padding:30px;
+  display:flex;
+}
+
+.apartments__free_left{
+  flex-shrink: 0;
+  margin-right:30px;
+}
+
+.apartments__free_right_top{
+  opacity: 0.45;
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.apartments__free_right_title{
+  opacity: 0.9;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top:8px;
+}
+
+.apartments__free_right_title img{
+  margin-right:6px;
+}
+
+.apartments__free_right_description{
+  opacity: 0.7;
+  color: #141414;
+  font-family: $font-avenir-book;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top:14px;
+}

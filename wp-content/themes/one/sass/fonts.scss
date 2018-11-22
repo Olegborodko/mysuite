@@ -58,11 +58,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'AvenirBlack';
+  src: url('../fonts/Avenir-Black.eot');
+  src: url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Avenir-Black.woff2') format('woff2'),
+  url('../fonts/Avenir-Black.woff') format('woff'),
+  url('../fonts/Avenir-Black.ttf') format('truetype'),
+  url('../fonts/Avenir-Black.svg#Avenir-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
 $font-lora: 'Lora', sans-serif;
 $font-avenir: 'Avenir', sans-serif;
 $font-avenir-book: 'AvenirBook', sans-serif;
 $font-lyon: 'Lyon Display', sans-serif;
 $font-kalam: 'Kalam', sans-serif;
+$font-avenir-black: 'AvenirBlack', sans-serif;
 
 $color_141414: #141414;
 $color_bfb5d7: #bfb5d7;

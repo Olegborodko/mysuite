@@ -37,7 +37,14 @@
 
 @import "news";
 @import "pagination";
-@import "property";
+
+@import "property/property";
+@import "property/apartments";
+@import "property/apartments__free";
+@import "property/apartments__quote";
+@import "property/available";
+@import "property/map";
+@import "property/building";
 
 @import "header_black";
 @import "footer";

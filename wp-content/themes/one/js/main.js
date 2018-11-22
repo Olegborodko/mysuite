@@ -672,4 +672,24 @@ jQuery(window).bind("load", function() {
             }
         });
     }
+
+    //================================== slider vertical
+    if ( jQuery(".map-swiper-container").length ) {
+        var swiper = new Swiper('.map-swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 4,
+            paginationClickable: true,
+            loop: false,
+            //spaceBetween: 3,
+            allowSwipeToNext: true,
+            allowSwipeToPrev: true,
+            nextButton: '.map-button-next',
+            prevButton: '.map-button-prev',
+            pagination: {
+                el: '.map-swiper-pagination',
+                clickable: true
+            }
+        });
+    }
+
 });

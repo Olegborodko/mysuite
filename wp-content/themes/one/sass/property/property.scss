@@ -1,0 +1,340 @@
+header.property{
+  margin-top:0;
+  background: $color_ffffff;
+}
+
+@media (min-width: 1200px) {
+  .property .fw-big-container {
+    width: 1290px;
+  }
+}
+
+.property__top_image{
+  min-height: 566px;
+  padding-top: 204px;
+  background-size: cover!important;
+  background: url(../img/property/pr_top.jpg) center no-repeat;
+}
+
+.pr__description {
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(70%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+
+  position: relative;
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+
+  top: -50px;
+  margin-bottom: -50px;
+  padding:43px 60px;
+}
+
+.pr__top_title{
+  opacity: 0.45;
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.pr__title{
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.pr__price{
+  opacity: 0.7;
+  color: $color_141414;
+  font-family: $font-avenir-book;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top:10px
+}
+
+.pr__text_block{
+  opacity: 0.8;
+  color: $color_rgba_20_20_20__70;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  display:flex;
+}
+
+.pr__arrow_back{
+  background: url(../img/arrow_left_b.png) center no-repeat;
+  width: 54px;
+  height:34px;
+  cursor:pointer;
+}
+
+.pr__one_month_free {
+  border-radius: 0 0 2px 2px;
+  background-color: $color_fac800;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  color: $color_ffffff;
+  padding: 6px 14px;
+
+  opacity: 0.9;
+  font-family: $font-avenir;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  right: 200px;
+  cursor:pointer;
+}
+
+.pr__semi_private {
+  border-radius: 0 0 2px 2px;
+  background-color: $color_a89fbd;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  color: $color_ffffff;
+  padding: 8px 14px;
+
+  opacity: 0.9;
+  font-family: $font-avenir;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  right: 80px;
+  cursor:pointer;
+}
+
+.property{
+  background: $color_f7f6f9;
+}
+
+.pr__text_left,
+.pr__text_right{
+  margin-top:40px;
+  width:50%;
+}
+
+.pr__text_left{
+  padding-right:10px;
+}
+
+.pr__text_right{
+  padding-left:10px;
+}
+
+.pr__view_gallery_title{
+  display:inline-block;
+}
+
+.pr__virtual_tour_title{
+  display:inline-block;
+}
+
+.pr__view_gallery_title,
+.pr__virtual_tour{
+  color: $color_141414;
+  font-family: $font-lora;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.19px;
+}
+
+.pr__view_gallery_title,
+.pr__virtual_tour_title{
+  position:relative;
+  top:-6px;
+  left:6px;
+}
+
+.pr__view_gallery,
+.pr__virtual_tour{
+  display:inline-block;
+  position:absolute;
+  top:-70px;
+  background: $color_ffffff;
+  cursor:pointer;
+}
+
+.pr__virtual_tour{
+  right:0;
+  padding:12px 28px 6px 20px;
+}
+
+.pr__view_gallery{
+  right:190px;
+  padding:12px 28px 4px 20px;
+}
+
+.pr__one_month_free_title{
+  display:inline-block;
+  position:relative;
+  top:-2px;
+  margin-left:6px;
+}
+
+/* apartment_amenities */
+
+.building__item.apartment_amenities{
+  margin-top:60px;
+}
+
+/* pet_policy */
+
+.building__item.pet_policy{
+  margin-top:60px;
+}
+
+.pet_policy__description{
+  opacity: 0.8;
+  color: $color_rgba_20_20_20__70;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* best_coffee */
+.best_coffee__free{
+  margin-top:40px;
+  border:1px solid $color_a89fbd;
+}
+
+.best_coffee__free.best_coffee__free_two{
+  margin-top:30px;
+}
+
+.best_coffee__free_top{
+  background: $color_a89fbd;
+  padding:5px 10px;
+  opacity: 0.9;
+  color: $color_ffffff;
+  font-family: $font-avenir-black;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.best_coffee__free_top img{
+  position:relative;
+  top:2px;
+  margin-right:6px;
+}
+
+.best_coffee__free_center{
+  padding:30px;
+  display:flex;
+}
+
+.best_coffee__free_left{
+  flex-shrink: 0;
+  margin-right:30px;
+}
+
+.best_coffee__free_right_top{
+  opacity: 0.45;
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.best_coffee__free_right_title{
+  opacity: 0.9;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top:10px;
+}
+
+.best_coffee__free_right_title img{
+  margin-right:6px;
+}
+
+.best_coffee__free_right_description{
+  opacity: 0.7;
+  color: $color_141414;
+  font-family: $font-avenir-book;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top:8px;
+}
+
+.best_coffee__bottom_phone,
+.best_coffee__bottom_email{
+  color: $color_a89fbd;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 800;
+  display:inline-block;
+  margin-left:10px;
+}
+
+.best_coffee__bottom_info {
+  margin-top: 10px;
+}
+
+.best_coffee__bottom_info img{
+  position:relative;
+  top:4px;
+}
+
+.best_coffee__bottom_phone{
+  margin-right: 18px;
+  padding-right: 22px;
+  position:relative;
+}
+
+.best_coffee__bottom_phone:after{
+  background: $color_rgba_168_159_189__40;
+  width: 1px;
+  height: 13px;
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  right: 0;
+}
+
+.partnership_benefits__title{
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-top:60px;
+}
+
+/* location */
+.location__title{
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-top: 60px;
+}
+
+.building__item.location__description{
+  margin-top:30px;
+}

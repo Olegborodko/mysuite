@@ -1,0 +1,23 @@
+.apartments__quote{
+  margin-top:30px;
+  text-align:center;
+}
+
+.apartments__quote_center{
+  display:inline-block;
+  border: 1px solid rgba(20, 20, 20, 0.1);
+  border-radius: 2px;
+  padding:10px;
+  opacity: 0.5;
+  color: $color_141414;
+  font-family: $font-avenir;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.apartments__quote img{
+  margin-right:10px;
+  position:relative;
+  top:2px;
+}
