@@ -64,3 +64,33 @@
   line-height: 28px;
   margin-top:14px;
 }
+
+@media screen and (max-width: 600px) {
+  .apartments__free_center {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .apartments__free_center {
+    display:block;
+
+    .apartments__free_left{
+      text-align: center;
+      margin-right:0;
+      margin-bottom:16px;
+    }
+
+    .apartments__free_right_top{
+      text-align: center;
+    }
+
+    .apartments__free_right_title{
+      text-align:center;
+    }
+
+    .apartments__free_right_description{
+      text-align:center;
+    }
+  }
+}

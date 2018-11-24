@@ -1,0 +1,116 @@
+.refer_friend__title{
+  color: $color_141414;
+  font-family: $font-lyon;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-top:60px;
+}
+
+.refer_friend__text{
+  opacity: 0.8;
+  color: $color_rgba_20_20_20__70;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top:20px;
+}
+
+
+/* form refer_friend */
+
+.form_el_refer {
+  padding-top:180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  input{
+    color: $color_141414;
+    font-family: $font-avenir;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .wpcf7-submit {
+    color: $color_ffffff;
+    margin-top: 30px;
+    background-color: $color_a89fbd;
+
+    font-family: $font-lora;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.41px;
+    padding: 18px 29px;
+    float: right;
+  }
+}
+
+.form_el_refer{
+  padding-top:0;
+  margin-top:10px;
+  .wpcf7-text{
+    background: none;
+    border:0;
+    border-radius:0;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    border-bottom: 1px solid rgba(20, 20, 20, .3);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    max-width:100%;
+    width:100%;
+  }
+}
+
+.refer_friend__form{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.refer_friend__left{
+  width:50%;
+  padding-right:12px;
+  position: relative;
+  margin-top:30px;
+}
+
+.refer_friend__right{
+  width:50%;
+  padding-left:12px;
+  position: relative;
+  margin-top:30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .refer_friend {
+    .contact_form__email {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .refer_friend__form{
+    display:block;
+
+    .refer_friend__left{
+      width:100%;
+      padding-right: 0;
+      padding-top:0;
+      margin-top:40px;
+    }
+
+    .refer_friend__right{
+      width:100%;
+      padding-left: 0;
+      padding-top:0;
+      margin-top:40px;
+    }
+
+    .contact_form__label_email{
+      padding-left: 0!important;
+    }
+  }
+}

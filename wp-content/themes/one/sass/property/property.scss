@@ -187,6 +187,45 @@ header.property{
   margin-left:6px;
 }
 
+@media screen and (max-width: 600px) {
+  .pr__description {
+    padding: 43px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pr__text_block {
+    display:block;
+
+    .pr__text_left{
+      width:100%;
+      padding-right:0;
+    }
+
+    .pr__text_right{
+      width:100%;
+      padding-left:0;
+    }
+  }
+
+  .pr__view_gallery{
+    padding: 12px 15px 4px 15px;
+  }
+
+  .pr__virtual_tour{
+    padding: 12px 15px 6px 15px;
+  }
+
+  .pr__semi_private{
+    right: 20px;
+  }
+
+  .pr__one_month_free{
+    left:10px;
+    right:initial;
+  }
+}
+
 /* apartment_amenities */
 
 .building__item.apartment_amenities{
@@ -337,4 +376,57 @@ header.property{
 
 .building__item.location__description{
   margin-top:30px;
+}
+
+.best_coffee__bottom_info_right,
+.best_coffee__bottom_info_left{
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .best_coffee__free_center {
+    padding:20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .best_coffee__free_center {
+    display:block;
+
+    .best_coffee__free_left{
+      text-align: center;
+      margin-right:0;
+      margin-bottom:16px;
+    }
+
+    .best_coffee__free_right_top{
+      text-align:center;
+    }
+
+    .best_coffee__free_right_title{
+      text-align:center;
+    }
+
+    .best_coffee__free_right_description{
+      text-align: center;
+    }
+
+    .best_coffee__bottom_phone{
+      width:80%;
+    }
+
+    .best_coffee__bottom_phone:after{
+      display:none;
+    }
+
+    .best_coffee__bottom_info_right,
+    .best_coffee__bottom_info_left{
+      display: block;
+    }
+
+    .best_coffee__bottom_info_right{
+      margin-top:10px;
+    }
+
+  }
 }

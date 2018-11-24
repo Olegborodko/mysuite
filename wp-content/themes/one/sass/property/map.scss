@@ -89,3 +89,28 @@
   width:50%;
 }
 
+@media screen and (max-width: 600px) {
+  .map_right {
+    width:100px;
+  }
+
+  .map_left{
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .map__bottom{
+    display:block;
+
+    .map__bottom_left{
+      margin-right:0;
+      width:100%;
+    }
+
+    .map__bottom_right{
+      margin-left:0;
+      width:100%;
+    }
+  }
+}

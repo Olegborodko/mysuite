@@ -1,0 +1,112 @@
+.slider_type4__center {
+  margin-top: 110px;
+
+  .related_post__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+
+  .slider_type4__button_prev {
+    background: url(../img/arrow_left_b.png) center no-repeat;
+    position: relative;
+    width: 54px;
+    float: right;
+    margin-right: 20px;
+    height: 35px;
+    left: 0;
+    display: block;
+    top: -15px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .slider_type4__button_next {
+    background: url(../img/arrow_right_b.png) center no-repeat;
+    position: relative;
+    float: right;
+    width: 54px;
+    height: 35px;
+    left: 0;
+    display: block;
+    top: -15px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+
+  //---------
+  .pr__one_month_free{
+    background-color: $color_fac800;
+    display: inline-block;
+    padding: 6px 14px;
+    left: 30px;
+    top: 1px;
+    right:initial;
+  }
+
+  .slider_type4__location{
+    opacity: 0.45;
+    color: $color_141414;
+    font-family: $font-lyon;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+
+  .slider_type4__title{
+    opacity: 0.9;
+    color: $color_141414;
+    font-family: $font-avenir;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top:6px;
+  }
+
+  .slider_type4__price{
+    opacity: 0.7;
+    color: $color_141414;
+    font-family: $font-avenir;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top:6px;
+  }
+
+  .slider_type4__bottom_block{
+    padding: 16px 30px 30px;
+    display:flex;
+  }
+
+  .slider_type4__bottom_left{
+    width:70%;
+  }
+
+  .slider_type4__bottom_right{
+    text-align:center;
+    min-width: 120px;
+    padding-top:25px;
+  }
+
+  .slider_type4__bottom_button{
+    display:inline-block;
+    border-radius: 2px;
+    background-color: $color_a89fbd;
+    color: $color_ffffff;
+    font-family: $font-avenir-black;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding:9px 14px;
+    cursor:pointer;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .slider_type4__center {
+    max-width: 440px;
+  }
+}

@@ -61,3 +61,10 @@
 .slider_type3__slide{
   text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+  .related_post__next_prev {
+    position: relative;
+    top: 40px;
+  }
+}

@@ -73,3 +73,19 @@
 .building__item_r{
   margin-left:20px;
 }
+
+@media screen and (max-width: 500px) {
+  .building__item_c {
+    display:block;
+
+    .building__item_l{
+      margin-right:0;
+      width:100%;
+    }
+
+    .building__item_r{
+      margin-left:0;
+      width:100%;
+    }
+  }
+}

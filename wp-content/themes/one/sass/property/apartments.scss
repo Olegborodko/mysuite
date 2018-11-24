@@ -31,6 +31,7 @@
   margin-top:20px;
   border-collapse: collapse;
   display: none;
+  min-width: 600px;
 }
 
 .apartments__table td{
@@ -143,4 +144,8 @@ tr.apartments__table_title {
   .js_apartments__arrow_up {
     display: none;
   }
+}
+
+.apartments__table_response{
+  overflow: auto;
 }

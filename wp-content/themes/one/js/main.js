@@ -688,6 +688,34 @@ jQuery(window).bind("load", function() {
             pagination: {
                 el: '.map-swiper-pagination',
                 clickable: true
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 6,
+                    spaceBetween: 0
+                }
+            }
+        });
+    }
+
+    //==================================== slider_type4__js
+    if ( jQuery(".slider_type4__js").length ) {
+        var mySwiper = new Swiper('.slider_type4__js', {
+            slidesPerView: 2,
+            centeredSlides: false,
+            paginationClickable: true,
+            loop: false,
+            spaceBetween: 20,
+            allowSwipeToNext: true,
+            allowSwipeToPrev: true,
+            // pagination: '.location_slider__js__pagination',
+            nextButton: '.slider_type4__button_next',
+            prevButton: '.slider_type4__button_prev',
+            breakpoints: {
+                767: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
             }
         });
     }

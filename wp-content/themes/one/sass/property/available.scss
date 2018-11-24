@@ -95,3 +95,10 @@
   position:relative;
   top:4px;
 }
+
+@media screen and (max-width: 1199px) {
+  .pr__available_block {
+    margin-bottom: 70px;
+    margin-top: 20px;
+  }
+}
