@@ -153,7 +153,7 @@ function vecb_initual_setup() {
 //Get current user role
 function vecb_get_current_user_role() {
     global $current_user;
-    get_currentuserinfo();
+    wp_get_current_user() ;
     $user_roles = $current_user->roles;
     $user_role = array_shift($user_roles);
     return $user_role;

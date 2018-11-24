@@ -263,3 +263,7 @@ add_filter( 'fw_ext_page_builder_settings_options_post_types_default_value', '_t
 //  return $vars;
 //}
 //add_filter( 'query_vars', 'myplugin_register_query_vars' );
+
+//remove emoji_styles, fix error
+//remove_action('wp_head', 'print_emoji_detection_script', 7);
+//remove_action('wp_print_styles', 'print_emoji_styles');

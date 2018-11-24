@@ -869,7 +869,6 @@ header.property{margin-top:0;background:#fff}
 .building__item.apartment_amenities,.building__item.pet_policy{margin-top:60px}
 .pet_policy__description{opacity:.8;color:rgba(20,20,20,.7);font-family:Avenir,sans-serif;font-size:16px;font-weight:400;line-height:28px}
 .best_coffee__free{margin-top:40px;border:1px solid #a89fbd}
-.apartments__top,.building__item_title{border-bottom:1px solid rgba(168,159,189,.4)}
 .best_coffee__free.best_coffee__free_two{margin-top:30px}
 .best_coffee__free_top{background:#a89fbd;padding:5px 10px;opacity:.9;color:#fff;font-family:AvenirBlack,sans-serif;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
 .best_coffee__free_top img{position:relative;top:2px;margin-right:6px}
@@ -887,8 +886,8 @@ header.property{margin-top:0;background:#fff}
 .best_coffee__bottom_phone:after{background:rgba(168,159,189,.4);width:1px;height:13px;display:block;position:absolute;content:'';top:5px;right:0}
 .location__title,.partnership_benefits__title{margin-top:60px}
 .building__item.location__description{margin-top:30px}
-.apartments__table td,.apartments__top{font-weight:400;line-height:28px;font-family:Avenir,sans-serif}
-.apartments__top{margin-top:40px;opacity:.9;color:#141414;font-size:20px;padding-bottom:6px;cursor:pointer}
+.apartments__table td,.apartments__top{font-family:Avenir,sans-serif;font-weight:400;line-height:28px}
+.apartments__top{margin-top:40px;opacity:.9;color:#141414;font-size:20px;border-bottom:1px solid rgba(168,159,189,.4);padding-bottom:6px;cursor:pointer}
 .apartments__top i{float:right;position:relative;top:5px;font-size:26px}
 .apartments__table{margin-top:20px;border-collapse:collapse;display:none}
 .apartments__table td{color:rgba(20,20,20,.7);font-size:14px}
@@ -900,7 +899,7 @@ header.property{margin-top:0;background:#fff}
 .apartments__table_one{padding-left:12px}
 .apartments__table_one img{margin-right:10px;position:relative;top:0}
 .apartments__table_view{opacity:.7;color:#141414;font-family:Avenir,sans-serif;font-size:11px;font-weight:500;line-height:21px;text-decoration:underline;position:absolute;bottom:-8px}
-.apartments__table_avaliable,.apartments__table_contact{color:#fff!important;font-family:Lora,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.41px;display:inline-block;padding:12px 0;width:100%;text-transform:uppercase;text-align:center}
+.apartments__table_avaliable,.apartments__table_contact{color:#fff!important;font-family:Lora,sans-serif;font-size:13px;font-weight:700;letter-spacing:1.41px;display:inline-block;padding:12px 0;width:100%;text-align:center;text-transform:uppercase}
 .apartments__table_contact{background-color:#a89fbd}
 .apartments__table_avaliable{background-color:#141414}
 .apartments__table .apartments__table_one{width:25%}
@@ -908,23 +907,23 @@ header.property{margin-top:0;background:#fff}
 .apartments__top .js_apartments__arrow_up{display:none}
 .apartments__free{margin-top:50px;border:1px solid #fac800}
 .apartments__free_top{background:#fac800;padding:5px 10px;opacity:.9;color:#fff;font-family:AvenirBlack,sans-serif;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
-.apartments__free_right_top,.pr__available_top_title,.widget-title{text-transform:uppercase;letter-spacing:1.3px}
 .apartments__free_top img{position:relative;top:2px;margin-right:6px}
 .apartments__free_center{padding:30px;display:flex}
 .apartments__free_left{flex-shrink:0;margin-right:30px}
-.apartments__free_right_top{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:11px;font-weight:500}
+.apartments__free_right_top{opacity:.45;color:#141414;font-family:"Lyon Display",sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px}
 .apartments__free_right_title{opacity:.9;color:#141414;font-family:Avenir,sans-serif;font-size:20px;font-weight:400;line-height:28px;margin-top:8px}
 .apartments__free_right_title img{margin-right:6px}
 .apartments__free_right_description{opacity:.7;color:#141414;font-family:AvenirBook,sans-serif;font-size:14px;font-weight:300;line-height:28px;margin-top:14px}
+.apartments__quote_center,.pr__available_text{font-family:Avenir,sans-serif}
 .apartments__quote{margin-top:30px;text-align:center}
-.apartments__quote_center{display:inline-block;border:1px solid rgba(20,20,20,.1);border-radius:2px;padding:10px;opacity:.5;color:#141414;font-family:Avenir,sans-serif;font-size:12px;font-weight:300;line-height:21px}
+.apartments__quote_center{display:inline-block;border:1px solid rgba(20,20,20,.1);border-radius:2px;padding:10px;opacity:.5;color:#141414;font-size:12px;font-weight:300;line-height:21px}
 .pr__available_title,.pr__available_top_title{color:#141414;font-family:"Lyon Display",sans-serif}
 .apartments__quote img{margin-right:10px;position:relative;top:2px}
 .pr__available_block{margin-top:60px;text-align:center}
-.pr__available_top_title{opacity:.45;font-size:11px;font-weight:500}
+.pr__available_top_title{opacity:.45;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1.3px}
 .pr__available_title{font-size:24px;font-weight:700;line-height:35px;max-width:260px;margin:10px auto}
 .pr__browse_available{color:#fff;font-family:Lora,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.41px;padding:20px 40px;display:inline-block;background-color:#141414;margin-top:20px;margin-bottom:20px}
-.pr__available_text{color:rgba(20,20,20,.7);font-family:Avenir,sans-serif;font-size:16px;font-weight:300;line-height:28px;padding-top:20px;border-top:1px solid rgba(168,159,189,.4);max-width:230px;margin:0 auto}
+.pr__available_text{color:rgba(20,20,20,.7);font-size:16px;font-weight:300;line-height:28px;padding-top:20px;border-top:1px solid rgba(168,159,189,.4);max-width:230px;margin:0 auto}
 .pr__available_bottom_form,.pr__available_bottom_number{margin-left:10px;font-family:Avenir,sans-serif;font-size:16px;font-weight:800;color:#a89fbd}
 .pr__available_bottom_block{margin-top:24px}
 .pr__available_bottom_form,.pr__available_bottom_number{display:inline-block}
@@ -943,11 +942,14 @@ header.property{margin-top:0;background:#fff}
 #map{height:100%;width:100%}
 .map_left{width:calc(100% - 180px);margin-right:20px;margin-top:25px}
 .map-btn-swiper-slide{z-index:1;cursor:pointer}
+.map__bottom{margin-top:40px;display:flex;opacity:.8;color:rgba(20,20,20,.7);font-family:Avenir;font-size:16px;font-weight:400;line-height:28px}
+.map__bottom_left{margin-right:12px;width:50%}
+.map__bottom_right{margin-left:12px;width:50%}
 .building{margin-top:60px}
 .building__title{color:#141414;font-family:"Lyon Display",sans-serif;font-size:24px;font-weight:700;line-height:35px}
 .building__item_c ul li,.building__item_title{font-family:Avenir,sans-serif;font-weight:400;line-height:28px}
 .building__item{margin-top:40px}
-.building__item_title{padding-bottom:6px;opacity:.9;color:#141414;font-size:20px}
+.building__item_title{border-bottom:1px solid rgba(168,159,189,.4);padding-bottom:6px;opacity:.9;color:#141414;font-size:20px}
 .building__item_title img{margin-right:6px}
 .building__item_c{display:flex;margin-top:20px}
 .building__item_c ul li{list-style-type:none;margin-top:14px;display:flex;opacity:.8;color:rgba(20,20,20,.7);font-size:16px}
@@ -968,7 +970,7 @@ header a.header_resident_portal_btn.header_resident_portal_btn_black{color:#fff;
 .footer_block{display:flex}
 .footer_part_1,.footer_part_2,.footer_part_3{flex:1 1 auto}
 .footer_part_4{flex:1 1 auto;max-width:330px;width:100%}
-.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px}
+.widget-title{font-family:"Lyon Display",sans-serif;font-size:12px;font-weight:700;line-height:36px;text-transform:uppercase;letter-spacing:1.3px}
 .footer .menu a,.footer_test_1{font-weight:300}
 .footer .menu a,.footer_copyright_desktop,.footer_phone,.footer_test_1{font-family:Avenir,sans-serif;font-size:13px;line-height:28px}
 .footer .menu a{opacity:.8}

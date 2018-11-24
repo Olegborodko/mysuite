@@ -66,3 +66,26 @@
   z-index: 1;
   cursor:pointer;
 }
+
+.map__bottom{
+  margin-top:40px;
+  display:flex;
+
+  opacity: 0.8;
+  color: rgba(20, 20, 20, 0.7);
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.map__bottom_left{
+  margin-right:12px;
+  width:50%;
+}
+
+.map__bottom_right{
+  margin-left:12px;
+  width:50%;
+}
+

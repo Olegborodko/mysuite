@@ -44,6 +44,7 @@ if ( isset( $atts['is_mobile_display'] ) && $atts['is_mobile_display'] ) {
   }
 }
 
+$container_style = '';
 $container_style .= $bg_color;
 $container_style .= $bg_image;
 

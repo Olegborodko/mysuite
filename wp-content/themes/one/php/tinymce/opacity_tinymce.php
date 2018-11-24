@@ -14,7 +14,7 @@ function gavickpro_add_my_tc_button() {
     // check if WYSIWYG is enabled
     if ( get_user_option('rich_editing') == 'true') {
       add_filter("mce_external_plugins", "gavickpro_add_tinymce_plugin");
-      add_filter('mce_buttons', 'gavickpro_register_my_tc_button');
+      //add_filter('mce_buttons', 'gavickpro_register_my_tc_button');
     }
 }
 

@@ -214,8 +214,9 @@ endwhile; // End of the loop.
             <?php
             require( get_stylesheet_directory() . '/php/property/map_slider.php' );
             ?>
-
           </div>
+
+
         </div>
       </div>
     </div>
