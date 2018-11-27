@@ -422,6 +422,7 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor:pointer;
 }
 
 .filter__r_description_left{
@@ -546,4 +547,83 @@
 .irs-slider.state_hover,
 .irs-slider:hover{
   background-position: 0 -120px!important;
+}
+
+/* hover */
+
+.filter__r_item_a_hover_arrow {
+  background: url(../img/b_arrow_right.png) center no-repeat;
+  height: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.filter__r_item_block_hover{
+  position:relative;
+}
+
+.filter__r_item_a_hover_center{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  padding-top:30%;
+  text-align:center;
+  color: $color_ffffff;
+  font-family: $font-lyon;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  text-decoration:none;
+  display:none;
+}
+
+.filter__r_item_a_hover_bath{
+  position:absolute;
+  bottom:50px;
+  left:30px;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.filter__r_item_a_hover_bed{
+  position:absolute;
+  bottom:22px;
+  left:30px;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.filter__r_item_a_hover_bed img,
+.filter__r_item_a_hover_bath img{
+  margin-right:7px;
+}
+
+.filter__r_item_a_hover_link_background{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: $color_000000;
+  opacity:0.5;
+  cursor:pointer;
+  display: none;
+}
+
+.filter__r_item_img_block_hover{
+  vertical-align:bottom
+}
+
+.filter__r_item_block_hover:hover{
+  .filter__r_item_a_hover_center,
+  .filter__r_item_a_hover_link_background{
+    display:inline-block;
+  }
 }
