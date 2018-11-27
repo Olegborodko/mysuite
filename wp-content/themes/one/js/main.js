@@ -720,4 +720,27 @@ jQuery(window).bind("load", function() {
         });
     }
 
+    //================================== lightbox
+    if ( jQuery(".lightbox").length ) {
+        jQuery(".lightbox").lightbox({
+            thumbnails: true,
+            //customClass: 'testTest'
+        });
+
+        jQuery(window).on("open.lightbox", function () {
+            if (!jQuery('.fs-lightbox-mobile').length) {
+                jQuery('.fs-lightbox-tools').replaceWith(jQuery('.fs-lightbox-thumbnails'));
+            }
+        }).on("close.lightbox", function () {
+            //console.log('ok');
+            //jQuery.lightbox("close");
+        });
+
+        //js_open_lightbox_gallery
+        $(".js_open_lightbox_gallery").click(function(){
+            $(".lightbox").trigger( "click" );
+        });
+    }
+
+
 });

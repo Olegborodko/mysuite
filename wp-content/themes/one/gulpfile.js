@@ -43,6 +43,26 @@ gulp.task('css_admin_panel', function () {
   .pipe(gulp.dest('build'));
 });
 
+// gulp.task('js_gallery', function () {
+//     gulp.src([
+//         'js/lightbox/core.js',
+//         'js/lightbox/lightbox.js',
+//         'js/lightbox/touch.js',
+//         'js/lightbox/transition.js',
+//         'js/lightbox/viewer.js'
+//     ]).pipe(uglify())
+//     .pipe(concat('lightbox.js'))
+//     .pipe(gulp.dest('build'));
+// });
+//
+// gulp.task('css_gallery', function () {
+//     return gulp.src(['css/lightbox/*.+(scss|css)'])
+//     .pipe(sass())
+//     .pipe(minify({keepBreaks: true}))
+//     .pipe(concat('lightbox.css'))
+//     .pipe(gulp.dest('build'));
+// });
+
 gulp.task('w', function () {
     gulp.watch(['sass/**/*.+(scss|css)', 'css/*.+(scss|css)', 'js/*.js'], ['css', 'js', 'css_admin_panel']);
 });

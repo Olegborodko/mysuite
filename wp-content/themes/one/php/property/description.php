@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="pr__view_gallery">
+  <div class="pr__view_gallery js_open_lightbox_gallery">
     <img src="<?= get_stylesheet_directory_uri() ?>/img/property/pr_2.png"/>
     <div class="pr__view_gallery_title">
       VIEW GALLERY
@@ -45,4 +45,22 @@
   <div class="pr__semi_private">
     Semi-private
   </div>
+</div>
+
+
+<!-- lightboxGallery -->
+<script src="<?= get_stylesheet_directory_uri() ?>/js/lightbox/lightbox.js"></script>
+<link href="<?= get_stylesheet_directory_uri() ?>/css/lightbox/lightbox.css" rel="stylesheet">
+<link href="<?= get_stylesheet_directory_uri() ?>/css/lightbox/custom.css" rel="stylesheet">
+
+<div class="lightboxGallery" style="display:none">
+  <a href="<?= get_stylesheet_directory_uri() ?>/img/b1.jpg" class="lightbox" data-lightbox-gallery="gallery_name" title="Image caption text.">
+    <img src="<?= get_stylesheet_directory_uri() ?>/img/b1.jpg" alt="">
+  </a>
+  <a href="<?= get_stylesheet_directory_uri() ?>/img/b2.jpg" class="lightbox" data-lightbox-gallery="gallery_name" title="Image caption text.">
+    <img src="<?= get_stylesheet_directory_uri() ?>/img/b2.jpg" alt="">
+  </a>
+  <a href="<?= get_stylesheet_directory_uri() ?>/img/b3.jpg" class="lightbox" data-lightbox-gallery="gallery_name" title="Image caption text.">
+    <img src="<?= get_stylesheet_directory_uri() ?>/img/b3.jpg" alt="">
+  </a>
 </div>
