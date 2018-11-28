@@ -789,17 +789,28 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .social_icons_fixed__link{display:inline-block;margin-bottom:10px}
 .social_icons_fixed__icon{border:1px solid rgba(20,20,20,.45);width:45px;height:45px;text-align:center}
 .social_icons_fixed__icon:before{display:inline-block;content:'';font-family:FontAwesome;position:relative;top:9px}
-.related_post__date,.related_post__title{font-family:"Lyon Display",sans-serif;color:#141414}
+.related_post__date,.related_post__title{color:#141414;font-family:"Lyon Display",sans-serif}
 .related_post__title{font-size:24px;font-weight:700;line-height:35px}
 .swiper-button-next.slider_type3__button_next{background:url(../img/arrow_right_b.png) center no-repeat;position:relative;float:right;width:54px;height:35px;left:0;display:block;top:-15px}
 .swiper-button-prev.slider_type3__button_prev{background:url(../img/arrow_left_b.png) center no-repeat;position:relative;width:54px;float:right;margin-right:20px;height:35px;left:0;display:block;top:-15px}
 .related_post__date{font-size:11px;font-weight:500}
-.related_post__post_title{opacity:.9;color:#141414;font-family:Avenir,sans-serif;font-size:20px;font-weight:400;line-height:28px;margin-top:10px}
-.news__press_date,.news__top_title{font-family:"Lyon Display",sans-serif;color:#141414}
+.related_post__post_title,.three_images__text{color:#141414;font-family:Avenir,sans-serif}
+.related_post__post_title{opacity:.9;font-size:20px;font-weight:400;line-height:28px;margin-top:10px}
 .related_post__bottom{padding:20px 30px 30px;text-align:left}
 .news__center_read_more,.pagination,.slider_type3__slide{text-align:center}
 .related_post__top{margin-bottom:50px}
 @media screen and (max-width:500px){.related_post__next_prev{position:relative;top:40px}
+}
+.three_images__item{max-width:263px}
+.three_images{display:flex;align-items:center;justify-content:center}
+.three_images__text{opacity:.7;font-size:14px;font-weight:800;line-height:20px;text-align:center;margin-top:20px}
+.news__press_date,.news__top_title{font-family:"Lyon Display",sans-serif;color:#141414}
+.three_images2{margin-left:30px;margin-right:30px}
+.three_images1{position:relative;top:20px}
+.three_images3{position:relative;top:35px}
+@media screen and (max-width:767px){.three_images{display:block;text-align:center}
+.three_images .three_images1,.three_images .three_images3{top:0}
+.three_images .three_images__item{margin:0 auto 40px}
 }
 .news__block{display:flex;padding:60px}
 .news__top_title{font-size:24px;font-weight:700;line-height:35px}
