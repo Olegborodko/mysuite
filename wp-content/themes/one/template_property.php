@@ -220,7 +220,7 @@ endwhile; // End of the loop.
               </div>
             </div>
             <?php
-            require( get_stylesheet_directory() . '/php/property/map_slider.php' );
+            require( get_stylesheet_directory() . '/php/property/map_slider__v2.php' );
             ?>
           </div>
 
@@ -232,21 +232,21 @@ endwhile; // End of the loop.
           echo do_shortcode('[contact-form-7 id="749" title="Refer A Friend"]');
           ?>
 
-          <div class="personal_link">
-            <div class="personal_link__item_title">
-              <img src="<?= get_stylesheet_directory_uri() ?>/img/property/shape.png">
-              Your Personal Referal Link
-            </div>
-
-            <div class="personal_link__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam sit amet lectus quis est.
-            </div>
-
-            <div class="personal_link__copy">
-              <input value="https://www.referafriend.com/sectionid=684823" type="text" class="personal_link__copy_input"/>
-              <div class="personal_link__copy_button">COPY</div>
-            </div>
-          </div>
+<!--          <div class="personal_link">-->
+<!--            <div class="personal_link__item_title">-->
+<!--              <img src="--><?//= get_stylesheet_directory_uri() ?><!--/img/property/shape.png">-->
+<!--              Your Personal Referal Link-->
+<!--            </div>-->
+<!---->
+<!--            <div class="personal_link__description">-->
+<!--              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam sit amet lectus quis est.-->
+<!--            </div>-->
+<!---->
+<!--            <div class="personal_link__copy">-->
+<!--              <input value="https://www.referafriend.com/sectionid=684823" type="text" class="personal_link__copy_input"/>-->
+<!--              <div class="personal_link__copy_button">COPY</div>-->
+<!--            </div>-->
+<!--          </div>-->
 
           <?php
           require( get_stylesheet_directory() . '/php/property/slider_type4.php');

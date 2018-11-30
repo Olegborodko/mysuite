@@ -18,19 +18,6 @@
             });
         }
 
-        jQuery(window).bind("load", function() {
-            jQuery(".map-btn-swiper-slide").click(function (e) {
-                e.preventDefault();
-
-                var lat = $(this).data('lat');
-                var lng = $(this).data('lng');
-                var location = new google.maps.LatLng({lat: lat, lng: lng});
-
-                map_map.setCenter(location);
-                map_marker.setPosition(location);
-            });
-        });
-
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=<?=fw_get_db_settings_option('set_google_key')?>&callback=initMap"
             type="text/javascript"></script>
@@ -42,29 +29,19 @@
     <div class="swiper-container map-swiper-container">
       <div class="swiper-wrapper map-swiper-wrapper">
         <div class="swiper-slide map-swiper-slide">
-          <div data-lat="27.7" data-lng="85.3" class="map-btn-swiper-slide">
-            <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map4.png">
-          </div>
+          <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map4.png">
         </div>
         <div class="swiper-slide map-swiper-slide">
-          <div data-lat="27.7" data-lng="85.2" class="map-btn-swiper-slide">
-            <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map2.png">
-          </div>
+          <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map2.png">
         </div>
         <div class="swiper-slide map-swiper-slide">
-          <div data-lat="27.7" data-lng="85.21" class="map-btn-swiper-slide">
-            <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map3.png">
-          </div>
+          <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map3.png">
         </div>
         <div class="swiper-slide map-swiper-slide">
-          <div data-lat="27.7" data-lng="85.32" class="map-btn-swiper-slide">
-            <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map2.png">
-          </div>
+          <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map2.png">
         </div>
         <div class="swiper-slide map-swiper-slide">
-          <div data-lat="27.7" data-lng="85.33" class="map-btn-swiper-slide">
-            <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map4.png">
-          </div>
+          <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map4.png">
         </div>
         <div class="swiper-slide map-swiper-slide">
           <img src="<?= get_stylesheet_directory_uri() ?>/img/property/map2.png">

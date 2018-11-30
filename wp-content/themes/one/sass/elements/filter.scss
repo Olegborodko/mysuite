@@ -423,6 +423,8 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
 }
 
 .filter__r_description_left{
@@ -618,7 +620,8 @@
 }
 
 .filter__r_item_img_block_hover{
-  vertical-align:bottom
+  vertical-align:bottom;
+  width:100%;
 }
 
 .filter__r_item_block_hover:hover{

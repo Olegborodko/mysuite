@@ -240,7 +240,6 @@ header .site-logo{width:50%;margin:0 auto}
 }
 input[type=checkbox].css-checkbox{position:absolute;z-index:-1000;left:-1000px;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
 input[type=checkbox].css-checkbox+label.css-label{padding-left:52px;height:20px;display:inline-block;line-height:21px;background-repeat:no-repeat;background-position:0 0;vertical-align:middle;cursor:pointer}
-.filter__r_item_img_block_hover,.news__center_image_block img{vertical-align:bottom}
 input[type=checkbox].css-checkbox:checked+label.css-label{background-position:0 -20px}
 label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .home_top__small_text{margin-top:145px;opacity:.7;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.18px}
@@ -682,11 +681,11 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .filter__r_item_price,.filter__r_item_title{color:#141414;font-family:Avenir,sans-serif;line-height:28px}
 .filter__r_item_title{opacity:.9;font-size:20px;font-weight:400;margin-top:10px}
 .filter__r_item_price{opacity:.7;font-size:14px;font-weight:300}
-.filter__r_button,.filter__r_premium{font-family:Avenir,sans-serif;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#fff}
 .filter__r_description{display:flex;flex-wrap:wrap;padding:30px}
-.filter__r_button{margin-top:30px;float:right;border-radius:2px;background-color:#a89fbd;padding:10px 15px;cursor:pointer}
+.filter__r_button,.filter__r_premium{display:inline-block;font-family:Avenir,sans-serif;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#fff}
+.filter__r_button{margin-top:30px;float:right;border-radius:2px;background-color:#a89fbd;padding:10px 15px;cursor:pointer;text-decoration:none}
 .filter__r_description_left{flex:1 1 auto;padding-right:16px}
-.filter__r_premium{border-radius:0 0 2px 2px;background-color:#fac800;display:inline-block;position:absolute;top:1px;padding:10px 12px;opacity:.9;left:40px}
+.filter__r_premium{border-radius:0 0 2px 2px;background-color:#fac800;position:absolute;top:1px;padding:10px 12px;opacity:.9;left:40px}
 .filter__pagination_item,.filter__pagination_item_active{font-family:Lora,sans-serif;font-size:13px;letter-spacing:1.41px;font-weight:700;text-transform:uppercase}
 .filter__r_premium img{margin-right:6px;position:relative;top:2px}
 @media screen and (max-width:768px){.filter__r_item{width:100%}
@@ -710,6 +709,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .filter__r_item_a_hover_bath img,.filter__r_item_a_hover_bed img{margin-right:7px}
 .filter__r_item_a_hover_link_background{position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.5;cursor:pointer;display:none}
 .locations_block_line__parent,.related_post__date{opacity:.45;text-transform:uppercase;letter-spacing:1.3px}
+.filter__r_item_img_block_hover{vertical-align:bottom;width:100%}
 .filter__r_item_block_hover:hover .filter__r_item_a_hover_center,.filter__r_item_block_hover:hover .filter__r_item_a_hover_link_background{display:inline-block}
 .partner_up{padding-top:180px;background-repeat:no-repeat;background-size:cover!important}
 .partner_up__block{max-width:850px;width:100%;margin:0 auto;background:#fff;padding:83px 165px 86px!important}
@@ -845,6 +845,7 @@ label.css-label{background-image:url(../img/checkbox.png);-webkit-touch-callout:
 .news__center_read_more_title{opacity:.9;color:#fff;font-family:"Lyon Display - Bold";font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.3px;margin-top:33%}
 .news__center_shadow{background:#000;opacity:.5}
 .news__center_image_block{position:relative}
+.news__center_image_block img{vertical-align:bottom}
 .news__center_item:hover{background:#fff;box-shadow:0 0 10px rgba(20,20,20,.2)}
 .news__center_item:hover .news__center_read_more,.news__center_item:hover .news__center_shadow{display:block}
 section.news{background:#f7f6f9}
