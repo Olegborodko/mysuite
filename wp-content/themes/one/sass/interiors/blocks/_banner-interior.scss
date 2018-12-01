@@ -1,0 +1,53 @@
+.banner-interior {
+    height: 740px;
+    padding-top: 205px;
+    padding-bottom: 382px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    .banner-interior__heading {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner-interior__title {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-family: 'AvenirBook', sans-serif;
+        font-size: 46px;
+        line-height: 66px;
+        color: #fff;
+    }
+
+    .banner-interior__slogan {
+        margin: 0;
+        font-family: 'AvenirBook', sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 1.18px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint(medium) {
+        height: auto;
+        padding: 200px 0;
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        padding-top: 55px;
+        padding-bottom: 75px;
+
+        .banner-interior__title {
+            margin-top: 0;
+            font-size: 32px;
+            line-height: 1;
+        }
+
+        .banner-interior__slogan {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+//typography: base styles for fonts, p, a, standard h1, h2 ...
+
+
+.sect-title {
+    margin: 0;
+    font-family: 'Lyon Display', sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 38px;
+    color: #141414;
+}
+
+.custom-rte {
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    //color:  rgba(20, 20, 20, 0.7);
+    color:  #888888;
+
+    p {
+        margin: 20px 0;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+
+        li {
+            padding-left: 5px;
+        }
+
+        li + li {
+            margin-top: 20px;
+        }
+    }
+}

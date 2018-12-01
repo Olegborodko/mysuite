@@ -1,0 +1,85 @@
+.sect-5 {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 160px;
+    background: #fff;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,245,248,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,245,248,1) 100%);
+
+    @include breakpoint(extra-small) {
+        padding-bottom: 0;
+        background: rgba(227,226,227,1);
+        background: -webkit-linear-gradient(top, rgba(227,226,227,1) 0%, rgba(242,242,242,1) 100%);
+        background: linear-gradient(to bottom, rgba(227,226,227,1) 0%, rgba(242,242,242,1) 100%);
+    }
+
+    .sect-5__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .sect-5__img-col {
+        position: relative;
+        z-index: 2;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        &:first-of-type {
+            padding-right: 15px;
+        }
+
+        &:last-of-type {
+            padding-left: 15px;
+        }
+
+        @include breakpoint(medium) {
+            display: none;
+        }
+    }
+
+    .default-container {
+        flex-grow: 2;
+
+        @media (min-width: 1200px) and (max-width: 1450px) {
+            max-width: 850px;
+        }
+
+        @include breakpoint(extra-small) {
+            width: 100%;
+        }
+    }
+
+    .sect-5__col-1 {
+        position: relative;
+        z-index: 2;
+
+        @include breakpoint(extra-small) {
+            order: 2;
+            margin-top: 3px;
+            padding: 0;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    .sect-5__col-2 {
+        @include breakpoint(extra-small) {
+            padding: 0;
+            img {
+                width: 100%;
+                display: block;
+            }
+
+        }
+    }
+}

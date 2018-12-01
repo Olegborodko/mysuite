@@ -1,0 +1,31 @@
+.button {
+    display: inline-block;
+    padding: 7px 15px;
+    font-family: 'Lora', sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.41px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: .3s all;
+
+    &.button--white {
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: #53505d;
+
+        &:hover,
+        &:focus {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    &.button--xl {
+        padding: 26px 47px;
+    }
+}

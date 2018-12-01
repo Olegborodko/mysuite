@@ -1,0 +1,69 @@
+.article-card {
+
+    .article-card__image {
+        position: relative;
+        display: block;
+        margin-bottom: 30px;
+        padding-top: 75.30%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: rgba(#000, .5);
+            transition-property: opacity;
+            transition-duration: .3s;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        @include breakpoint(extra-small) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .article-card__title {
+        margin: 0;
+        font-family: 'Lyon Display', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        word-break: break-word;
+        line-height: 38px;
+
+        a {
+            text-decoration: none;
+            color: #141414;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .article-card__description {
+        overflow: hidden;
+        margin-top: 40px;
+        font-family: 'Avenir', sans-serif;;
+        font-size: 16px;
+        line-height: 28px;
+        color: rgba(#141414, 0.8);
+
+        p {
+            margin: 0;
+        }
+
+        @include breakpoint(extra-small) {
+            margin-top: 3px;
+        }
+    }
+}

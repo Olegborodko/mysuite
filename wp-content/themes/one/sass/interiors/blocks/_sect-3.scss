@@ -1,0 +1,102 @@
+.sect-3 {
+    padding-bottom: 485px;
+    margin-top: -20px;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 50%;
+
+    @include breakpoint(small) {
+        margin-top: 0;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        background-image: none!important;
+    }
+
+    .default-container {
+        position: relative;
+    }
+
+    .sect-3__title {
+        position: absolute;
+        top: 65px;
+        right: 48px;
+        margin: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 23px;
+            height: 1px;
+            width: 100vw;
+            background-color: #bfb5d7;
+            right: calc(100% + 35px);
+            z-index: -1;
+        }
+
+        @include breakpoint(small) {
+            display: flex;
+            position: relative;
+            align-items: center;
+            top: 0;
+            right: 0;
+            margin-right: -15px;
+
+            &::before {
+                position: static;
+                order: 2;
+                width: 40px;
+                margin-top: 5px;
+                margin-left: 20px;
+                margin-bottom: 5px;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .sect-3__col {
+        width: 50%;
+        padding: 0 15px;
+
+        .custom-rte {
+            p:last-of-type {
+                max-width: 410px;
+            }
+        }
+
+        @include breakpoint(small) {
+            width: 100%;
+
+            .custom-rte {
+                p:last-of-type {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .sect-3__col--2 {
+        padding-top: 195px;
+    }
+
+    .sect-3__col--mobile {
+        display: none;
+        @include breakpoint(small) {
+            display: block;
+
+            img {
+                display: block;
+                margin: 0 -15px;
+                margin-bottom: 3px;
+                max-width: calc(100% + 30px);
+                width: 100vw;
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .sect-3__img-1 {
+        margin-bottom: 23px;
+    }
+
+}

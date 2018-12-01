@@ -1,0 +1,137 @@
+.custom-slider-wrapper {
+    max-width: 330px;
+    padding-left: 80px;
+    box-sizing: content-box;
+
+    @include breakpoint(small) {
+        padding-left: 30px;
+    }
+
+    @include breakpoint(extra-small) {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+
+.custom-slider {
+    margin-top: 53px;
+    outline: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 23px;
+        height: 1px;
+        width: 100vw;
+        background-color: #bfb5d7;
+        right: calc(100% + 35px);
+        z-index: 1;
+    }
+
+    .sect-title {
+        margin-bottom: 30px;
+    }
+
+    .custom-slider__text {
+        max-height: 165px;
+        overflow: hidden;
+    }
+
+    @include breakpoint(extra-small) {
+        margin-top: 0;
+
+        .sect-title {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+#custom-slider-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 77px;
+
+    @include breakpoint(extra-small) {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .slick-arrow {
+        width: 55px;
+        height: 20px;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+    }
+
+    .slick-prev {
+        order: 1;
+        background-image: url('../img/slick-prev.png');
+    }
+
+    .slick-next {
+        order: 3;
+        background-image: url('../img/slick-next.png');
+    }
+
+    .slider-dots {
+        order: 2;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 25px;
+        margin-right: auto;
+        padding: 0 10px;
+        list-style-type: none;
+
+        li {
+            display: inline-flex;
+            align-items: center;
+            padding: 9px 0;
+            cursor: pointer;
+
+        }
+
+        button {
+            width: 12px;
+            height: 2px;
+            margin: 0 3px;
+            padding: 0;
+            background-color: rgba(#a89fbd, 0.4);
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 0 !important;
+            color: transparent;
+            -webkit-appearance: none;
+            appearance: none;
+            outline: none;
+        }
+
+        li.slick-active {
+            button {
+                width: 22px;
+                background-color: rgba(#a89fbd, 1);
+            }
+        }
+
+        @include breakpoint(extra-small) {
+            margin: 0 auto;
+        }
+    }
+}

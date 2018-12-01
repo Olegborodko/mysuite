@@ -1,0 +1,93 @@
+.sect-4 {
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include breakpoint(small) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .sect-4__container {
+        position: relative;
+        max-width: 1290px;
+        margin: 0 auto;
+        margin-top: -115px;
+        padding-top: 110px;
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-bottom: 50px;
+        background-color: #fff;
+        border-radius: 2px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            box-shadow: 0px -50px 50px rgba(0,0,0,0.058)
+        }
+
+        @include breakpoint(large) {
+            padding-left: 80px;
+            padding-right:  80px;
+        }
+
+        @include breakpoint(small) {
+            margin-top: 0;
+            padding-top: 50px;
+            padding-bottom: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &::before {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .sect-title {
+        margin-bottom: 100px;
+        @include breakpoint(small) {
+            display: flex;
+            margin-bottom: 27px;
+            position: relative;
+            align-items: center;
+            margin-right: -15px;
+
+            &::before {
+                content: "";
+                position: static;
+                order: 2;
+                width: 40px;
+                height: 1px;
+                background-color: #bfb5d7;
+                margin-top: 5px;
+                margin-left: 20px;
+                margin-bottom: 5px;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .custom-rte {
+        margin-top: 43px;
+        @include breakpoint(small) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .sect-4__img {
+        @include breakpoint(small) {
+            display: block;
+            margin: 0 -15px;
+            max-width: calc(100% + 30px);
+            width: 100vw;
+        }
+    }
+}

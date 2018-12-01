@@ -1,0 +1,22 @@
+@import "mixins/mixins";
+@import "base/base";
+
+
+
+// Import libs
+@import "libs/_slick";
+
+// UI
+@import "blocks/button";
+
+
+//Import your blocks
+@import "blocks/banner-interior";
+@import "blocks/offseting-box";
+@import "blocks/sect-3";
+@import "blocks/sect-4";
+@import "blocks/sect-5";
+@import "blocks/custom-slider";
+@import "blocks/sect-6";
+@import "blocks/article-card";
+@import "blocks/sect-7";
