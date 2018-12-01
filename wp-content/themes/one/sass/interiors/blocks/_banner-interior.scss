@@ -1,12 +1,12 @@
 .banner-interior {
     height: 740px;
-    padding-top: 205px;
-    padding-bottom: 382px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 
     .banner-interior__heading {
+        padding-top: 205px;
+        padding-bottom: 382px;
         max-width: 800px;
         margin: 0 auto;
         text-align: center;
@@ -33,12 +33,16 @@
 
     @include breakpoint(medium) {
         height: auto;
-        padding: 200px 0;
+        .banner-interior__heading {
+            padding: 200px 0;
+        }
     }
 
     @include breakpoint(small-tablet-portrait) {
-        padding-top: 55px;
-        padding-bottom: 75px;
+        .banner-interior__heading {
+            padding-top: 130px;
+            padding-bottom: 100px;
+        }
 
         .banner-interior__title {
             margin-top: 0;

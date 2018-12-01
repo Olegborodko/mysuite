@@ -6,7 +6,7 @@
     }
 
     @if $point == large {
-        @media (max-width: 1500px) {
+        @media (min-width: 1200px) {
             @content;
         }
     } @else if $point == medium {
@@ -22,7 +22,7 @@
     }  
     
      @else if $point == small {
-        @media (max-width: 991px) {
+        @media (max-width: 1200px) {
             @content;
         }
     } @else if $point == extra-small {
@@ -30,15 +30,15 @@
             @content;
         }
     } @else if $point == small-tablet-portrait {
-        @media (max-width: 575px) {
+        @media (max-width: 767px) {
             @content;
         }
     } @else if $point == mobile-landscape {
-        @media (max-width: 480px) {
+        @media (max-width: 767px) {
             @content;
         }
     } @else if $point == mobile {
-        @media (max-width: 380px) {
+        @media (max-width: 767px) {
             @content;
         }
     } 
