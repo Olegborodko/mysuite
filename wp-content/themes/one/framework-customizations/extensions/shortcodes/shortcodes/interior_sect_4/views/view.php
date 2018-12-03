@@ -23,7 +23,7 @@ if ( !empty( $atts['image2'] ) && !empty($atts['image2']['url']) ) {
 
   <div class="sect-4">
     <div class="sect-4__container">
-      <div class="default-row">
+      <div class="default-row default-row-custom">
         <div class="default-col-lg-6">
           <h2 class="sect-title"><?=$atts['title']?></h2>
           <img class="sect-4__img" src="<?=$image1?>" alt="">

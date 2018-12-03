@@ -8,6 +8,12 @@
         padding-bottom: 93px;
     }
 
+    .default-custom-row{
+        @include breakpoint(small) {
+            margin: 0;
+        }
+    }
+
     .sect-6__col {
         width: 33.333333%;
         padding: 0 15px;
@@ -51,7 +57,7 @@
         @include breakpoint(small) {
             display: flex;
             align-items: center;
-            margin-right: -15px;
+            padding-left:20px;
             &::before {
                 content: "";
                 position: static;

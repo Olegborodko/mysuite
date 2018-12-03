@@ -30,7 +30,7 @@ if ( !empty( $atts['background'] ) && !empty($atts['background']['url']) ) {
     <div class="default-container">
       <h2 class="sect-title sect-3__title"><?=$atts['title']?></h2>
 
-      <div class="default-row">
+      <div class="default-row default-row-custom">
         <div class="sect-3__col sect-3__col--1">
           <img class="sect-3__img-1 hidden-md" src="<?=$image1?>" alt="">
           <div class="custom-rte hidden-md">

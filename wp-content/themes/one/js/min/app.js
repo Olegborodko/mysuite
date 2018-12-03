@@ -12,6 +12,7 @@ $(document).ready(function () {
             customSlider.slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                variableWidth: true,
                 autoplay: false,
                 dots: true,
                 arrows: true,
