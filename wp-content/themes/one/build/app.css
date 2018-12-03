@@ -1158,9 +1158,11 @@ header.property{margin-top:0;background:#fff}
 }
 .sect-3 .sect-3__img-1{margin-bottom:23px}
 .sect-4{padding-bottom:50px;padding-left:15px;padding-right:15px}
-@media (max-width:1200px){.sect-4{padding-left:0;padding-right:0;padding-bottom:0}
+.sect-4 .default-row{max-width:1130px;margin:0 auto}
+@media (max-width:1200px){.sect-4 .default-row{padding:0 20px!important}
+.sect-4{padding-left:0;padding-right:0;padding-bottom:0}
 }
-.sect-4 .sect-4__container{position:relative;max-width:1290px;margin:-115px auto 0;background-color:#fff;border-radius:2px;padding:110px 110px 50px}
+.sect-4 .sect-4__container{position:relative;max-width:1290px;margin:0 auto;background-color:#fff;border-radius:2px;padding:110px 110px 50px}
 .sect-4 .sect-4__container::before{content:"";position:absolute;z-index:-1;top:0;left:0;width:100%;height:50%;box-shadow:0 -50px 50px rgba(0,0,0,.058)}
 .sect-5 .sect-5__col-1,.sect-5 .sect-5__img-col{z-index:2;position:relative}
 .custom-slider::before,.sect-6 .sect-title::before{content:"";top:23px;right:calc(100% + 35px)}
@@ -1169,12 +1171,13 @@ header.property{margin-top:0;background:#fff}
 .sect-4 .sect-title{margin-bottom:100px}
 @media (max-width:1200px){.sect-4 .sect-4__container{margin-top:0;padding:50px 15px 0}
 .sect-4 .sect-4__container::before{box-shadow:none}
-.sect-4 .sect-title{display:flex;margin-bottom:27px;position:relative;align-items:center;margin-right:-15px}
+.sect-4 .sect-title{display:flex;margin-bottom:27px;position:relative;align-items:center}
 .sect-4 .sect-title::before{content:"";position:static;order:2;width:40px;height:1px;background-color:#bfb5d7;margin-top:5px;margin-left:20px;margin-bottom:5px;padding-left:5px}
 }
 .sect-4 .custom-rte{margin-top:43px}
 @media (max-width:1200px){.sect-4 .custom-rte{margin-top:30px;margin-bottom:30px}
-.sect-4 .sect-4__img{display:block;margin:0 -15px;max-width:calc(100% + 30px);width:100vw}
+.sect-4 .sect-4__img{display:block;width:100%}
+.sect-4 .default-col-lg-6.default-col-lg-6-custom{padding:0}
 }
 .sect-5{position:relative;padding-top:90px;padding-bottom:160px;background:#fff;background:-webkit-linear-gradient(top,#fff 0,#f6f5f8 100%);background:linear-gradient(to bottom,#fff 0,#f6f5f8 100%)}
 .sect-5 .sect-5__container{display:flex;flex-wrap:wrap;align-items:center}

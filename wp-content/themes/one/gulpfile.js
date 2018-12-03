@@ -21,6 +21,8 @@ gulp.task('js', function () {
       //'js/swiper.jquery.min.js',
       'js/swiper.min.js',
       'js/ion.rangeSlider.min.js',
+      'js/min/app.js',
+      'js/slick.min.js',
       'js/main.js'
     ]).pipe(uglify())
 	     .pipe(concat('app.js'))

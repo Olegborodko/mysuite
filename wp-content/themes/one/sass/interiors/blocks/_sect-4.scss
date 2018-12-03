@@ -1,4 +1,14 @@
 .sect-4 {
+    .default-row{
+        max-width:1130px;
+        margin: 0 auto;
+
+        @include breakpoint(small) {
+            padding: 0 20px!important;
+        }
+    }
+
+
     padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
@@ -13,7 +23,6 @@
         position: relative;
         max-width: 1290px;
         margin: 0 auto;
-        margin-top: -115px;
         padding-top: 110px;
         padding-left: 110px;
         padding-right: 110px;
@@ -57,7 +66,6 @@
             margin-bottom: 27px;
             position: relative;
             align-items: center;
-            margin-right: -15px;
 
             &::before {
                 content: "";
@@ -85,9 +93,13 @@
     .sect-4__img {
         @include breakpoint(small) {
             display: block;
-            margin: 0 -15px;
-            max-width: calc(100% + 30px);
-            width: 100vw;
+            width: 100%;
+        }
+    }
+
+    .default-col-lg-6.default-col-lg-6-custom{
+        @include breakpoint(small) {
+            padding: 0;
         }
     }
 }
